@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    public int Greitis;
+    public float Greitis = 5f;
     Vector3 Vec;
     public KeyCode dash;
 

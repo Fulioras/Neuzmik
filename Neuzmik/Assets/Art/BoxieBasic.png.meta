@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1e76441612b9d0945bb6e54b10e35e53
+guid: 9da9705fa920eb14eb0cabe50283ce0a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,12 +104,180 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Player 1_0
+      name: BoxieBasic_0
       rect:
         serializedVersion: 2
-        x: 32
-        y: 302
-        width: 418
+        x: 52
+        y: 1093
+        width: 1123
+        height: 1640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f00470de767aecc45a3a63ef20cec08b
+      internalID: 1654017855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoxieBasic_1
+      rect:
+        serializedVersion: 2
+        x: 1233
+        y: 1138
+        width: 756
+        height: 1615
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66770ef0a6ade914eb88cb07c916338f
+      internalID: 306970846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoxieBasic_2
+      rect:
+        serializedVersion: 2
+        x: 2089
+        y: 1144
+        width: 764
+        height: 1611
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e45f0b37059f634788b6118133379ce
+      internalID: 2117328356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoxieBasic_3
+      rect:
+        serializedVersion: 2
+        x: 2876
+        y: 1169
+        width: 1117
+        height: 1639
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65a4e99b43355064d8aa0cfd740f92fc
+      internalID: -1357218588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoxieBasic_4
+      rect:
+        serializedVersion: 2
+        x: 1849
+        y: 890
+        width: 13
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89867716727b9274c9aa436e7149aec8
+      internalID: 819692372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoxieBasic_5
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 290
+        width: 338
+        height: 471
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e617eddbf79c44408fb115582f76c73
+      internalID: -1959589528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoxieBasic_6
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 294
+        width: 328
+        height: 471
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ecae25dd0bb4be4ea9f6e831931c659
+      internalID: -1960129049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoxieBasic_7
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 446
+        width: 361
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e6e3f9a231e53d45a7c445e0318106c
+      internalID: 1022720206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoxieBasic_8
+      rect:
+        serializedVersion: 2
+        x: 2169
+        y: 456
+        width: 383
         height: 260
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -118,71 +286,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3b8950331170c248ac325afa1c8303c
-      internalID: -1188732488
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player 1_1
-      rect:
-        serializedVersion: 2
-        x: 529
-        y: 293
-        width: 29
-        height: 214
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 34d02a27c57d68f4188fb0fad566448d
-      internalID: -967257797
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player 1_2
-      rect:
-        serializedVersion: 2
-        x: 92
-        y: 24
-        width: 219
-        height: 258
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e54d508f2f2234741bcd54c2a309e5a9
-      internalID: -2117309525
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player 1_3
-      rect:
-        serializedVersion: 2
-        x: 562
-        y: 51
-        width: 122
-        height: 208
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a7ca0c6450a462a40987481153c95132
-      internalID: 903465898
+      spriteID: 92bc28afb0934104f8ab3178d209a309
+      internalID: -1840376232
       vertices: []
       indices: 
       edges: []
@@ -198,10 +303,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Player 1_3: 903465898
-      Player 1_1: -967257797
-      Player 1_0: -1188732488
-      Player 1_2: -2117309525
+      BoxieBasic_1: 306970846
+      BoxieBasic_5: -1959589528
+      BoxieBasic_7: 1022720206
+      BoxieBasic_3: -1357218588
+      BoxieBasic_8: -1840376232
+      BoxieBasic_4: 819692372
+      BoxieBasic_0: 1654017855
+      BoxieBasic_6: -1960129049
+      BoxieBasic_2: 2117328356
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
