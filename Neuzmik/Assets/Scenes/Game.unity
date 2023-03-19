@@ -1456,9 +1456,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Greitis: 10
   dash: 304
-  dashSpeed: 50
-  dashLength: 0.5
-  dashCooldown: 1
   animator: {fileID: 0}
 --- !u!212 &1559994944
 SpriteRenderer:
@@ -1607,6 +1604,7 @@ GameObject:
   - component: {fileID: 1753990910}
   - component: {fileID: 1753990911}
   - component: {fileID: 1753990912}
+  - component: {fileID: 1753990913}
   m_Layer: 0
   m_Name: Boxie
   m_TagString: Untagged
@@ -1671,9 +1669,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Greitis: 35
   dash: 0
-  dashSpeed: 0
-  dashLength: 0.5
-  dashCooldown: 1
   animator: {fileID: 1753990908}
 --- !u!50 &1753990911
 Rigidbody2D:
@@ -1712,6 +1707,73 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -4}
   serializedVersion: 2
   m_Radius: 1.5
+--- !u!114 &1753990913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753990907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a151dce15c3382645b7c5ea97eae99ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dashSpeed: 100
+  dashTime: 0.5
+  dashCooldown: 1
+  dashCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 9.244841
+      outSlope: 9.244841
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.087500006
+      value: 0.8089236
+      inSlope: 0.27543798
+      outSlope: 0.27543798
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.25756598
+      value: 0.675173
+      inSlope: -0.8472795
+      outSlope: -0.8472795
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.5252708
+      value: 0.43207133
+      inSlope: -0.9373897
+      outSlope: -0.9373897
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.4528592
+    - serializedVersion: 3
+      time: 0.9875
+      value: -0.01886785
+      inSlope: -0.97557485
+      outSlope: -0.97557485
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  dashKey: 304
 --- !u!1 &1814594485
 GameObject:
   m_ObjectHideFlags: 0
