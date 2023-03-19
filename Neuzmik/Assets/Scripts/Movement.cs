@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    public float Greitis = 5f;
-    Vector3 Vec;
+    public float Greitis;
+
+
+    Vector2 Vec;
     public KeyCode dash;
 
     private float activeMoveSpeed;
@@ -13,6 +15,9 @@ public class Movement : MonoBehaviour
     public float dashLength = .5f, dashCooldown = 1f;
     private float dashCounter;
     private float dashCoolCounter;
+
+    public Animator animator;
+
     void Start()
     {
         activeMoveSpeed = Greitis;
@@ -23,6 +28,10 @@ public class Movement : MonoBehaviour
         Vec.x += Input.GetAxis("Horizontal") * Time.deltaTime * Greitis;
         Vec.y += Input.GetAxis("Vertical") * Time.deltaTime * Greitis;
         transform.localPosition = Vec;
+
+        animator.SetFloat("Horizontal", Input.GetAxis("Horizontal"));
+        animator.SetFloat("Vertical", Input.GetAxis("Vertical"));
+        //animator.SetFloat("Speed", Input.GetAxis("Horizontal")* Input.GetAxis("Vertical"));
 
         if (Input.GetKeyDown(dash))
         {
