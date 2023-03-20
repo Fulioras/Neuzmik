@@ -32,6 +32,8 @@ public class Movement : MonoBehaviour
 
         animator.SetFloat("Horizontal", horizontalInput);
         animator.SetFloat("Vertical", verticalInput);
+        animator.SetFloat("Speed", inputVector.sqrMagnitude);
+
     }
 
 
