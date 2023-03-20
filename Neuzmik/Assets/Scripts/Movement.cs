@@ -8,7 +8,6 @@ public class Movement : MonoBehaviour
 
 
     Vector2 Vec;
-    public KeyCode dash;
 
     private float activeMoveSpeed;
 
@@ -21,14 +20,19 @@ public class Movement : MonoBehaviour
     void Update()
     {
         Vec = transform.localPosition;
-        Vec.x += Input.GetAxis("Horizontal") * Time.deltaTime * Greitis;
-        Vec.y += Input.GetAxis("Vertical") * Time.deltaTime * Greitis;
+
+        float horizontalInput = Input.GetAxis("Horizontal");
+        float verticalInput = Input.GetAxis("Vertical");
+
+        Vector2 inputVector = new Vector2(horizontalInput, verticalInput).normalized;
+
+        Vec += inputVector * Time.deltaTime * activeMoveSpeed;
+
         transform.localPosition = Vec;
 
-        animator.SetFloat("Horizontal", Input.GetAxis("Horizontal"));
-        animator.SetFloat("Vertical", Input.GetAxis("Vertical"));
-        //animator.SetFloat("Speed", Input.GetAxis("Horizontal")* Input.GetAxis("Vertical"));
-
+        animator.SetFloat("Horizontal", horizontalInput);
+        animator.SetFloat("Vertical", verticalInput);
     }
- 
+
+
 }
