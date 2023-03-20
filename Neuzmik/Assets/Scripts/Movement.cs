@@ -7,7 +7,7 @@ public class Movement : MonoBehaviour
     public float Greitis;
 
 
-    Vector2 Vec;
+    Vector2 Vec; 
 
     private float activeMoveSpeed;
 
