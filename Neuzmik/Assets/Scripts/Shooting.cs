@@ -46,8 +46,9 @@ public class Shooting : MonoBehaviour
         Vector3 direction = mousePos - transform.position;
         direction.z = 0f;   // Make sure the direction is in the 2D plane
 
+        Vector3 bulletSpawn = transform.position;
         // Create a new ball instance and set its position and velocity
-        GameObject newBall = Instantiate(ballPrefab, transform.position, Quaternion.identity);
+        GameObject newBall = Instantiate(ballPrefab, bulletSpawn, Quaternion.identity);
         Rigidbody2D ballRigidbody = newBall.GetComponent<Rigidbody2D>();
         ballRigidbody.velocity = direction.normalized * ballSpeed;
     }
