@@ -8,48 +8,58 @@ public class Shooting : MonoBehaviour
     public int mode = 1;   // The firing mode: 1 for tap firing, 2 for continuous firing
 
     private bool isShooting = false;   // Whether the player is currently shooting
+    public float fireRate = 0.5f; // The time between shots
 
+private float timeSinceLastShot = 0f;
     // Update is called once per frame
     void Update()
-    {
-        if (mode == 1)
-        {
-            if (Input.GetButtonDown("Fire1"))
-            {
-                Shoot();
-            }
-        }
-        else if (mode == 2)
-        {
-            if (Input.GetButtonDown("Fire1"))
-            {
-                isShooting = true;
-            }
-            else if (Input.GetButtonUp("Fire1"))
-            {
-                isShooting = false;
-            }
+{
+    timeSinceLastShot += Time.deltaTime;
 
-            if (isShooting)
-            {
-                Shoot();
-            }
+    if (mode == 1)
+    {
+        if (Input.GetButtonDown("Fire1") && timeSinceLastShot >= fireRate)
+        {
+            Shoot();
+            timeSinceLastShot = 0f;
         }
     }
+    else if (mode == 2)
+    {
+        if (Input.GetButtonDown("Fire1"))
+        {
+            isShooting = true;
+        }
+        else if (Input.GetButtonUp("Fire1"))
+        {
+            isShooting = false;
+        }
+
+        if (isShooting && timeSinceLastShot >= fireRate)
+        {
+            Shoot();
+            timeSinceLastShot = 0f;
+        }
+    }
+}
 
     void Shoot()
-    {
-        // Get the position of the mouse in world coordinates
-        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+{
+    // Get the position of the mouse in world coordinates
+    Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-        // Calculate the direction from the player to the mouse position
-        Vector3 direction = mousePos - transform.position;
-        direction.z = 0f;   // Make sure the direction is in the 2D plane
+    // Calculate the direction from the player to the mouse position
+    Vector3 direction = mousePos - transform.position;
+    direction.z = 0f;   // Make sure the direction is in the 2D plane
 
-        Vector3 bulletSpawn = transform.position;
-        // Create a new ball instance and set its position and velocity
-        GameObject newBall = Instantiate(ballPrefab, bulletSpawn, Quaternion.identity);
-        Rigidbody2D ballRigidbody = newBall.GetComponent<Rigidbody2D>();
-        ballRigidbody.velocity = direction.normalized * ballSpeed;
-    }
+    Vector3 bulletSpawn = transform.position;
+    // Create a new ball instance and set its position and velocity
+    GameObject newBall = Instantiate(ballPrefab, bulletSpawn, Quaternion.identity);
+    Rigidbody2D ballRigidbody = newBall.GetComponent<Rigidbody2D>();
+    ballRigidbody.velocity = direction.normalized * ballSpeed;
+
+    // Destroy the bullet game object after 2 seconds
+    Destroy(newBall, 1f);
+}
+
 }
