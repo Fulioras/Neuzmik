@@ -9,6 +9,7 @@ public class Shooting : MonoBehaviour
 
     private bool isShooting = false;   // Whether the player is currently shooting
     public float fireRate = 0.5f; // The time between shots
+    public GameObject fireEffect;
 
 private float timeSinceLastShot = 0f;
     // Update is called once per frame
@@ -21,6 +22,7 @@ private float timeSinceLastShot = 0f;
         if (Input.GetButtonDown("Fire1") && timeSinceLastShot >= fireRate)
         {
             Shoot();
+            Instantiate(fireEffect, transform.position, transform.rotation);
             timeSinceLastShot = 0f;
         }
     }
@@ -38,7 +40,10 @@ private float timeSinceLastShot = 0f;
         if (isShooting && timeSinceLastShot >= fireRate)
         {
             Shoot();
+            GameObject effect = Instantiate(fireEffect, transform.position, transform.rotation); // iskviecia sautuvo flare animacija
+            effect.transform.parent = transform; // animacija seka sautuva
             timeSinceLastShot = 0f;
+            Destroy(effect, 0.2f);
         }
     }
 }
@@ -54,12 +59,13 @@ private float timeSinceLastShot = 0f;
 
     Vector3 bulletSpawn = transform.position;
     // Create a new ball instance and set its position and velocity
-    GameObject newBall = Instantiate(ballPrefab, bulletSpawn, Quaternion.identity);
+    GameObject newBall = Instantiate(ballPrefab, bulletSpawn, transform.rotation);
     Rigidbody2D ballRigidbody = newBall.GetComponent<Rigidbody2D>();
     ballRigidbody.velocity = direction.normalized * ballSpeed;
 
-    // Destroy the bullet game object after 2 seconds
+    // Destroy the bullet game object after x seconds
     Destroy(newBall, 1f);
+
 }
 
 }
