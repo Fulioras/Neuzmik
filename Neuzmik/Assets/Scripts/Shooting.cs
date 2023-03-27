@@ -22,7 +22,10 @@ private float timeSinceLastShot = 0f;
         if (Input.GetButtonDown("Fire1") && timeSinceLastShot >= fireRate)
         {
             Shoot();
-            Instantiate(fireEffect, transform.position, transform.rotation);
+            GameObject effect = Instantiate(fireEffect, transform.position, transform.rotation); // iskviecia sautuvo flare animacija
+            effect.transform.parent = transform; // animacija seka sautuva
+            timeSinceLastShot = 0f;
+            Destroy(effect, 0.2f);
             timeSinceLastShot = 0f;
         }
     }

@@ -338,7 +338,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ballPrefab: {fileID: 1951492458}
   ballSpeed: 120
-  mode: 2
+  mode: 1
   fireRate: 0.3
   fireEffect: {fileID: 386031009}
 --- !u!212 &231371258
