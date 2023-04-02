@@ -2,77 +2,80 @@ using UnityEngine;
 
 public class Shooting : MonoBehaviour
 {
-    public GameObject ballPrefab;   // The prefab for the ball
-    public float ballSpeed = 10f;   // The speed at which the ball travels
+    public GameObject ballPrefab;
+    public float ballSpeed = 10f;
+    public float accuracy = 0.1f;
 
-    public int mode = 1;   // The firing mode: 1 for tap firing, 2 for continuous firing
+    public int mode = 1;
 
-    private bool isShooting = false;   // Whether the player is currently shooting
-    public float fireRate = 0.5f; // The time between shots
+    private bool isShooting = false;
+    public float rpm = 60;
     public GameObject fireEffect;
 
     public AudioSource soundEffect;
 
-private float timeSinceLastShot = 0f;
-    // Update is called once per frame
+    private float timeSinceLastShot = 0f;
+    public int bulletDamage = 1; 
+
     void Update()
-{
-    timeSinceLastShot += Time.deltaTime;
-
-    if (mode == 1)
     {
-        if (Input.GetButtonDown("Fire1") && timeSinceLastShot >= fireRate)
+        timeSinceLastShot += Time.deltaTime;
+
+        if (mode == 1)
         {
-            Shoot();
-            soundEffect.Play();
-            GameObject effect = Instantiate(fireEffect, transform.position, transform.rotation); // iskviecia sautuvo flare animacija
-            effect.transform.parent = transform; // animacija seka sautuva
-            timeSinceLastShot = 0f;
-            Destroy(effect, 0.2f);
-            timeSinceLastShot = 0f;
+            if (Input.GetButtonDown("Fire1") && timeSinceLastShot >= ((1/rpm)*60))
+            {
+                Shoot();
+                soundEffect.Play();
+                GameObject effect = Instantiate(fireEffect, transform.position, transform.rotation);
+                effect.transform.parent = transform;
+                timeSinceLastShot = 0f;
+                Destroy(effect, 0.2f);
+                timeSinceLastShot = 0f;
+            }
+        }
+        else if (mode == 2)
+        {
+            if (Input.GetButtonDown("Fire1"))
+            {
+                isShooting = true;
+            }
+            else if (Input.GetButtonUp("Fire1"))
+            {
+                isShooting = false;
+            }
+
+            if (isShooting && timeSinceLastShot >= ((1/rpm)*60))
+            {
+                Shoot();
+                soundEffect.Play();
+                GameObject effect = Instantiate(fireEffect, transform.position, transform.rotation);
+                effect.transform.parent = transform;
+                timeSinceLastShot = 0f;
+                Destroy(effect, 0.2f);
+            }
         }
     }
-    else if (mode == 2)
-    {
-        if (Input.GetButtonDown("Fire1"))
-        {
-            isShooting = true;
-        }
-        else if (Input.GetButtonUp("Fire1"))
-        {
-            isShooting = false;
-        }
-
-        if (isShooting && timeSinceLastShot >= fireRate)
-        {
-            Shoot();
-            soundEffect.Play();
-            GameObject effect = Instantiate(fireEffect, transform.position, transform.rotation); // iskviecia sautuvo flare animacija
-            effect.transform.parent = transform; // animacija seka sautuva
-            timeSinceLastShot = 0f;
-            Destroy(effect, 0.2f);
-        }
-    }
-}
 
     void Shoot()
-{
-    // Get the position of the mouse in world coordinates
-    Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+    {
+        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-    // Calculate the direction from the player to the mouse position
-    Vector3 direction = mousePos - transform.position;
-    direction.z = 0f;   // Make sure the direction is in the 2D plane
+        Vector3 direction = mousePos - transform.position;
+        direction.z = 0f;
 
-    Vector3 bulletSpawn = transform.position;
-    // Create a new ball instance and set its position and velocity
-    GameObject newBall = Instantiate(ballPrefab, bulletSpawn, transform.rotation);
-    Rigidbody2D ballRigidbody = newBall.GetComponent<Rigidbody2D>();
-    ballRigidbody.velocity = direction.normalized * ballSpeed;
+        Vector3 deviation = new Vector3(Random.Range(-accuracy, accuracy), Random.Range(-accuracy, accuracy), 0f);
+        direction += deviation;
 
-    // Destroy the bullet game object after x seconds
-    Destroy(newBall, 1f);
+        Vector3 bulletSpawn = transform.position;
+        GameObject newBall = Instantiate(ballPrefab, bulletSpawn, transform.rotation);
+        Rigidbody2D ballRigidbody = newBall.GetComponent<Rigidbody2D>();
+        ballRigidbody.velocity = direction.normalized * ballSpeed;
 
-}
+        // Set the bullet damage on the bullet prefab so that OnCollisionEnter2D() can access it
+        newBall.GetComponent<Bullet>().damage = bulletDamage;
+
+        Destroy(newBall, 1f);
+    }
 
 }
