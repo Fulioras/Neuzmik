@@ -9,4 +9,21 @@ public class StartGame : MonoBehaviour
     {
         SceneManager.LoadScene("Game");
     }
+    public void secondCutScene()
+    {
+        SceneManager.LoadScene("Genesis2");
+    }
+    public void toMenu()
+    {
+        SceneManager.LoadScene("Menu");
+    }
+    public void toCredits()
+    {
+        SceneManager.LoadScene("Credits");
+    }
+    public void Quit()
+    {
+        Application.Quit();
+    }
+
 }
