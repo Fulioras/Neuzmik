@@ -11,6 +11,8 @@ public class Shooting : MonoBehaviour
     public float fireRate = 0.5f; // The time between shots
     public GameObject fireEffect;
 
+    public AudioSource soundEffect;
+
 private float timeSinceLastShot = 0f;
     // Update is called once per frame
     void Update()
@@ -22,6 +24,7 @@ private float timeSinceLastShot = 0f;
         if (Input.GetButtonDown("Fire1") && timeSinceLastShot >= fireRate)
         {
             Shoot();
+            soundEffect.Play();
             GameObject effect = Instantiate(fireEffect, transform.position, transform.rotation); // iskviecia sautuvo flare animacija
             effect.transform.parent = transform; // animacija seka sautuva
             timeSinceLastShot = 0f;
@@ -43,6 +46,7 @@ private float timeSinceLastShot = 0f;
         if (isShooting && timeSinceLastShot >= fireRate)
         {
             Shoot();
+            soundEffect.Play();
             GameObject effect = Instantiate(fireEffect, transform.position, transform.rotation); // iskviecia sautuvo flare animacija
             effect.transform.parent = transform; // animacija seka sautuva
             timeSinceLastShot = 0f;
