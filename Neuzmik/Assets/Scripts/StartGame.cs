@@ -21,9 +21,14 @@ public class StartGame : MonoBehaviour
     {
         SceneManager.LoadScene("Credits");
     }
+    public void toOptions()
+    {
+        SceneManager.LoadScene("Options");
+    }
     public void Quit()
     {
         Application.Quit();
     }
+
 
 }

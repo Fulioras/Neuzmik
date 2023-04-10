@@ -759,7 +759,7 @@ MonoBehaviour:
   ballPrefab: {fileID: 1951492458}
   ballSpeed: 120
   accuracy: 3
-  mode: 2
+  mode: 1
   rpm: 300
   fireEffect: {fileID: 386031009}
   soundEffect: {fileID: 231371259}
@@ -1116,7 +1116,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5517,7 +5517,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1753990907}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.26, y: 1.66, z: 0}
+  m_LocalPosition: {x: -8.2, y: 4.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5636,10 +5636,10 @@ MonoBehaviour:
       inWeight: 0.33333334
       outWeight: 0.4528592
     - serializedVersion: 3
-      time: 0.9875
-      value: -0.01886785
-      inSlope: -0.97557485
-      outSlope: -0.97557485
+      time: 0.6583374
+      value: -0.01105535
+      inSlope: -3.3301122
+      outSlope: -3.3301122
       tangentMode: 34
       weightedMode: 0
       inWeight: 0.33333334
