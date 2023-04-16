@@ -56,26 +56,33 @@ public class Shooting : MonoBehaviour
             }
         }
     }
+public Transform gunTipTransform;
+public Transform armTransform;
+   void Shoot()
+{
+     // Get the hand position in world space
+    Vector3 handPos = armTransform.position;
 
-    void Shoot()
-    {
-        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+    // Calculate the direction from the hand to the gun tip
+    Vector3 direction = gunTipTransform.position - handPos;
+    direction.z = 0f;
 
-        Vector3 direction = mousePos - transform.position;
-        direction.z = 0f;
 
-        Vector3 deviation = new Vector3(Random.Range(-accuracy, accuracy), Random.Range(-accuracy, accuracy), 0f);
-        direction += deviation;
 
-        Vector3 bulletSpawn = transform.position;
-        GameObject newBall = Instantiate(ballPrefab, bulletSpawn, transform.rotation);
-        Rigidbody2D ballRigidbody = newBall.GetComponent<Rigidbody2D>();
-        ballRigidbody.velocity = direction.normalized * ballSpeed;
+    // Add random deviation to direction to simulate inaccuracy
+    Vector3 deviation = new Vector3(Random.Range(-accuracy, accuracy), Random.Range(-accuracy, accuracy), 0f);
+    direction += deviation;
 
-        // Set the bullet damage on the bullet prefab so that OnCollisionEnter2D() can access it
-        newBall.GetComponent<Bullet>().damage = bulletDamage;
+    Vector3 bulletSpawn = transform.position;
+    GameObject newBall = Instantiate(ballPrefab, bulletSpawn, transform.rotation);
+    Rigidbody2D bulletRb = newBall.GetComponent<Rigidbody2D>();
+    bulletRb.velocity = direction.normalized * ballSpeed;
 
-        Destroy(newBall, 1f);
-    }
+    // Set the bullet damage on the bullet prefab so that OnCollisionEnter2D() can access it
+    newBall.GetComponent<Bullet>().damage = bulletDamage;
 
+    // Destroy the bullet after a certain time to prevent it from living forever
+    Destroy(newBall, 0.4f);
 }
+}
+

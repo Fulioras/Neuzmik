@@ -759,11 +759,13 @@ MonoBehaviour:
   ballPrefab: {fileID: 1951492458}
   ballSpeed: 120
   accuracy: 3
-  mode: 1
+  mode: 2
   rpm: 300
   fireEffect: {fileID: 386031009}
   soundEffect: {fileID: 231371259}
   bulletDamage: 5
+  gunTipTransform: {fileID: 231371256}
+  armTransform: {fileID: 98480427}
 --- !u!212 &231371258
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2362,6 +2364,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdf83298dca920a47a9bca32863eb81c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gunTip: {fileID: 231371256}
   flipAngle: 90
 --- !u!1 &887735328
 GameObject:
