@@ -4,6 +4,7 @@ public class Health : MonoBehaviour
 {
     public int maxHealth = 100;
     public int currentHealth;
+    public GameObject laimejimas;
 
     private void Start()
     {
@@ -22,7 +23,21 @@ public class Health : MonoBehaviour
 
     private void Die()
     {
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        Debug.Log(enemies.Length);
+        if (enemies.Length == 1)
+        {
+            NoMoreEnemies();
+        }
         // Do something when the object dies, such as destroying it or playing an animation
         Destroy(gameObject);
+        
+        
     }
+    public void NoMoreEnemies()
+    {
+            laimejimas.SetActive(true);
+        Debug.Log("Veikia");
+    }
+
 }
