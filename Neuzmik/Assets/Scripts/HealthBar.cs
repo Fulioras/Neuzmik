@@ -7,10 +7,7 @@ public class HealthBar : MonoBehaviour
     public TextMeshProUGUI healthText;
     public Image healthBar;
     public float fillSpeed = 5f;
-    public void Start()
-    {
-        PlayerHealth.currentPlayerHealth = PlayerHealth.maxPlayerHealth;
-    }
+
     private void Update()
     {
         // Ensure that health text is updated correctly

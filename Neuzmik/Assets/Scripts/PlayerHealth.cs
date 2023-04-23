@@ -2,20 +2,11 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    private Nustatymai config;
-    public static int currentPlayerHealth;
-    public static int maxPlayerHealth;
+    public static int maxPlayerHealth = 100;
+    public static int currentPlayerHealth = 100;
     public GameObject MirtiesZenklas;
     public Animator anim;
 
-
-    void Start()
-    {
-        GameObject configObject = GameObject.FindGameObjectWithTag("Nustatymai");
-        config = configObject.GetComponent<Nustatymai>();
-        currentPlayerHealth = config.playerHealth;
-        maxPlayerHealth = config.playerHealth;
-    }
     public void TakeDamage(int damage)
     {
         currentPlayerHealth -= damage;
