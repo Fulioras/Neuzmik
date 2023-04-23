@@ -3,27 +3,33 @@ using UnityEngine;
 public class Shooting : MonoBehaviour
 {
     public GameObject ballPrefab;
-    public float ballSpeed = 10f;
-    public float accuracy = 0.1f;
-
-    public int mode = 1;
-
     private bool isShooting = false;
-    public float rpm = 60;
     public GameObject fireEffect;
-
     public AudioSource soundEffect;
+    private float timeSinceLastShot = 0.1f;
+    private Nustatymai config;
 
-    private float timeSinceLastShot = 0f;
-    public int bulletDamage = 1; 
+
+        private void Start()
+    {
+        GameObject configObject = GameObject.FindGameObjectWithTag("Nustatymai");
+        if (configObject != null)
+        {
+            config = configObject.GetComponent<Nustatymai>();
+        }
+        else
+        {
+            Debug.LogError("Could not find AttackConfig object in scene.");
+        }
+    }
 
     void Update()
     {
         timeSinceLastShot += Time.deltaTime;
 
-        if (mode == 1)
+        if (config.firingMode == 1)
         {
-            if (Input.GetButtonDown("Fire1") && timeSinceLastShot >= ((1/rpm)*60))
+            if (Input.GetButtonDown("Fire1") && timeSinceLastShot >= ((1/config.rpm)*60))
             {
                 Shoot();
                 soundEffect.Play();
@@ -34,7 +40,7 @@ public class Shooting : MonoBehaviour
                 timeSinceLastShot = 0f;
             }
         }
-        else if (mode == 2)
+        else if (config.firingMode == 2)
         {
             if (Input.GetButtonDown("Fire1"))
             {
@@ -45,7 +51,7 @@ public class Shooting : MonoBehaviour
                 isShooting = false;
             }
 
-            if (isShooting && timeSinceLastShot >= ((1/rpm)*60))
+            if (isShooting && timeSinceLastShot >= ((1/config.rpm)*60))
             {
                 Shoot();
                 soundEffect.Play();
@@ -70,16 +76,13 @@ public Transform armTransform;
 
 
     // Add random deviation to direction to simulate inaccuracy
-    Vector3 deviation = new Vector3(Random.Range(-accuracy, accuracy), Random.Range(-accuracy, accuracy), 0f);
+    Vector3 deviation = new Vector3(Random.Range(-config.accuracy, config.accuracy), Random.Range(-config.accuracy, config.accuracy), 0f);
     direction += deviation;
 
     Vector3 bulletSpawn = transform.position;
     GameObject newBall = Instantiate(ballPrefab, bulletSpawn, transform.rotation);
     Rigidbody2D bulletRb = newBall.GetComponent<Rigidbody2D>();
-    bulletRb.velocity = direction.normalized * ballSpeed;
-
-    // Set the bullet damage on the bullet prefab so that OnCollisionEnter2D() can access it
-    newBall.GetComponent<Bullet>().damage = bulletDamage;
+    bulletRb.velocity = direction.normalized * config.ballSpeed;
 
     // Destroy the bullet after a certain time to prevent it from living forever
     Destroy(newBall, 0.4f);

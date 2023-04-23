@@ -283,8 +283,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f04ac91edfcd101478b17d96de04e6d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
-  currentHealth: 10
 --- !u!50 &69188728
 Rigidbody2D:
   serializedVersion: 4
@@ -335,8 +333,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1753990909}
-  speed: 15
-  detectionRange: 40
 --- !u!212 &69188731
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -401,9 +397,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7226f87add8546343ba29b77e4d310b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
-  attackRange: 3
-  attackSpeed: 1.5
 --- !u!1 &98480426
 GameObject:
   m_ObjectHideFlags: 0
@@ -537,8 +530,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f04ac91edfcd101478b17d96de04e6d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
-  currentHealth: 10
 --- !u!50 &127119081
 Rigidbody2D:
   serializedVersion: 4
@@ -589,8 +580,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1753990909}
-  speed: 15
-  detectionRange: 40
 --- !u!212 &127119084
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -655,9 +644,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7226f87add8546343ba29b77e4d310b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
-  attackRange: 3
-  attackSpeed: 1.5
 --- !u!1 &147108450
 GameObject:
   m_ObjectHideFlags: 0
@@ -924,13 +910,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballPrefab: {fileID: 1951492458}
-  ballSpeed: 120
-  accuracy: 0.75
-  mode: 2
-  rpm: 300
   fireEffect: {fileID: 386031009}
   soundEffect: {fileID: 231371259}
-  bulletDamage: 5
   gunTipTransform: {fileID: 231371256}
   armTransform: {fileID: 98480427}
 --- !u!212 &231371258
@@ -1422,8 +1403,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f04ac91edfcd101478b17d96de04e6d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
-  currentHealth: 10
 --- !u!50 &389881141
 Rigidbody2D:
   serializedVersion: 4
@@ -1474,8 +1453,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1753990909}
-  speed: 15
-  detectionRange: 40
 --- !u!212 &389881144
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1540,9 +1517,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7226f87add8546343ba29b77e4d310b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
-  attackRange: 3
-  attackSpeed: 1.5
 --- !u!1 &426727820
 GameObject:
   m_ObjectHideFlags: 0
@@ -1554,9 +1528,10 @@ GameObject:
   - component: {fileID: 426727823}
   - component: {fileID: 426727822}
   - component: {fileID: 426727821}
+  - component: {fileID: 426727824}
   m_Layer: 0
   m_Name: EventSystem
-  m_TagString: Untagged
+  m_TagString: Nustatymai
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1610,6 +1585,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &426727824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 426727820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bbdc4cdac3501f4db4995977f084eb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackRange: 1.5
+  attackSpeed: 0.5
+  speed: 5
+  detectionRange: 3
+  enemyDamage: 20
+  bulletDamage: 100
+  firingMode: 1
+  rpm: 180
+  accuracy: 0.1
+  ballSpeed: 10
+  dashSpeed: 10
+  dashTime: 0.5
+  dashCooldown: 1
+  enemyHealth: 100
+  greitis: 0
+  playerHealth: 100
 --- !u!1 &435485820
 GameObject:
   m_ObjectHideFlags: 0
@@ -1806,8 +1809,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f04ac91edfcd101478b17d96de04e6d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
-  currentHealth: 10
 --- !u!50 &443925736
 Rigidbody2D:
   serializedVersion: 4
@@ -1858,8 +1859,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1753990909}
-  speed: 15
-  detectionRange: 40
 --- !u!212 &443925739
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1924,9 +1923,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7226f87add8546343ba29b77e4d310b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
-  attackRange: 3
-  attackSpeed: 1.5
 --- !u!1 &474543135
 GameObject:
   m_ObjectHideFlags: 0
@@ -1976,8 +1972,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f04ac91edfcd101478b17d96de04e6d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
-  currentHealth: 10
 --- !u!50 &474543138
 Rigidbody2D:
   serializedVersion: 4
@@ -2028,8 +2022,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1753990909}
-  speed: 15
-  detectionRange: 40
 --- !u!212 &474543141
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2094,9 +2086,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7226f87add8546343ba29b77e4d310b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
-  attackRange: 3
-  attackSpeed: 1.5
 --- !u!1 &502268272
 GameObject:
   m_ObjectHideFlags: 0
@@ -2146,8 +2135,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f04ac91edfcd101478b17d96de04e6d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
-  currentHealth: 10
 --- !u!50 &502268275
 Rigidbody2D:
   serializedVersion: 4
@@ -2198,8 +2185,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1753990909}
-  speed: 15
-  detectionRange: 40
 --- !u!212 &502268278
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2264,9 +2249,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7226f87add8546343ba29b77e4d310b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
-  attackRange: 3
-  attackSpeed: 1.5
 --- !u!1 &527512580
 GameObject:
   m_ObjectHideFlags: 0
@@ -3004,8 +2986,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f04ac91edfcd101478b17d96de04e6d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
-  currentHealth: 10
 --- !u!50 &887735331
 Rigidbody2D:
   serializedVersion: 4
@@ -3056,8 +3036,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1753990909}
-  speed: 15
-  detectionRange: 40
 --- !u!212 &887735334
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3122,9 +3100,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7226f87add8546343ba29b77e4d310b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
-  attackRange: 3
-  attackSpeed: 1.5
 --- !u!1 &930463843
 GameObject:
   m_ObjectHideFlags: 0
@@ -3174,8 +3149,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f04ac91edfcd101478b17d96de04e6d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
-  currentHealth: 10
 --- !u!50 &930463846
 Rigidbody2D:
   serializedVersion: 4
@@ -3226,8 +3199,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1753990909}
-  speed: 15
-  detectionRange: 40
 --- !u!212 &930463849
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3292,9 +3263,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7226f87add8546343ba29b77e4d310b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
-  attackRange: 3
-  attackSpeed: 1.5
 --- !u!1 &1018827719
 GameObject:
   m_ObjectHideFlags: 0
@@ -3344,8 +3312,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f04ac91edfcd101478b17d96de04e6d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
-  currentHealth: 10
 --- !u!50 &1018827722
 Rigidbody2D:
   serializedVersion: 4
@@ -3396,8 +3362,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1753990909}
-  speed: 15
-  detectionRange: 40
 --- !u!212 &1018827725
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3462,9 +3426,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7226f87add8546343ba29b77e4d310b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
-  attackRange: 3
-  attackSpeed: 1.5
 --- !u!1 &1023187549
 GameObject:
   m_ObjectHideFlags: 0
@@ -3514,8 +3475,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f04ac91edfcd101478b17d96de04e6d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
-  currentHealth: 10
 --- !u!50 &1023187552
 Rigidbody2D:
   serializedVersion: 4
@@ -3566,8 +3525,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1753990909}
-  speed: 15
-  detectionRange: 40
 --- !u!212 &1023187555
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3632,9 +3589,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7226f87add8546343ba29b77e4d310b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
-  attackRange: 3
-  attackSpeed: 1.5
 --- !u!1 &1023488072
 GameObject:
   m_ObjectHideFlags: 0
@@ -3684,8 +3638,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f04ac91edfcd101478b17d96de04e6d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
-  currentHealth: 10
 --- !u!50 &1023488075
 Rigidbody2D:
   serializedVersion: 4
@@ -3736,8 +3688,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1753990909}
-  speed: 15
-  detectionRange: 40
 --- !u!212 &1023488078
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3802,9 +3752,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7226f87add8546343ba29b77e4d310b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
-  attackRange: 3
-  attackSpeed: 1.5
 --- !u!1 &1030413719
 GameObject:
   m_ObjectHideFlags: 0
@@ -4016,8 +3963,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1753990909}
-  speed: 15
-  detectionRange: 40
 --- !u!212 &1046200094
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4134,8 +4079,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f04ac91edfcd101478b17d96de04e6d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
-  currentHealth: 10
 --- !u!114 &1046200099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4148,9 +4091,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7226f87add8546343ba29b77e4d310b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
-  attackRange: 3
-  attackSpeed: 1.5
 --- !u!1 &1075401188
 GameObject:
   m_ObjectHideFlags: 0
@@ -4284,8 +4224,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f04ac91edfcd101478b17d96de04e6d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
-  currentHealth: 10
 --- !u!50 &1144955066
 Rigidbody2D:
   serializedVersion: 4
@@ -4336,8 +4274,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1753990909}
-  speed: 15
-  detectionRange: 40
 --- !u!212 &1144955069
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4402,9 +4338,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7226f87add8546343ba29b77e4d310b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
-  attackRange: 3
-  attackSpeed: 1.5
 --- !u!1 &1151323279
 GameObject:
   m_ObjectHideFlags: 0
@@ -4952,8 +4885,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f04ac91edfcd101478b17d96de04e6d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
-  currentHealth: 10
 --- !u!50 &1354007089
 Rigidbody2D:
   serializedVersion: 4
@@ -5004,8 +4935,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1753990909}
-  speed: 15
-  detectionRange: 40
 --- !u!212 &1354007092
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5070,9 +4999,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7226f87add8546343ba29b77e4d310b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
-  attackRange: 3
-  attackSpeed: 1.5
 --- !u!1 &1366560197
 GameObject:
   m_ObjectHideFlags: 0
@@ -5227,8 +5153,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f04ac91edfcd101478b17d96de04e6d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
-  currentHealth: 10
 --- !u!50 &1427026560
 Rigidbody2D:
   serializedVersion: 4
@@ -5279,8 +5203,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1753990909}
-  speed: 15
-  detectionRange: 40
 --- !u!212 &1427026563
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5345,9 +5267,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7226f87add8546343ba29b77e4d310b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
-  attackRange: 3
-  attackSpeed: 1.5
 --- !u!1 &1441255023
 GameObject:
   m_ObjectHideFlags: 0
@@ -5801,8 +5720,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f04ac91edfcd101478b17d96de04e6d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
-  currentHealth: 10
 --- !u!50 &1591146939
 Rigidbody2D:
   serializedVersion: 4
@@ -5853,8 +5770,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1753990909}
-  speed: 15
-  detectionRange: 40
 --- !u!212 &1591146942
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5919,9 +5834,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7226f87add8546343ba29b77e4d310b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
-  attackRange: 3
-  attackSpeed: 1.5
 --- !u!1 &1611259621
 GameObject:
   m_ObjectHideFlags: 0
@@ -6166,8 +6078,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f04ac91edfcd101478b17d96de04e6d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
-  currentHealth: 10
 --- !u!50 &1668300749
 Rigidbody2D:
   serializedVersion: 4
@@ -6218,8 +6128,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1753990909}
-  speed: 15
-  detectionRange: 40
 --- !u!212 &1668300752
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6284,9 +6192,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7226f87add8546343ba29b77e4d310b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
-  attackRange: 3
-  attackSpeed: 1.5
 --- !u!1 &1686334208
 GameObject:
   m_ObjectHideFlags: 0
@@ -6336,8 +6241,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f04ac91edfcd101478b17d96de04e6d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
-  currentHealth: 10
 --- !u!50 &1686334211
 Rigidbody2D:
   serializedVersion: 4
@@ -6388,8 +6291,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1753990909}
-  speed: 15
-  detectionRange: 40
 --- !u!212 &1686334214
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6454,9 +6355,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7226f87add8546343ba29b77e4d310b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
-  attackRange: 3
-  attackSpeed: 1.5
 --- !u!1 &1718386726
 GameObject:
   m_ObjectHideFlags: 0
@@ -6661,7 +6559,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0ba939c052548a44b4fbe3762134b4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Greitis: 35
   animator: {fileID: 1753990908}
 --- !u!50 &1753990911
 Rigidbody2D:
@@ -6712,9 +6609,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a151dce15c3382645b7c5ea97eae99ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dashSpeed: 100
-  dashTime: 0.5
-  dashCooldown: 1
   dashCurve:
     serializedVersion: 2
     m_Curve:
@@ -6829,8 +6723,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f04ac91edfcd101478b17d96de04e6d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
-  currentHealth: 10
 --- !u!50 &1754898509
 Rigidbody2D:
   serializedVersion: 4
@@ -6881,8 +6773,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1753990909}
-  speed: 15
-  detectionRange: 40
 --- !u!212 &1754898512
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6947,9 +6837,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7226f87add8546343ba29b77e4d310b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
-  attackRange: 3
-  attackSpeed: 1.5
 --- !u!1 &1789938407
 GameObject:
   m_ObjectHideFlags: 0
@@ -6999,8 +6886,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f04ac91edfcd101478b17d96de04e6d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
-  currentHealth: 10
 --- !u!50 &1789938410
 Rigidbody2D:
   serializedVersion: 4
@@ -7051,8 +6936,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1753990909}
-  speed: 15
-  detectionRange: 40
 --- !u!212 &1789938413
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7117,9 +7000,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7226f87add8546343ba29b77e4d310b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
-  attackRange: 3
-  attackSpeed: 1.5
 --- !u!1 &1814594485
 GameObject:
   m_ObjectHideFlags: 0
@@ -7390,8 +7270,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f04ac91edfcd101478b17d96de04e6d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
-  currentHealth: 10
 --- !u!50 &1884176025
 Rigidbody2D:
   serializedVersion: 4
@@ -7442,8 +7320,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1753990909}
-  speed: 15
-  detectionRange: 40
 --- !u!212 &1884176028
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7508,9 +7384,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7226f87add8546343ba29b77e4d310b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
-  attackRange: 3
-  attackSpeed: 1.5
 --- !u!1 &1951492458
 GameObject:
   m_ObjectHideFlags: 0
@@ -7657,7 +7530,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6810a5e4e2e44044a8bde832018b543, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 20
   HitEffect: {fileID: 648893417}
 --- !u!1 &2018715941
 GameObject:
@@ -7819,8 +7691,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f04ac91edfcd101478b17d96de04e6d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
-  currentHealth: 10
 --- !u!50 &2058383098
 Rigidbody2D:
   serializedVersion: 4
@@ -7871,8 +7741,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1753990909}
-  speed: 15
-  detectionRange: 40
 --- !u!212 &2058383101
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7937,9 +7805,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7226f87add8546343ba29b77e4d310b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
-  attackRange: 3
-  attackSpeed: 1.5
 --- !u!1 &2125312018
 GameObject:
   m_ObjectHideFlags: 0
@@ -7989,8 +7854,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f04ac91edfcd101478b17d96de04e6d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
-  currentHealth: 10
 --- !u!50 &2125312021
 Rigidbody2D:
   serializedVersion: 4
@@ -8041,8 +7904,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1753990909}
-  speed: 15
-  detectionRange: 40
 --- !u!212 &2125312024
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8107,9 +7968,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7226f87add8546343ba29b77e4d310b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
-  attackRange: 3
-  attackSpeed: 1.5
 --- !u!1 &2128127395
 GameObject:
   m_ObjectHideFlags: 0

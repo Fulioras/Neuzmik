@@ -2,12 +2,14 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    public int maxHealth = 100;
-    public int currentHealth;
+     int currentHealth;
+    private Nustatymai config;
 
     private void Start()
     {
-        currentHealth = maxHealth;
+        GameObject configObject = GameObject.FindGameObjectWithTag("Nustatymai");
+        config = configObject.GetComponent<Nustatymai>();
+        currentHealth = config.enemyHealth;
     }
 
     public void TakeDamage(int damage)

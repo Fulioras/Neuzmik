@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    public float Greitis;
-
-
     Vector2 Vec; 
 
     private float activeMoveSpeed;
 
     public Animator animator;
+    private Nustatymai config;
 
     void Start()
     {
-        activeMoveSpeed = Greitis;
+        GameObject configObject = GameObject.FindGameObjectWithTag("Nustatymai");
+        config = configObject.GetComponent<Nustatymai>();
+        activeMoveSpeed = config.greitis;
     }
     void Update()
     {
