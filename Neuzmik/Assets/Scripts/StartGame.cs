@@ -25,6 +25,14 @@ public class StartGame : MonoBehaviour
     {
         SceneManager.LoadScene("Options");
     }
+    public void playCity()
+    {
+        SceneManager.LoadScene("City_level");
+    }
+    public void chooseLevel()
+    {
+        SceneManager.LoadScene("Choosing");
+    }
     public void Quit()
     {
         Application.Quit();
