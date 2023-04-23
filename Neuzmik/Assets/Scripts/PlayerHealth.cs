@@ -6,6 +6,7 @@ public class PlayerHealth : MonoBehaviour
     public static int currentPlayerHealth;
     public static int maxPlayerHealth;
     public GameObject MirtiesZenklas;
+    public Animator anim;
 
 
     void Start()
@@ -18,11 +19,12 @@ public class PlayerHealth : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentPlayerHealth -= damage;
-
+        anim.SetBool("GotDamaged", true);
         if (currentPlayerHealth <= 0)
         {
             Die();
         }
+        
     }
 
     private void Die()
@@ -30,5 +32,6 @@ public class PlayerHealth : MonoBehaviour
         // Do something when the object dies, such as destroying it or playing an animation
         Destroy(gameObject);
         MirtiesZenklas.SetActive(true);
+        currentPlayerHealth = maxPlayerHealth;
     }
 }
