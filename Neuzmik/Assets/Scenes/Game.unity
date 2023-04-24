@@ -5232,8 +5232,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackRange: 1.5
   attackSpeed: 1.5
-  speed: 5
-  detectionRange: 3
+  speed: 15
+  detectionRange: 40
   enemyDamage: 10
   bulletDamage: 10
   firingMode: 1
