@@ -2,25 +2,30 @@ using UnityEngine;
 
 public class Dash : MonoBehaviour
 {
-    public float dashSpeed = 10f; // the speed at which the object will dash
-    public float dashTime = 0.5f; // the duration of the dash
-    public float dashCooldown = 1f; // the cooldown time before the object can dash again
     public AnimationCurve dashCurve; // the curve controlling the acceleration and deceleration of the dash
     public KeyCode dashKey = KeyCode.LeftShift; // the key used to initiate the dash
-
     private Rigidbody2D rb;
     private float dashTimer;
     private bool isDashing;
-
+    private Nustatymai config;
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        dashTimer = dashCooldown;
+        GameObject configObject = GameObject.FindGameObjectWithTag("Nustatymai");
+        if (configObject != null)
+        {
+            config = configObject.GetComponent<Nustatymai>();
+        }
+        else
+        {
+            Debug.LogError("Could not find AttackConfig object in scene.");
+        }
+        dashTimer = config.dashCooldown;
     }
 
     private void Update()
 {
-    if (Input.GetKeyDown(dashKey) && dashTimer >= dashCooldown)
+    if (Input.GetKeyDown(dashKey) && dashTimer >= config.dashCooldown)
     {
         isDashing = true;
         dashTimer = 0f;
@@ -28,30 +33,30 @@ public class Dash : MonoBehaviour
 
     if (isDashing)
     {
-        float t = dashTimer / dashTime;
+        float t = dashTimer / config.dashTime;
         float curveValue = dashCurve.Evaluate(t);
 
         // Check if the "W" key is held down
         if (Input.GetKey(KeyCode.W))
         {
-            rb.velocity = transform.up * dashSpeed * curveValue;
+            rb.velocity = transform.up * config.dashSpeed * curveValue;
         }
         else if (Input.GetKey(KeyCode.D))
         {
-            rb.velocity = transform.right * dashSpeed * curveValue;
+            rb.velocity = transform.right * config.dashSpeed * curveValue;
         }
         else if (Input.GetKey(KeyCode.A))
         {
-            rb.velocity = -transform.right * dashSpeed * curveValue;
+            rb.velocity = -transform.right * config.dashSpeed * curveValue;
         }
         else
         {
-            rb.velocity = -transform.up * dashSpeed * curveValue;
+            rb.velocity = -transform.up * config.dashSpeed * curveValue;
         }
 
         dashTimer += Time.deltaTime;
 
-        if (dashTimer >= dashTime)
+        if (dashTimer >= config.dashTime)
         {
             isDashing = false;
             rb.velocity = Vector2.zero;
@@ -59,7 +64,7 @@ public class Dash : MonoBehaviour
     }
     else
     {
-        dashTimer = Mathf.Min(dashTimer + Time.deltaTime, dashCooldown);
+        dashTimer = Mathf.Min(dashTimer + Time.deltaTime, config.dashCooldown);
     }
 }
 }

@@ -9061,8 +9061,45 @@ PrefabInstance:
       propertyPath: m_Name
       value: EventSystem
       objectReference: {fileID: 0}
+    - target: {fileID: 7260263050915678411, guid: 61203587ad6061b41bb9119e802d2896, type: 3}
+      propertyPath: m_TagString
+      value: Nustatymai
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61203587ad6061b41bb9119e802d2896, type: 3}
+--- !u!1 &1865377130 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7260263050915678411, guid: 61203587ad6061b41bb9119e802d2896, type: 3}
+  m_PrefabInstance: {fileID: 1865377129}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1865377131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1865377130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64dfb7d8df7ff99409b66d089623c862, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackRange: 1.5
+  attackSpeed: 1.5
+  speed: 20
+  detectionRange: 30
+  enemyDamage: 10
+  bulletDamage: 10
+  firingMode: 1
+  rpm: 180
+  accuracy: 0.1
+  ballSpeed: 10
+  dashSpeed: 100
+  dashTime: 0.5
+  dashCooldown: 1
+  enemyHealth: 100
+  greitis: 20
+  playerHealth: 100
 --- !u!1 &2007984873
 GameObject:
   m_ObjectHideFlags: 0

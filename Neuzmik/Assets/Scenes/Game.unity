@@ -336,8 +336,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1207526185}
-  speed: 15
-  detectionRange: 40
 --- !u!212 &69188731
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -402,9 +400,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7226f87add8546343ba29b77e4d310b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
-  attackRange: 3
-  attackSpeed: 1.5
 --- !u!1 &127119078
 GameObject:
   m_ObjectHideFlags: 0
@@ -507,8 +502,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1207526185}
-  speed: 15
-  detectionRange: 40
 --- !u!212 &127119084
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -573,9 +566,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7226f87add8546343ba29b77e4d310b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
-  attackRange: 3
-  attackSpeed: 1.5
 --- !u!1 &327915814
 GameObject:
   m_ObjectHideFlags: 0
@@ -894,8 +884,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1207526185}
-  speed: 15
-  detectionRange: 40
 --- !u!212 &389881144
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -960,9 +948,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7226f87add8546343ba29b77e4d310b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
-  attackRange: 3
-  attackSpeed: 1.5
 --- !u!1 &443925733
 GameObject:
   m_ObjectHideFlags: 0
@@ -1065,8 +1050,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1207526185}
-  speed: 15
-  detectionRange: 40
 --- !u!212 &443925739
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1131,9 +1114,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7226f87add8546343ba29b77e4d310b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
-  attackRange: 3
-  attackSpeed: 1.5
 --- !u!1 &474543135
 GameObject:
   m_ObjectHideFlags: 0
@@ -1236,8 +1216,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1207526185}
-  speed: 15
-  detectionRange: 40
 --- !u!212 &474543141
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1302,9 +1280,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7226f87add8546343ba29b77e4d310b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
-  attackRange: 3
-  attackSpeed: 1.5
 --- !u!1 &502268272
 GameObject:
   m_ObjectHideFlags: 0
@@ -1407,8 +1382,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1207526185}
-  speed: 15
-  detectionRange: 40
 --- !u!212 &502268278
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1473,9 +1446,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7226f87add8546343ba29b77e4d310b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
-  attackRange: 3
-  attackSpeed: 1.5
 --- !u!1001 &562632871
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1988,8 +1958,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1207526185}
-  speed: 15
-  detectionRange: 40
 --- !u!212 &887735334
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2054,9 +2022,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7226f87add8546343ba29b77e4d310b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
-  attackRange: 3
-  attackSpeed: 1.5
 --- !u!1 &930463843
 GameObject:
   m_ObjectHideFlags: 0
@@ -2159,8 +2124,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1207526185}
-  speed: 15
-  detectionRange: 40
 --- !u!212 &930463849
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2225,9 +2188,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7226f87add8546343ba29b77e4d310b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
-  attackRange: 3
-  attackSpeed: 1.5
 --- !u!1 &1018827719
 GameObject:
   m_ObjectHideFlags: 0
@@ -2330,8 +2290,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1207526185}
-  speed: 15
-  detectionRange: 40
 --- !u!212 &1018827725
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2396,9 +2354,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7226f87add8546343ba29b77e4d310b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
-  attackRange: 3
-  attackSpeed: 1.5
 --- !u!1 &1023187549
 GameObject:
   m_ObjectHideFlags: 0
@@ -2501,8 +2456,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1207526185}
-  speed: 15
-  detectionRange: 40
 --- !u!212 &1023187555
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2567,9 +2520,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7226f87add8546343ba29b77e4d310b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
-  attackRange: 3
-  attackSpeed: 1.5
 --- !u!1 &1023488072
 GameObject:
   m_ObjectHideFlags: 0
@@ -2672,8 +2622,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1207526185}
-  speed: 15
-  detectionRange: 40
 --- !u!212 &1023488078
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2738,9 +2686,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7226f87add8546343ba29b77e4d310b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
-  attackRange: 3
-  attackSpeed: 1.5
 --- !u!4 &1046200095 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 295641020602068574, guid: cce0ab7601d46574eaa23c7dc15f2b84, type: 3}
@@ -2848,8 +2793,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1207526185}
-  speed: 15
-  detectionRange: 40
 --- !u!212 &1144955069
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2914,9 +2857,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7226f87add8546343ba29b77e4d310b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
-  attackRange: 3
-  attackSpeed: 1.5
 --- !u!1 &1151323279
 GameObject:
   m_ObjectHideFlags: 0
@@ -3522,8 +3462,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1207526185}
-  speed: 15
-  detectionRange: 40
 --- !u!212 &1354007092
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3588,9 +3526,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7226f87add8546343ba29b77e4d310b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
-  attackRange: 3
-  attackSpeed: 1.5
 --- !u!1 &1366560197
 GameObject:
   m_ObjectHideFlags: 0
@@ -3798,8 +3733,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1207526185}
-  speed: 15
-  detectionRange: 40
 --- !u!212 &1427026563
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3864,9 +3797,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7226f87add8546343ba29b77e4d310b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
-  attackRange: 3
-  attackSpeed: 1.5
 --- !u!1 &1441255023
 GameObject:
   m_ObjectHideFlags: 0
@@ -4080,8 +4010,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1207526185}
-  speed: 15
-  detectionRange: 40
 --- !u!212 &1591146942
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4146,9 +4074,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7226f87add8546343ba29b77e4d310b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
-  attackRange: 3
-  attackSpeed: 1.5
 --- !u!1 &1611259621
 GameObject:
   m_ObjectHideFlags: 0
@@ -4446,8 +4371,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1207526185}
-  speed: 15
-  detectionRange: 40
 --- !u!212 &1668300752
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4512,9 +4435,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7226f87add8546343ba29b77e4d310b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
-  attackRange: 3
-  attackSpeed: 1.5
 --- !u!1 &1686334208
 GameObject:
   m_ObjectHideFlags: 0
@@ -4617,8 +4537,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1207526185}
-  speed: 15
-  detectionRange: 40
 --- !u!212 &1686334214
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4683,9 +4601,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7226f87add8546343ba29b77e4d310b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
-  attackRange: 3
-  attackSpeed: 1.5
 --- !u!1 &1718386726
 GameObject:
   m_ObjectHideFlags: 0
@@ -4800,7 +4715,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e70dc581e5fa7c4fa69c10f4deb2985, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laimejimas: {fileID: 0}
 --- !u!1 &1754898506
 GameObject:
   m_ObjectHideFlags: 0
@@ -4903,8 +4817,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1207526185}
-  speed: 15
-  detectionRange: 40
 --- !u!212 &1754898512
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4969,9 +4881,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7226f87add8546343ba29b77e4d310b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
-  attackRange: 3
-  attackSpeed: 1.5
 --- !u!1 &1789938407
 GameObject:
   m_ObjectHideFlags: 0
@@ -5074,8 +4983,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1207526185}
-  speed: 15
-  detectionRange: 40
 --- !u!212 &1789938413
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5140,9 +5047,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7226f87add8546343ba29b77e4d310b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
-  attackRange: 3
-  attackSpeed: 1.5
 --- !u!1 &1884176022
 GameObject:
   m_ObjectHideFlags: 0
@@ -5245,8 +5149,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1207526185}
-  speed: 15
-  detectionRange: 40
 --- !u!212 &1884176028
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5311,9 +5213,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7226f87add8546343ba29b77e4d310b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
-  attackRange: 3
+--- !u!1 &1948449018 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7260263050915678411, guid: 61203587ad6061b41bb9119e802d2896, type: 3}
+  m_PrefabInstance: {fileID: 7260263050498167111}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1948449019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1948449018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64dfb7d8df7ff99409b66d089623c862, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackRange: 1.5
   attackSpeed: 1.5
+  speed: 5
+  detectionRange: 3
+  enemyDamage: 10
+  bulletDamage: 10
+  firingMode: 1
+  rpm: 180
+  accuracy: 0.1
+  ballSpeed: 10
+  dashSpeed: 10
+  dashTime: 0.5
+  dashCooldown: 1
+  enemyHealth: 100
+  greitis: 0
+  playerHealth: 100
 --- !u!1 &1951492458
 GameObject:
   m_ObjectHideFlags: 0
@@ -5460,7 +5392,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6810a5e4e2e44044a8bde832018b543, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 20
   HitEffect: {fileID: 648893417}
 --- !u!1 &2018715941
 GameObject:
@@ -5675,8 +5606,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1207526185}
-  speed: 15
-  detectionRange: 40
 --- !u!212 &2058383101
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5741,9 +5670,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7226f87add8546343ba29b77e4d310b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
-  attackRange: 3
-  attackSpeed: 1.5
 --- !u!1 &2125312018
 GameObject:
   m_ObjectHideFlags: 0
@@ -5846,8 +5772,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1207526185}
-  speed: 15
-  detectionRange: 40
 --- !u!212 &2125312024
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5912,9 +5836,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7226f87add8546343ba29b77e4d310b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
-  attackRange: 3
-  attackSpeed: 1.5
 --- !u!1 &2128127395
 GameObject:
   m_ObjectHideFlags: 0
@@ -6246,6 +6167,10 @@ PrefabInstance:
     - target: {fileID: 7260263050915678411, guid: 61203587ad6061b41bb9119e802d2896, type: 3}
       propertyPath: m_Name
       value: EventSystem
+      objectReference: {fileID: 0}
+    - target: {fileID: 7260263050915678411, guid: 61203587ad6061b41bb9119e802d2896, type: 3}
+      propertyPath: m_TagString
+      value: Nustatymai
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61203587ad6061b41bb9119e802d2896, type: 3}

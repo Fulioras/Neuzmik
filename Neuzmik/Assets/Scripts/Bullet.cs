@@ -4,8 +4,15 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public int damage = 10;
+    private Nustatymai config;
     public GameObject HitEffect;
+
+        private void Start()
+    {
+        GameObject configObject = GameObject.FindGameObjectWithTag("Nustatymai");
+        config = configObject.GetComponent<Nustatymai>();
+    }
+
     void OnCollisionEnter2D(Collision2D collision) 
     {
         Health health = collision.gameObject.GetComponent<Health>();
@@ -14,7 +21,7 @@ public class Bullet : MonoBehaviour
         Destroy(effect, 0.3f);
         if (health != null)
         {
-            health.TakeDamage(damage);
+            health.TakeDamage(config.bulletDamage);
         }
 
     }
