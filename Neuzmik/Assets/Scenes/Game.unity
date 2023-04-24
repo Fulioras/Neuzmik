@@ -5239,12 +5239,12 @@ MonoBehaviour:
   firingMode: 1
   rpm: 180
   accuracy: 0.1
-  ballSpeed: 10
-  dashSpeed: 10
+  ballSpeed: 100
+  dashSpeed: 100
   dashTime: 0.5
   dashCooldown: 1
-  enemyHealth: 100
-  greitis: 0
+  enemyHealth: 20
+  greitis: 40
   playerHealth: 100
 --- !u!1 &1951492458
 GameObject:
