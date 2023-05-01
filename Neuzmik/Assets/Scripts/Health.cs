@@ -7,6 +7,8 @@ public class Health : MonoBehaviour
     public GameObject laimejimas;
     private Nustatymai config;
 
+    [SerializeField] ParticleSystem splash = null;
+
     private void Start()
     {
         GameObject configObject = GameObject.FindGameObjectWithTag("Nustatymai");
@@ -17,6 +19,7 @@ public class Health : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
+        splash.Play();
 
         if (currentHealth <= 0)
         {
@@ -33,7 +36,9 @@ public class Health : MonoBehaviour
             NoMoreEnemies();
         }
         // Do something when the object dies, such as destroying it or playing an animation
+        
         Destroy(gameObject);
+        
         
         
     }

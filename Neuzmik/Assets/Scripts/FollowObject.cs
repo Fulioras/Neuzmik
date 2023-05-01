@@ -4,6 +4,7 @@ public class FollowObject : MonoBehaviour
 {
     public Transform target;
     private Nustatymai config;
+    public Animator animator;
 
         private void Start()
     {
@@ -28,9 +29,14 @@ public class FollowObject : MonoBehaviour
         {
             // Calculate the direction from this object to the target
             Vector2 direction = (target.position - transform.position).normalized;
+            
+            animator.SetBool("arJuda", true);
+            animator.SetFloat("horizontal", direction.x);
+            animator.SetFloat("vertical", direction.y);
+            
 
             // Move this object towards the target at the specified speed
             transform.Translate(direction * config.speed * Time.deltaTime);
-        }
+        }else animator.SetBool("arJuda", false);
     }
 }
