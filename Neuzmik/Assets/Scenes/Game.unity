@@ -149,7 +149,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3978747}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -170.5635, y: 117.1976, z: 0.5898055}
+  m_LocalPosition: {x: -166.7036, y: 103.6881, z: 0.5898055}
   m_LocalScale: {x: 3.961318, y: 3.9613178, z: 3.9613175}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -202,7 +202,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 77.087814, y: 63.343967}
+  m_Size: {x: 83.90851, y: 65.29273}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -226,7 +226,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 5.12, y: 5.12}
-    newSize: {x: 77.087814, y: 63.343967}
+    newSize: {x: 83.90851, y: 65.29273}
     adaptiveTilingThreshold: 0.5
     drawMode: 2
     adaptiveTiling: 0
@@ -286,6 +286,7 @@ MonoBehaviour:
   maxHealth: 10
   currentHealth: 10
   laimejimas: {fileID: 602251707}
+  splash: {fileID: 0}
 --- !u!50 &69188728
 Rigidbody2D:
   serializedVersion: 4
@@ -336,6 +337,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1207526185}
+  animator: {fileID: 0}
 --- !u!212 &69188731
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -452,6 +454,7 @@ MonoBehaviour:
   maxHealth: 10
   currentHealth: 10
   laimejimas: {fileID: 602251707}
+  splash: {fileID: 0}
 --- !u!50 &127119081
 Rigidbody2D:
   serializedVersion: 4
@@ -502,6 +505,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1207526185}
+  animator: {fileID: 0}
 --- !u!212 &127119084
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -592,7 +596,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 327915814}
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 21.5145, y: 100.1473, z: 0.5898055}
+  m_LocalPosition: {x: 25.2057, y: 96.1776, z: 0.5898055}
   m_LocalScale: {x: 3.6595, y: 3.6595, z: 3.6595}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -645,7 +649,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 63.782047, y: 5.4295983}
+  m_Size: {x: 71.81685, y: 7.446917}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -664,18 +668,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.14427567, y: 0}
+  m_Offset: {x: -1.1834526, y: -0.33985758}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 5.12, y: 5.6}
-    newSize: {x: 63.782047, y: 5.4295983}
+    newSize: {x: 71.81685, y: 7.446917}
     adaptiveTilingThreshold: 0.5
     drawMode: 2
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 63.87834, y: 5.6}
+  m_Size: {x: 65.9567, y: 6.2797146}
   m_EdgeRadius: 0
 --- !u!1 &386031009
 GameObject:
@@ -834,6 +838,7 @@ MonoBehaviour:
   maxHealth: 10
   currentHealth: 10
   laimejimas: {fileID: 602251707}
+  splash: {fileID: 0}
 --- !u!50 &389881141
 Rigidbody2D:
   serializedVersion: 4
@@ -884,6 +889,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1207526185}
+  animator: {fileID: 0}
 --- !u!212 &389881144
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1000,6 +1006,7 @@ MonoBehaviour:
   maxHealth: 10
   currentHealth: 10
   laimejimas: {fileID: 602251707}
+  splash: {fileID: 0}
 --- !u!50 &443925736
 Rigidbody2D:
   serializedVersion: 4
@@ -1050,6 +1057,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1207526185}
+  animator: {fileID: 0}
 --- !u!212 &443925739
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1166,6 +1174,7 @@ MonoBehaviour:
   maxHealth: 10
   currentHealth: 10
   laimejimas: {fileID: 602251707}
+  splash: {fileID: 0}
 --- !u!50 &474543138
 Rigidbody2D:
   serializedVersion: 4
@@ -1216,6 +1225,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1207526185}
+  animator: {fileID: 0}
 --- !u!212 &474543141
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1332,6 +1342,7 @@ MonoBehaviour:
   maxHealth: 10
   currentHealth: 10
   laimejimas: {fileID: 602251707}
+  splash: {fileID: 0}
 --- !u!50 &502268275
 Rigidbody2D:
   serializedVersion: 4
@@ -1382,6 +1393,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1207526185}
+  animator: {fileID: 0}
 --- !u!212 &502268278
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1457,6 +1469,18 @@ PrefabInstance:
       propertyPath: MirtiesZenklas
       value: 
       objectReference: {fileID: 1719621563}
+    - target: {fileID: 3346226802001428110, guid: 480b3ac081828344c9b037bff1fbd5b9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3346226802001428337, guid: 480b3ac081828344c9b037bff1fbd5b9, type: 3}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3346226802001428337, guid: 480b3ac081828344c9b037bff1fbd5b9, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3346226802001428339, guid: 480b3ac081828344c9b037bff1fbd5b9, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -1908,6 +1932,7 @@ MonoBehaviour:
   maxHealth: 10
   currentHealth: 10
   laimejimas: {fileID: 602251707}
+  splash: {fileID: 0}
 --- !u!50 &887735331
 Rigidbody2D:
   serializedVersion: 4
@@ -1958,6 +1983,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1207526185}
+  animator: {fileID: 0}
 --- !u!212 &887735334
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2074,6 +2100,7 @@ MonoBehaviour:
   maxHealth: 10
   currentHealth: 10
   laimejimas: {fileID: 602251707}
+  splash: {fileID: 0}
 --- !u!50 &930463846
 Rigidbody2D:
   serializedVersion: 4
@@ -2124,6 +2151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1207526185}
+  animator: {fileID: 0}
 --- !u!212 &930463849
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2240,6 +2268,7 @@ MonoBehaviour:
   maxHealth: 10
   currentHealth: 10
   laimejimas: {fileID: 602251707}
+  splash: {fileID: 0}
 --- !u!50 &1018827722
 Rigidbody2D:
   serializedVersion: 4
@@ -2290,6 +2319,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1207526185}
+  animator: {fileID: 0}
 --- !u!212 &1018827725
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2406,6 +2436,7 @@ MonoBehaviour:
   maxHealth: 10
   currentHealth: 10
   laimejimas: {fileID: 602251707}
+  splash: {fileID: 0}
 --- !u!50 &1023187552
 Rigidbody2D:
   serializedVersion: 4
@@ -2456,6 +2487,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1207526185}
+  animator: {fileID: 0}
 --- !u!212 &1023187555
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2572,6 +2604,7 @@ MonoBehaviour:
   maxHealth: 10
   currentHealth: 10
   laimejimas: {fileID: 602251707}
+  splash: {fileID: 0}
 --- !u!50 &1023488075
 Rigidbody2D:
   serializedVersion: 4
@@ -2622,6 +2655,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1207526185}
+  animator: {fileID: 0}
 --- !u!212 &1023488078
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2743,6 +2777,7 @@ MonoBehaviour:
   maxHealth: 10
   currentHealth: 10
   laimejimas: {fileID: 602251707}
+  splash: {fileID: 0}
 --- !u!50 &1144955066
 Rigidbody2D:
   serializedVersion: 4
@@ -2793,6 +2828,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1207526185}
+  animator: {fileID: 0}
 --- !u!212 &1144955069
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2968,11 +3004,42 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.12, y: 5.12}
   m_EdgeRadius: 0
+--- !u!1 &1202234497 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3346226802001428341, guid: 480b3ac081828344c9b037bff1fbd5b9, type: 3}
+  m_PrefabInstance: {fileID: 562632871}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1207526185 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3346226802001428339, guid: 480b3ac081828344c9b037bff1fbd5b9, type: 3}
   m_PrefabInstance: {fileID: 562632871}
   m_PrefabAsset: {fileID: 0}
+--- !u!61 &1207526192
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1202234497}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.019779682, y: -1.9976997}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.4351416, y: 4.9953985}
+  m_EdgeRadius: 0
 --- !u!1 &1326330676
 GameObject:
   m_ObjectHideFlags: 0
@@ -3347,7 +3414,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 14.72873, y: 0}
+  m_Offset: {x: 16.356163, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3358,7 +3425,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 34.577477, y: 5.6}
+  m_Size: {x: 37.832344, y: 5.6}
   m_EdgeRadius: 0
 --- !u!1 &1354007086
 GameObject:
@@ -3412,6 +3479,7 @@ MonoBehaviour:
   maxHealth: 10
   currentHealth: 10
   laimejimas: {fileID: 602251707}
+  splash: {fileID: 0}
 --- !u!50 &1354007089
 Rigidbody2D:
   serializedVersion: 4
@@ -3462,6 +3530,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1207526185}
+  animator: {fileID: 0}
 --- !u!212 &1354007092
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3683,6 +3752,7 @@ MonoBehaviour:
   maxHealth: 10
   currentHealth: 10
   laimejimas: {fileID: 602251707}
+  splash: {fileID: 0}
 --- !u!50 &1427026560
 Rigidbody2D:
   serializedVersion: 4
@@ -3733,6 +3803,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1207526185}
+  animator: {fileID: 0}
 --- !u!212 &1427026563
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3960,6 +4031,7 @@ MonoBehaviour:
   maxHealth: 10
   currentHealth: 10
   laimejimas: {fileID: 602251707}
+  splash: {fileID: 0}
 --- !u!50 &1591146939
 Rigidbody2D:
   serializedVersion: 4
@@ -4010,6 +4082,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1207526185}
+  animator: {fileID: 0}
 --- !u!212 &1591146942
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4321,6 +4394,7 @@ MonoBehaviour:
   maxHealth: 10
   currentHealth: 10
   laimejimas: {fileID: 602251707}
+  splash: {fileID: 0}
 --- !u!50 &1668300749
 Rigidbody2D:
   serializedVersion: 4
@@ -4371,6 +4445,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1207526185}
+  animator: {fileID: 0}
 --- !u!212 &1668300752
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4487,6 +4562,7 @@ MonoBehaviour:
   maxHealth: 10
   currentHealth: 10
   laimejimas: {fileID: 602251707}
+  splash: {fileID: 0}
 --- !u!50 &1686334211
 Rigidbody2D:
   serializedVersion: 4
@@ -4537,6 +4613,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1207526185}
+  animator: {fileID: 0}
 --- !u!212 &1686334214
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4767,6 +4844,7 @@ MonoBehaviour:
   maxHealth: 10
   currentHealth: 10
   laimejimas: {fileID: 602251707}
+  splash: {fileID: 0}
 --- !u!50 &1754898509
 Rigidbody2D:
   serializedVersion: 4
@@ -4817,6 +4895,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1207526185}
+  animator: {fileID: 0}
 --- !u!212 &1754898512
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4933,6 +5012,7 @@ MonoBehaviour:
   maxHealth: 10
   currentHealth: 10
   laimejimas: {fileID: 602251707}
+  splash: {fileID: 0}
 --- !u!50 &1789938410
 Rigidbody2D:
   serializedVersion: 4
@@ -4983,6 +5063,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1207526185}
+  animator: {fileID: 0}
 --- !u!212 &1789938413
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5099,6 +5180,7 @@ MonoBehaviour:
   maxHealth: 10
   currentHealth: 10
   laimejimas: {fileID: 602251707}
+  splash: {fileID: 0}
 --- !u!50 &1884176025
 Rigidbody2D:
   serializedVersion: 4
@@ -5149,6 +5231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1207526185}
+  animator: {fileID: 0}
 --- !u!212 &1884176028
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5233,18 +5316,18 @@ MonoBehaviour:
   attackRange: 1.5
   attackSpeed: 1.5
   speed: 5
-  detectionRange: 3
+  detectionRange: 50
   enemyDamage: 10
   bulletDamage: 10
   firingMode: 1
   rpm: 180
   accuracy: 0.1
   ballSpeed: 10
-  dashSpeed: 10
+  dashSpeed: 500
   dashTime: 0.5
   dashCooldown: 1
   enemyHealth: 100
-  greitis: 0
+  greitis: 50
   playerHealth: 100
 --- !u!1 &1951492458
 GameObject:
@@ -5556,6 +5639,7 @@ MonoBehaviour:
   maxHealth: 10
   currentHealth: 10
   laimejimas: {fileID: 602251707}
+  splash: {fileID: 0}
 --- !u!50 &2058383098
 Rigidbody2D:
   serializedVersion: 4
@@ -5606,6 +5690,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1207526185}
+  animator: {fileID: 0}
 --- !u!212 &2058383101
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5722,6 +5807,7 @@ MonoBehaviour:
   maxHealth: 10
   currentHealth: 10
   laimejimas: {fileID: 602251707}
+  splash: {fileID: 0}
 --- !u!50 &2125312021
 Rigidbody2D:
   serializedVersion: 4
@@ -5772,6 +5858,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1207526185}
+  animator: {fileID: 0}
 --- !u!212 &2125312024
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5958,6 +6045,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1207526185}
+    - target: {fileID: 295641020602068572, guid: cce0ab7601d46574eaa23c7dc15f2b84, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 295641020602068573, guid: cce0ab7601d46574eaa23c7dc15f2b84, type: 3}
       propertyPath: m_Name
       value: Circle
