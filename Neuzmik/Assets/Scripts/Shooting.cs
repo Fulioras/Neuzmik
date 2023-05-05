@@ -26,15 +26,15 @@ public class Shooting : MonoBehaviour
     void Update()
     {
         timeSinceLastShot += Time.deltaTime;
-
-        if (config.firingMode == 1)
+    if(!EscapeMenu.inEscape){
+if (config.firingMode == 1)
         {
             if (Input.GetButtonDown("Fire1") && timeSinceLastShot >= ((1/config.rpm)*60))
             {
                 Shoot();
                 soundEffect.Play();
                 GameObject effect = Instantiate(fireEffect, transform.position, transform.rotation);
-                effect.transform.parent = transform;
+                //effect.transform.parent = transform;
                 timeSinceLastShot = 0f;
                 Destroy(effect, 0.2f);
                 timeSinceLastShot = 0f;
@@ -61,6 +61,7 @@ public class Shooting : MonoBehaviour
                 Destroy(effect, 0.2f);
             }
         }
+    }
     }
 public Transform gunTipTransform;
 public Transform armTransform;

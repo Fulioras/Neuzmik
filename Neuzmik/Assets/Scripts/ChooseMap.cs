@@ -20,6 +20,15 @@ public class ChooseMap : MonoBehaviour
             int index = i; // Needed to capture the current value of i for the lambda expression below
             buttons[i].GetComponent<Button>().onClick.AddListener(() => OnButtonClicked(index));
         }
+        // Select the first button by default
+selectedButtonIndex = 0;
+MapoID = selectedButtonIndex;
+whiteObjects[selectedButtonIndex].GetComponent<RawImage>().color = Color.red;
+MapPicture[selectedButtonIndex].SetActive(true);
+
+// Update the level text to display the level value of the selected button
+int level = levels[selectedButtonIndex];
+levelText.text = "Privalomas lygis: " + level.ToString();
     }
 
     private void OnButtonClicked(int index)
