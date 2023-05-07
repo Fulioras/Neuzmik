@@ -5,6 +5,7 @@ public class FollowObject : MonoBehaviour
     public Transform target;
     private Nustatymai config;
     public Animator animator;
+    private bool Gaudo = false;
 
         private void Start()
     {
@@ -25,8 +26,9 @@ public class FollowObject : MonoBehaviour
         float distance = Vector2.Distance(transform.position, target.position);
 
         // Check if the target is within the detection range
-        if (distance <= config.detectionRange)
+        if (distance <= config.detectionRange || Gaudo == true)
         {
+            Gaudo = true;
             // Calculate the direction from this object to the target
             Vector2 direction = (target.position - transform.position).normalized;
             
@@ -38,5 +40,8 @@ public class FollowObject : MonoBehaviour
             // Move this object towards the target at the specified speed
             transform.Translate(direction * config.speed * Time.deltaTime);
         }else animator.SetBool("arJuda", false);
+        if(distance > 150){
+            Gaudo = false;
+        }
     }
 }

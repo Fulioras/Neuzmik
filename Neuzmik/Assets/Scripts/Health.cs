@@ -1,4 +1,5 @@
 using UnityEngine;
+using TMPro;
 
 public class Health : MonoBehaviour
 {
@@ -6,6 +7,7 @@ public class Health : MonoBehaviour
     public int currentHealth;
     public GameObject laimejimas;
     private Nustatymai config;
+    public TextMeshProUGUI priesuLiko;
 
     [SerializeField] ParticleSystem splash = null;
 
@@ -29,23 +31,18 @@ public class Health : MonoBehaviour
 
     private void Die()
     {
+        XP.DabartinisZaidejoXP += 5;
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
         Debug.Log(enemies.Length);
+        if(enemies.Length <= 11){
+        priesuLiko.text = "Liko priešų: " + (enemies.Length-1);
+        }
         if (enemies.Length == 1)
         {
-            NoMoreEnemies();
+            Boss.Bosas = true;
         }
-        // Do something when the object dies, such as destroying it or playing an animation
         
         Destroy(gameObject);
-        
-        
-        
-    }
-    public void NoMoreEnemies()
-    {
-            laimejimas.SetActive(true);
-        Debug.Log("Veikia");
     }
 
 }
