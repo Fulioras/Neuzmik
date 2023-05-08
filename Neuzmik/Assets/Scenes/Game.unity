@@ -2895,9 +2895,9 @@ GameObject:
   - component: {fileID: 587870926}
   - component: {fileID: 587870925}
   - component: {fileID: 587870924}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Siena
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4816,7 +4816,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 850555999}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -168.5186, y: 111.8168, z: 0.5898055}
+  m_LocalPosition: {x: -255.7684, y: 133.1841, z: 0.5898055}
   m_LocalScale: {x: 3.961318, y: 3.9613178, z: 3.9613175}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4841,7 +4841,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 5.12, y: 5.12}
-    newSize: {x: 68.47821, y: -11.151227}
+    newSize: {x: 112.52912, y: -21.9392}
     adaptiveTilingThreshold: 0.5
     drawMode: 2
     adaptiveTiling: 0
@@ -4895,7 +4895,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 68.47821, y: -11.151227}
+  m_Size: {x: 112.52912, y: -21.9392}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -5954,7 +5954,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1008433837}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.8071, y: -269.823, z: 0.5898055}
+  m_LocalPosition: {x: 32.9624, y: -266.8926, z: 0.5898055}
   m_LocalScale: {x: 3.9613183, y: 3.9613183, z: 3.9613175}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5979,7 +5979,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 5.12, y: 5.12}
-    newSize: {x: 31.900484, y: 24.020605}
+    newSize: {x: 51.97938, y: 25.500107}
     adaptiveTilingThreshold: 0.5
     drawMode: 2
     adaptiveTiling: 0
@@ -6033,7 +6033,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 31.900484, y: 24.020605}
+  m_Size: {x: 51.97938, y: 25.500107}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -8059,7 +8059,7 @@ GameObject:
   - component: {fileID: 1308325446}
   m_Layer: 5
   m_Name: Canvas
-  m_TagString: Untagged
+  m_TagString: Siena
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10959,8 +10959,8 @@ MonoBehaviour:
   detectionRange: 50
   enemyDamage: 10
   bulletDamage: 10
-  firingMode: 1
-  rpm: 180
+  firingMode: 2
+  rpm: 300
   accuracy: 0.1
   ballSpeed: 100
   dashSpeed: 500
