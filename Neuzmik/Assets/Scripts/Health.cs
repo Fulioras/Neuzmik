@@ -16,12 +16,19 @@ public class Health : MonoBehaviour
         GameObject configObject = GameObject.FindGameObjectWithTag("Nustatymai");
         config = configObject.GetComponent<Nustatymai>();
         currentHealth = config.enemyHealth;
+
+        if (gameObject.CompareTag("Bosas"))
+        {
+            currentHealth = 350;
+            maxHealth = 350;
+        }
     }
 
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
         splash.Play();
+        Debug.Log(currentHealth);
 
         if (currentHealth <= 0)
         {

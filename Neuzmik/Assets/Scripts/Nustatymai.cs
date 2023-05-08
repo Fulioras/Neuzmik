@@ -18,4 +18,5 @@ public class Nustatymai : MonoBehaviour
     public int enemyHealth = 100; // ENEMY HEALTH
     public float greitis; // PLAYER MOVEMENT SPEED
     public int playerHealth = 100; // PLAYER HEALTH
+    public int bossHealth = 200; // PLAYER HEALTH
 }

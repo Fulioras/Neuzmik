@@ -26,4 +26,10 @@ public class EscapeMenu : MonoBehaviour
     {
         Application.Quit(); // quit the game
     }
+    public void Atgal()
+    {
+        Time.timeScale = 1f; // unfreeze the game
+        escapeMenuUI.SetActive(false); // hide the escape menu UI
+        inEscape = false;
+    }
 }

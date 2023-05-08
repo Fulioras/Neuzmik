@@ -7,6 +7,7 @@ TagManager:
   - Enemy
   - Nustatymai
   - Siena
+  - Bosas
   layers:
   - Default
   - TransparentFX
