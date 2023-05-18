@@ -192,7 +192,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0ba939c052548a44b4fbe3762134b4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Greitis: 35
   animator: {fileID: 3346226802001428338}
 --- !u!50 &3346226802001428337
 Rigidbody2D:
@@ -243,9 +242,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a151dce15c3382645b7c5ea97eae99ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dashSpeed: 100
-  dashTime: 0.5
-  dashCooldown: 1
   dashCurve:
     serializedVersion: 2
     m_Curve:
@@ -964,13 +960,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballPrefab: {fileID: 0}
-  ballSpeed: 120
-  accuracy: 0.75
-  mode: 2
-  rpm: 300
   fireEffect: {fileID: 0}
   soundEffect: {fileID: 3346226803532236917}
-  bulletDamage: 5
   gunTipTransform: {fileID: 3346226803532236918}
   armTransform: {fileID: 3346226803398854821}
 --- !u!82 &3346226803532236917
@@ -985,7 +976,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f2aad6d4406c2df48aebbf9a0805e05a, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.3
+  m_Volume: 0.199
   m_Pitch: 1
   Loop: 0
   Mute: 0
