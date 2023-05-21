@@ -32,6 +32,7 @@ public class ChooseMap : MonoBehaviour
     // Multiplier values
     private float xpMultiplier = 1f;
     private float lootMultiplier = 1f;
+    public static int GyvybiuKiekis = 3;
 
     private void Start()
     {
@@ -57,8 +58,15 @@ public class ChooseMap : MonoBehaviour
 
     private void Update()
     {
-        xpMultiplierText.text = "Experience Multiplier: " + GetExperienceMultiplier() + "x";
-        lootMultiplierText.text = "Loot Multiplier: " + GetLootMultiplier() + "x";
+        if(HardcoreRezimas){
+        xpMultiplierText.text = "Experience Multiplier: " + xpMultiplier*2 + "x";
+        lootMultiplierText.text = "Loot Multiplier: " + lootMultiplier*2 + "x";
+        }
+        else{
+        xpMultiplierText.text = "Experience Multiplier: " + xpMultiplier + "x";
+        lootMultiplierText.text = "Loot Multiplier: " + lootMultiplier + "x";
+        }
+
         if (DabartinisZaidejoLygis < ReikiamasZaidejoLygis)
         {
             Play.interactable = false;
@@ -109,13 +117,6 @@ public class ChooseMap : MonoBehaviour
                 xpMultiplier = 1f;
                 lootMultiplier = 1f;
             }
-
-            // Apply hardcore mode if enabled
-            if (HardcoreRezimas)
-            {
-                xpMultiplier *= 2f;
-                lootMultiplier *= 2f;
-            }
         }
     }
 
@@ -151,38 +152,16 @@ public class ChooseMap : MonoBehaviour
     public void Hardcore()
     {
         if(HardcoreRezimas){
+            GyvybiuKiekis = 3;
             HardcoreRezimas = false;
             hearts.SetActive(true);
             hardcoreButtonImage.color = Color.white;
         }
         else{
+            GyvybiuKiekis = 1;
             HardcoreRezimas = true;
             hearts.SetActive(false);
             hardcoreButtonImage.color = selectedButtonColor;
-        }
-    }
-
-    private float GetExperienceMultiplier()
-    {
-        if (HardcoreRezimas)
-        {
-            return xpMultiplier * 2f;
-        }
-        else
-        {
-            return xpMultiplier;
-        }
-    }
-
-    private float GetLootMultiplier()
-    {
-        if (HardcoreRezimas)
-        {
-            return lootMultiplier * 2f;
-        }
-        else
-        {
-            return lootMultiplier;
         }
     }
 }

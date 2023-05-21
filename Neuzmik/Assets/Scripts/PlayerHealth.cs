@@ -17,6 +17,7 @@ void Start()
     }
     public void TakeDamage(int damage)
     {
+        EnergyBar.currentEnergy += 10;
         currentPlayerHealth -= damage;
         anim.SetBool("GotDamaged", true);
         if (currentPlayerHealth <= 0)
@@ -29,8 +30,7 @@ void Start()
     private void Die()
     {
         // Do something when the object dies, such as destroying it or playing an animation
-        Destroy(gameObject);
+        Time.timeScale = 0f;
         MirtiesZenklas.SetActive(true);
-        currentPlayerHealth = maxPlayerHealth;
     }
 }

@@ -29,6 +29,7 @@ public class FollowObject : MonoBehaviour
         if (distance <= config.detectionRange || Gaudo == true)
         {
             Gaudo = true;
+            EnergyBar.decreaseEnabled = false;
             // Calculate the direction from this object to the target
             Vector2 direction = (target.position - transform.position).normalized;
             
@@ -42,6 +43,7 @@ public class FollowObject : MonoBehaviour
         }else animator.SetBool("arJuda", false);
         if(distance > 150){
             Gaudo = false;
+            EnergyBar.decreaseEnabled = true;
         }
     }
 }

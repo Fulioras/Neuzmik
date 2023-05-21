@@ -22,8 +22,8 @@ public class StartGame : MonoBehaviour
     }
     public void toMenu()
     {
+        Time.timeScale = 1f;
         if(EscapeMenu.inEscape){
-        Time.timeScale = 1f; // unfreeze the game
         EscapeMenu.inEscape = false;
         }
         SceneManager.LoadScene("Menu");
