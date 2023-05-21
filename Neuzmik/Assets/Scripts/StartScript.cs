@@ -6,10 +6,10 @@ public class StartScript : MonoBehaviour
 {
     public void play()
     {
-        if(ChooseMap.MapoID == 0){
+        if(ChooseMap.selectedMapIndex == 0){
             SceneManager.LoadScene("Game");
         }
-        else if(ChooseMap.MapoID == 1){
+        else if(ChooseMap.selectedMapIndex == 1){
             SceneManager.LoadScene("City_level");
         }
     }

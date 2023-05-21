@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Options.unity
     guid: fb18289ca37714b4593670a73d2eff57
   - enabled: 1
-    path: Assets/Scenes/Game.unity
+    path: Assets/Scenes/Dungeon.unity
     guid: 28a243a6573940a49abc3a40542b9afb
   - enabled: 1
     path: Assets/Scenes/Shop.unity
@@ -30,6 +30,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Choosing.unity
     guid: 5e637186ca8aca6478e6b4f7cf76542c
   - enabled: 1
-    path: Assets/Scenes/City_level.unity
+    path: Assets/Scenes/City.unity
     guid: 4060d2cf76b98f042bbd6e09e440a92a
   m_configObjects: {}
