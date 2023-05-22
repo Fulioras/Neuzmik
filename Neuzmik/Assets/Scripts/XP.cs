@@ -32,26 +32,6 @@ public class XP : MonoBehaviour
         else{
             ZaidejoXP.text = "XP " + DabartinisZaidejoXP + " / " + reikiamasXpKiekis + " [" + Mathf.RoundToInt((DabartinisZaidejoXP / reikiamasXpKiekis) * 100) + "%]";
         }
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            DabartinisZaidejoLygis -= 1; // Increase XP by 1
-            UpdateLevel();
-            DabartinisZaidejoXP -= reikiamasXpKiekis;
-            if(DabartinisZaidejoXP < 0){
-                DabartinisZaidejoXP = 0;
-            }
-            ZaidejoLygis.text = DabartinisZaidejoLygis + " Lygis";
-        }
-        if (Input.GetKeyDown(KeyCode.G))
-        {
-            DabartinisZaidejoLygis += 1; // Increase XP by 1
-            UpdateLevel();
-            DabartinisZaidejoXP -= reikiamasXpKiekis;
-            if(DabartinisZaidejoXP < 0){
-                DabartinisZaidejoXP = 0;
-            }
-            ZaidejoLygis.text = DabartinisZaidejoLygis + " Lygis";
-        }
         if (DabartinisZaidejoXP >= reikiamasXpKiekis && DabartinisZaidejoLygis != 50)
         {
             DabartinisZaidejoXP -= reikiamasXpKiekis;

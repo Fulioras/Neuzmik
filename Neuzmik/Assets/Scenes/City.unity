@@ -1778,7 +1778,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 272025983}
-  - component: {fileID: 272025984}
   m_Layer: 0
   m_Name: Mirtis
   m_TagString: Untagged
@@ -1804,23 +1803,6 @@ Transform:
   m_Father: {fileID: 161747429}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &272025984
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 272025982}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52f8db6ff64917747993c4624d39f2f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MygtukoTekstas: {fileID: 1216057421}
-  PrisikelimoMygtukas: {fileID: 32325342}
-  MirtiesMeniu: {fileID: 272025982}
-  TreciaSirdele: {fileID: 1297567814}
-  AntraSirdele: {fileID: 285638537}
 --- !u!1001 &278767480
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42464,6 +42446,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1677008112}
+  - component: {fileID: 1677008113}
   m_Layer: 0
   m_Name: Hearts
   m_TagString: Untagged
@@ -42489,6 +42472,23 @@ Transform:
   m_Father: {fileID: 1456632963}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1677008113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1677008111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52f8db6ff64917747993c4624d39f2f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MygtukoTekstas: {fileID: 1216057421}
+  PrisikelimoMygtukas: {fileID: 32325342}
+  MirtiesMeniu: {fileID: 272025982}
+  TreciaSirdele: {fileID: 1297567814}
+  AntraSirdele: {fileID: 285638537}
 --- !u!1 &1690064146
 GameObject:
   m_ObjectHideFlags: 0

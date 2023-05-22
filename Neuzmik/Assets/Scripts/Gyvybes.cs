@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class Gyvybes : MonoBehaviour
 {
-    int ZaidejoGyvybes = ChooseMap.GyvybiuKiekis;
+    int ZaidejoGyvybes = ChooseMap.GyvybiuKiekis - 1;
     public TextMeshProUGUI MygtukoTekstas;
     public Button PrisikelimoMygtukas;
     public GameObject MirtiesMeniu;
@@ -16,9 +16,11 @@ public class Gyvybes : MonoBehaviour
     void Start()
     {
         
-        if (ZaidejoGyvybes < 2)
+        if (ChooseMap.HardcoreRezimas)
         {
             PrisikelimoMygtukas.interactable = false;
+            TreciaSirdele.SetActive(false);
+            AntraSirdele.SetActive(false);
         }
     }
     void Update(){

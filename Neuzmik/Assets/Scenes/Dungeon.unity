@@ -564,7 +564,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: 107.99998, y: 0}
+  m_AnchoredPosition: {x: 108, y: 0}
   m_SizeDelta: {x: 272.45, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &155400621
@@ -2783,6 +2783,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 506176800}
+  - component: {fileID: 506176801}
   m_Layer: 0
   m_Name: Hearts
   m_TagString: Untagged
@@ -2808,6 +2809,23 @@ Transform:
   m_Father: {fileID: 433050226}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &506176801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 506176799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52f8db6ff64917747993c4624d39f2f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MygtukoTekstas: {fileID: 649151178}
+  PrisikelimoMygtukas: {fileID: 1159181989}
+  MirtiesMeniu: {fileID: 1719621563}
+  TreciaSirdele: {fileID: 949009983}
+  AntraSirdele: {fileID: 1492191166}
 --- !u!1001 &558441264
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7477,7 +7495,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8206484957489604182}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Gyvybes, Assembly-CSharp
         m_MethodName: Prisikelimas
         m_Mode: 1
@@ -11123,7 +11141,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8206484957489604181}
-  - component: {fileID: 8206484957489604182}
   m_Layer: 0
   m_Name: Mirtis
   m_TagString: Untagged
@@ -13849,23 +13866,6 @@ Transform:
   m_Father: {fileID: 1859013501}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8206484957489604182
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1719621563}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52f8db6ff64917747993c4624d39f2f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MygtukoTekstas: {fileID: 649151178}
-  PrisikelimoMygtukas: {fileID: 1159181989}
-  MirtiesMeniu: {fileID: 1719621563}
-  TreciaSirdele: {fileID: 949009983}
-  AntraSirdele: {fileID: 1492191166}
 --- !u!222 &9159505255462247272
 CanvasRenderer:
   m_ObjectHideFlags: 0
