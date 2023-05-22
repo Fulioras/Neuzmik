@@ -2902,6 +2902,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3346226801940429368, guid: 480b3ac081828344c9b037bff1fbd5b9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f09d89b5328c0db49a2376aaf9ff368d, type: 3}
     - target: {fileID: 3346226802001428108, guid: 480b3ac081828344c9b037bff1fbd5b9, type: 3}
       propertyPath: MirtiesZenklas
       value: 
@@ -7443,7 +7447,6 @@ GameObject:
   - component: {fileID: 1159181992}
   - component: {fileID: 1159181990}
   - component: {fileID: 1159181989}
-  - component: {fileID: 1159181991}
   m_Layer: 5
   m_Name: Prisikelti
   m_TagString: Untagged
@@ -7495,7 +7498,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 506176801}
         m_TargetAssemblyTypeName: Gyvybes, Assembly-CSharp
         m_MethodName: Prisikelimas
         m_Mode: 1
@@ -7537,18 +7540,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &1159181991
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1159181988}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c3b91d82e4be44408efb96b5181382e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!222 &1159181992
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13660,8 +13651,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190270
-  m_fontColor: {r: 0.745283, g: 0, b: 0, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -13714,7 +13705,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -556.0484, y: 0, z: -532.8478, w: 0}
+  m_margin: {x: -59.40686, y: 0, z: -58.7807, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

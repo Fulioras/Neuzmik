@@ -30,7 +30,6 @@ public class Gyvybes : MonoBehaviour
     public void Prisikelimas()
     {
         Time.timeScale = 1f;
-        ZaidejoGyvybes -= 1;
         MirtiesMeniu.SetActive(false);
         PlayerHealth.currentPlayerHealth = PlayerHealth.maxPlayerHealth;
         EnergyBar.currentEnergy += 100;
@@ -43,11 +42,9 @@ public class Gyvybes : MonoBehaviour
         else if (ZaidejoGyvybes == 1)
         {
             AntraSirdele.SetActive(false);
-        }
-        else{
             PrisikelimoMygtukas.interactable = false;
         }
-        
+        ZaidejoGyvybes -= 1;
     }
 
     private void PushObjects()

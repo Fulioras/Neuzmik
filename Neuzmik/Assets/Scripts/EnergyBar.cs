@@ -32,6 +32,7 @@ public class EnergyBar : MonoBehaviour
         UpdateEnergyBar();
         UpdateEnergyText();
         if(currentEnergy <= 0){
+            Time.timeScale = 0f;
             Die();
         }
     }
