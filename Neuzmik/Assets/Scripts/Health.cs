@@ -9,6 +9,9 @@ public class Health : MonoBehaviour
     private Nustatymai config;
     public TextMeshProUGUI priesuLiko;
     public int PlayerXPGain = 0;
+    public int coinDropCount = 3;
+    public GameObject coinPrefab;
+    public float coinSpawnRadius = 50f;
 
     [SerializeField] ParticleSystem splash = null;
 
@@ -87,7 +90,11 @@ public class Health : MonoBehaviour
         {
             Boss.Bosas = true;
         }
-        
+        for (int i = 0; i < coinDropCount; i++)
+        {
+            Vector3 spawnPosition = transform.position + Random.insideUnitSphere * coinSpawnRadius;
+            Instantiate(coinPrefab, spawnPosition, Quaternion.identity);
+        }
         Destroy(gameObject);
     }
 
