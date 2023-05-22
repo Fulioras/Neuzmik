@@ -564,8 +564,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -5, y: 0}
-  m_SizeDelta: {x: -20, y: 0}
+  m_AnchoredPosition: {x: 107.99998, y: 0}
+  m_SizeDelta: {x: 272.45, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &155400621
 PrefabInstance:
@@ -7127,8 +7127,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 108, y: -199.62}
-  m_SizeDelta: {x: 298.27, y: -30.43}
+  m_AnchoredPosition: {x: -2.6201172, y: -200.07999}
+  m_SizeDelta: {x: 0.6, y: -19.79}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1142872693
 MonoBehaviour:
@@ -8255,7 +8255,6 @@ GameObject:
   - component: {fileID: 1269195499}
   - component: {fileID: 1269195501}
   - component: {fileID: 1269195500}
-  - component: {fileID: 1269195502}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -8380,24 +8379,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1269195498}
   m_CullTransparentMesh: 1
---- !u!114 &1269195502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1269195498}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89c3a3ded510365469cd19cc91511dca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ZaidejoXP: {fileID: 1269195500}
-  ZaidejoLygis: {fileID: 1160633121}
-  reikiamasXpKiekis: 100
-  DabartinisZaidejoLygis: 0
-  fillSpeed: 5
-  xpSlider: {fileID: 0}
 --- !u!1 &1270607024
 GameObject:
   m_ObjectHideFlags: 0
@@ -12949,7 +12930,6 @@ MonoBehaviour:
   energyText: {fileID: 1380278331}
   MirtiesZenklas: {fileID: 1719621563}
   MirtiesPranesimas: {fileID: 5549205988576933582}
-  Zaidejas: {fileID: 1202234497}
 --- !u!114 &2111344708
 MonoBehaviour:
   m_ObjectHideFlags: 0

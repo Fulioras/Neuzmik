@@ -13,8 +13,8 @@ public class ChooseMap : MonoBehaviour
     public static int selectedDifficultyIndex = 0;
     private string[] mapNames = { "Dungeon", "City", "Park" };
     private Sprite[] mapSprites;
-    private int[] requiredLevels = { 1, 15, 30 };
-    private int[] difficultyLevels = { 0, 5, 10 };
+    private int[] requiredLevels = { 1, 20, 30 };
+    private int[] difficultyLevels = { 0, 8, 14 };
     private Color normalButtonColor = Color.white;
     private Color selectedButtonColor = new Color(0.5f, 0.5f, 0.5f, 0.5f);
     public int DabartinisZaidejoLygis;
@@ -22,16 +22,12 @@ public class ChooseMap : MonoBehaviour
     public TextMeshProUGUI yourLevelText;
     public Button Play;
 
-    public TextMeshProUGUI xpMultiplierText;
-    public TextMeshProUGUI lootMultiplierText;
+  
     public bool HardcoreRezimas = false;
     public Image hardcoreButtonImage; // Reference to the Hardcore button's Image component
     
     public GameObject hearts;
 
-    // Multiplier values
-    private float xpMultiplier = 1f;
-    private float lootMultiplier = 1f;
     public static int GyvybiuKiekis = 3;
 
     private void Start()
@@ -58,15 +54,6 @@ public class ChooseMap : MonoBehaviour
 
     private void Update()
     {
-        if(HardcoreRezimas){
-        xpMultiplierText.text = "Experience Multiplier: " + xpMultiplier*2 + "x";
-        lootMultiplierText.text = "Loot Multiplier: " + lootMultiplier*2 + "x";
-        }
-        else{
-        xpMultiplierText.text = "Experience Multiplier: " + xpMultiplier + "x";
-        lootMultiplierText.text = "Loot Multiplier: " + lootMultiplier + "x";
-        }
-
         if (DabartinisZaidejoLygis < ReikiamasZaidejoLygis)
         {
             Play.interactable = false;
@@ -100,23 +87,6 @@ public class ChooseMap : MonoBehaviour
             UpdateMap();
 
             difficultyButtons[selectedDifficultyIndex].image.color = selectedButtonColor;
-
-            // Set XP and Loot multipliers based on difficulty
-            if (selectedDifficultyIndex == 1)
-            {
-                xpMultiplier = 1.4f;
-                lootMultiplier = 1.4f;
-            }
-            else if (selectedDifficultyIndex == 2)
-            {
-                xpMultiplier = 2f;
-                lootMultiplier = 2f;
-            }
-            else
-            {
-                xpMultiplier = 1f;
-                lootMultiplier = 1f;
-            }
         }
     }
 
