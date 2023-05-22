@@ -22,7 +22,6 @@ public class Coin : MonoBehaviour
 
             if (distance > followDistance)
             {
-                // Coin is too far from the player, do not follow
                 return;
             }
 
@@ -30,6 +29,7 @@ public class Coin : MonoBehaviour
             {
                 // Despawn the coin orb
                 Destroy(gameObject);
+                Money.PiniguKiekis += 10;
             }
             else
             {
