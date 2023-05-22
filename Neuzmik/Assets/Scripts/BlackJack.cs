@@ -8,22 +8,16 @@ public class BlackJack : MonoBehaviour
     private int rankosVerte = 0;
     int randomIndex;
     int[] numeris = new int[53];
-    void Start()
-    {
-        
-    }
 
 
     // Update is called once per frame
-    void Update()
+    public void hit()
     {
         
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
+        
 
-            pasirenkamKorta();
-            randamRankosVerte();
-        }
+        pasirenkamKorta();
+        randamRankosVerte();
 
 
         if (rankosVerte == 21)

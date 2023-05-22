@@ -1,0 +1,848 @@
+fileFormatVersion: 2
+guid: 45e70d30229da7148936b1a74a77d898
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ParkBackground_0
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 5387
+        width: 504
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1259e0d27cc3943478d8213bf4d4ebcf
+      internalID: -1952541970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParkBackground_1
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 5391
+        width: 504
+        height: 507
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d345e0011ae916f4c8223e4c09768ffa
+      internalID: 1216914900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParkBackground_2
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 5398
+        width: 508
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32620682b06a7c042a1c1dfd0e1c96ca
+      internalID: -153945978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParkBackground_3
+      rect:
+        serializedVersion: 2
+        x: 1824
+        y: 5398
+        width: 504
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1366bd107b6601c439dd9490bf0b8786
+      internalID: 67126630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParkBackground_4
+      rect:
+        serializedVersion: 2
+        x: 2352
+        y: 5398
+        width: 503
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2234432a1c5b5647970308c74c18e2d
+      internalID: 790666978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParkBackground_5
+      rect:
+        serializedVersion: 2
+        x: 2891
+        y: 5398
+        width: 507
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00abe6d7b9d614d479d0e4b34b071836
+      internalID: -1872651108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParkBackground_6
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 4715
+        width: 508
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9744652b81d94c4b9ddab55670afbe8
+      internalID: -1532308778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParkBackground_7
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 4715
+        width: 508
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cee1021c27c516e4bbc031d0947e7ca7
+      internalID: -1450764576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParkBackground_8
+      rect:
+        serializedVersion: 2
+        x: 1277
+        y: 4715
+        width: 508
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3abd560eb82e5b42bd265d867139d90
+      internalID: -1419872544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParkBackground_9
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 4129
+        width: 508
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4ac42fc0455c864eaa5ed4ba8504a7f
+      internalID: 2109913407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParkBackground_10
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 4129
+        width: 508
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 009b5ec5f5a40324389be6b0b7853f94
+      internalID: -613114389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParkBackground_11
+      rect:
+        serializedVersion: 2
+        x: 1266
+        y: 4125
+        width: 504
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5545f98d7aec0fa4f8e9f65f8e7d4a85
+      internalID: -1204406315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParkBackground_12
+      rect:
+        serializedVersion: 2
+        x: 1805
+        y: 4125
+        width: 508
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1e1575683da9404f8ea928134e4c56a
+      internalID: -1459941674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParkBackground_13
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 3590
+        width: 504
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b2ac9193d9d6f6428caabc6a1b6f9f9
+      internalID: 1010815510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParkBackground_14
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 3590
+        width: 504
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db9b1d83ec3af6d4998dd322a2265d06
+      internalID: 2104003424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParkBackground_15
+      rect:
+        serializedVersion: 2
+        x: 1273
+        y: 3602
+        width: 504
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa9a2a01581ac464f89f98aee46b0d88
+      internalID: 108494890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParkBackground_16
+      rect:
+        serializedVersion: 2
+        x: 1797
+        y: 3605
+        width: 508
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d0f162cb4e99984698ecdcc40a6f908
+      internalID: 1390788886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParkBackground_17
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 3012
+        width: 508
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae01a0d1dfc81734eb0c16cd2ff23c40
+      internalID: -1339306565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParkBackground_18
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 3004
+        width: 507
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67b037f7d6fc8e24cb393b9fe29e79df
+      internalID: 844307297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParkBackground_19
+      rect:
+        serializedVersion: 2
+        x: 1434
+        y: 3012
+        width: 507
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6844028578c36d84b9f8f5db77fdb091
+      internalID: -1068981343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParkBackground_20
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 2473
+        width: 508
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd92817f7116fd442bc424cbcff883c6
+      internalID: -1821760491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParkBackground_21
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 2480
+        width: 508
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ec5150d4c65bf0419413d74667c742b
+      internalID: 496707663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParkBackground_22
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1934
+        width: 504
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4d03e5f4fa0e4944bfad43e6e7893f9
+      internalID: -1478055921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParkBackground_23
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 1922
+        width: 504
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aca4101c54c55d649adde125b394d0b0
+      internalID: 1427956209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParkBackground_24
+      rect:
+        serializedVersion: 2
+        x: 1383
+        y: 1918
+        width: 504
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c81b4d1d27e05c4c942acf09c5edda8
+      internalID: 1505273629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParkBackground_25
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 1305
+        width: 504
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e99f68d2194239428cf9130a07c7d5f
+      internalID: -2082647134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParkBackground_26
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 1309
+        width: 504
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8906dc39630b28c4db5e86b751907c29
+      internalID: -653511526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParkBackground_27
+      rect:
+        serializedVersion: 2
+        x: 1395
+        y: 1313
+        width: 503
+        height: 507
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0ac0b645329b1b489cea16cdb3a0306
+      internalID: -555364076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParkBackground_28
+      rect:
+        serializedVersion: 2
+        x: 1965
+        y: 1328
+        width: 508
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b30dc00c2d9c72d4a9f35cb23f38d25a
+      internalID: 440135620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParkBackground_29
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 777
+        width: 508
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dffc1d52ea5b8f4694a97b0f10e2473
+      internalID: 1264027026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParkBackground_30
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 777
+        width: 508
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16c7898d409721243a898b4cf081991f
+      internalID: 700834801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParkBackground_31
+      rect:
+        serializedVersion: 2
+        x: 1395
+        y: 777
+        width: 503
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8da0ae34a63a61b4a9cf71b00be4b688
+      internalID: 942259072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParkBackground_32
+      rect:
+        serializedVersion: 2
+        x: 1965
+        y: 781
+        width: 508
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7ce20e51230aab4cb599d47622630de
+      internalID: -185454697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      ParkBackground_32: -185454697
+      ParkBackground_12: -1459941674
+      ParkBackground_31: 942259072
+      ParkBackground_29: 1264027026
+      ParkBackground_5: -1872651108
+      ParkBackground_25: -2082647134
+      ParkBackground_0: -1952541970
+      ParkBackground_9: 2109913407
+      ParkBackground_3: 67126630
+      ParkBackground_22: -1478055921
+      ParkBackground_2: -153945978
+      ParkBackground_15: 108494890
+      ParkBackground_11: -1204406315
+      ParkBackground_30: 700834801
+      ParkBackground_26: -653511526
+      ParkBackground_23: 1427956209
+      ParkBackground_20: -1821760491
+      ParkBackground_16: 1390788886
+      ParkBackground_6: -1532308778
+      ParkBackground_19: -1068981343
+      ParkBackground_4: 790666978
+      ParkBackground_10: -613114389
+      ParkBackground_1: 1216914900
+      ParkBackground_8: -1419872544
+      ParkBackground_14: 2104003424
+      ParkBackground_13: 1010815510
+      ParkBackground_7: -1450764576
+      ParkBackground_17: -1339306565
+      ParkBackground_28: 440135620
+      ParkBackground_24: 1505273629
+      ParkBackground_21: 496707663
+      ParkBackground_18: 844307297
+      ParkBackground_27: -555364076
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
