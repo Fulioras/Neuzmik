@@ -6,14 +6,12 @@ using UnityEngine.SceneManagement;
 public class ChooseWeapon : MonoBehaviour
 {
     public Image mapImage;
-    public TextMeshProUGUI CostText;
     public Button[] ginkluMygtukai;
     public static int pasirinktasGinklas = 0;
     private string[] GinkluPavadinimai = { "Slingshot", "Toy Gun", "Deagle", "AK-47", "AWP", "G36C" };
     private Sprite[] GinkluNuotraukos;
     private int[] GinkluKainos = { 100, 500, 1500, 3500, 10000, 18000 };
     public int DabartinisZaidejoBalansas;
-    public int GinkloKaina;
     public TextMeshProUGUI TavoBalansas;
     public Button Pirkti;
     public TextMeshProUGUI PirkimoMygtukoTekstas;
@@ -27,11 +25,18 @@ public class ChooseWeapon : MonoBehaviour
     public static int AWPData; // (0 - nenupirktas, 1 - nupirktas)
     public static int G36CData; // (0 - nenupirktas, 1 - nupirktas)
     public static int EquippedWeapon;
+    int modifiedRequiredLevel;
+    public TextMeshProUGUI FireRate;
+    public TextMeshProUGUI FireMode;
+    public TextMeshProUGUI BulletSpeed;
+    public TextMeshProUGUI Damage;
+    public TextMeshProUGUI Accuracy;
+    public TextMeshProUGUI Weight;
 
     private void Start()
     {
         DabartinisZaidejoBalansas = PlayerPrefs.GetInt("ZaidejoPinigai", 0);
-        EquippedWeapon = PlayerPrefs.GetInt("Equipped", -1);
+        EquippedWeapon = PlayerPrefs.GetInt("Equipped", 0);
 
         TavoBalansas.text = "Balance: " + DabartinisZaidejoBalansas;
 
@@ -45,18 +50,68 @@ public class ChooseWeapon : MonoBehaviour
         if(EquippedWeapon > -1){
             SelectMap(EquippedWeapon);
             UpdateMap();
-            CostText.text = "";
         }
         else{
         SelectMap(0);
         UpdateMap();
+        UpdateStats();
         }
     }
-
+    private void UpdateStats()
+    {
+        if(pasirinktasGinklas == 0){
+            FireRate.text = "Fire Rate: 50 rpm";
+            FireMode.text = "Fire Mode: Single";
+            BulletSpeed.text = "Bullet Speed: 100 m/s";
+            Damage.text = "20";
+            Accuracy.text = "60%";
+            Weight.text = "Light";
+        }
+        else if(pasirinktasGinklas == 1){
+            FireRate.text = "600";
+            FireMode.text = "Auto";
+            BulletSpeed.text = "80";
+            Damage.text = "5";
+            Accuracy.text = "60%";
+            Weight.text = "Light";
+        }
+        else if(pasirinktasGinklas == 2){
+            FireRate.text = "200";
+            FireMode.text = "Single";
+            BulletSpeed.text = "150";
+            Damage.text = "40";
+            Accuracy.text = "80%";
+            Weight.text = "Light";
+        }
+        else if(pasirinktasGinklas == 3){
+            FireRate.text = "400";
+            FireMode.text = "Auto";
+            BulletSpeed.text = "120";
+            Damage.text = "30";
+            Accuracy.text = "70%";
+            Weight.text = "Heavy";    
+        }
+        else if(pasirinktasGinklas == 4){
+            FireRate.text = "60";
+            FireMode.text = "Single";
+            BulletSpeed.text = "200";
+            Damage.text = "150";
+            Accuracy.text = "100%";
+            Weight.text = "Heavy"; 
+        }
+        else if(pasirinktasGinklas == 5){
+            FireRate.text = "600";
+            FireMode.text = "Auto";
+            BulletSpeed.text = "150";
+            Damage.text = "30";
+            Accuracy.text = "85%";
+            Weight.text = "Heavy";
+        }
+    }
     private void Update()
     {
     
-        SlingshotData = PlayerPrefs.GetInt("Slingshot", 0);
+        SlingshotData = PlayerPrefs.GetInt("Slingshot", 1);
         ToyGunData = PlayerPrefs.GetInt("Toy Gun", 0);
         DeagleData = PlayerPrefs.GetInt("Deagle", 0);
         AK47Data = PlayerPrefs.GetInt("AK-47", 0);
@@ -114,13 +169,13 @@ public class ChooseWeapon : MonoBehaviour
         else if (DabartinisZaidejoBalansas < GinkluKainos[pasirinktasGinklas])
         {
             Pirkti.interactable = false;
-            PirkimoMygtukoTekstas.text = "Not Enough Money";
+            PirkimoMygtukoTekstas.text = "($" + modifiedRequiredLevel + ")";
             Pirkti.GetComponent<Image>().color = Color.red;
         }
         else
         {
             Pirkti.interactable = true;
-            PirkimoMygtukoTekstas.text = "Buy";
+            PirkimoMygtukoTekstas.text = "($" + modifiedRequiredLevel + ")";
             Pirkti.GetComponent<Image>().color = Color.green;
         }
 
@@ -133,6 +188,7 @@ public class ChooseWeapon : MonoBehaviour
             pasirinktasGinklas = mapIndex;
             UpdateMap();
         }
+        UpdateStats();
     }
     public void PirktiGinkla(){
         if (ginkluMygtukai[pasirinktasGinklas].GetComponent<Image>().color == Color.green && EquippedWeapon != pasirinktasGinklas)
@@ -151,15 +207,8 @@ public class ChooseWeapon : MonoBehaviour
     private void UpdateMap()
     {
         mapImage.sprite = GinkluNuotraukos[pasirinktasGinklas];
-        int modifiedRequiredLevel = GinkluKainos[pasirinktasGinklas];
-        GinkloKaina = modifiedRequiredLevel;
-        if(ginkluMygtukai[pasirinktasGinklas].GetComponent<Image>().color != Color.green){
-            CostText.text = "Cost: " + modifiedRequiredLevel.ToString();
-        }
-        else{
-            CostText.text = "";
-        }
-        
+        modifiedRequiredLevel = GinkluKainos[pasirinktasGinklas];
+        UpdateStats();
     }
 
     private void OnDisable()

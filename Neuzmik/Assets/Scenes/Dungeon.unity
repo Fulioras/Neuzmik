@@ -12614,11 +12614,11 @@ MonoBehaviour:
   rpm: 300
   accuracy: 0.1
   ballSpeed: 100
-  dashSpeed: 500
+  dashSpeed: 100
   dashTime: 0.5
   dashCooldown: 1
   enemyHealth: 20
-  greitis: 150
+  greitis: 60
   playerHealth: 100
   bossHealth: 200
 --- !u!114 &1948449023
