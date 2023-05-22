@@ -25,7 +25,6 @@ public class XP : MonoBehaviour
 
     void Update()
     {
-        
         if(DabartinisZaidejoLygis == 50){
             ZaidejoXP.text = "MAX";
             ZaidejoLygis.text = DabartinisZaidejoLygis + " Lygis [MAX]";

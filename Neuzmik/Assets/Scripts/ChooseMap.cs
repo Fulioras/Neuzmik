@@ -21,9 +21,10 @@ public class ChooseMap : MonoBehaviour
     public int ReikiamasZaidejoLygis;
     public TextMeshProUGUI yourLevelText;
     public Button Play;
-
+    public static int SelectedMap = 0;
+    public static int SelectedDifficulty = 0;
   
-    public bool HardcoreRezimas = false;
+    public static bool HardcoreRezimas = false;
     public Image hardcoreButtonImage; // Reference to the Hardcore button's Image component
     
     public GameObject hearts;
@@ -117,6 +118,8 @@ public class ChooseMap : MonoBehaviour
     public void PlayButton()
     {
         SceneManager.LoadScene(mapNames[selectedMapIndex]);
+        SelectedMap = selectedMapIndex;
+        SelectedDifficulty = selectedDifficultyIndex;
     }
 
     public void Hardcore()
