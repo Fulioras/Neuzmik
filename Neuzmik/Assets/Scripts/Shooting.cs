@@ -9,11 +9,16 @@ public class Shooting : MonoBehaviour
     private float timeSinceLastShot = 0.0f;
     private Nustatymai config;
 
-    public Transform gunTipTransform;
+    public Transform[] gunTipTransforms; // Array of gun tip transforms
     public Transform armTransform;
+    public int Ginklas;
+    public Sprite[] ginkluModeliai;
+    public GameObject GinkloRenderer;
 
     private void Start()
     {
+        Ginklas = PlayerPrefs.GetInt("Equipped", 0);
+        GinkloRenderer.GetComponent<SpriteRenderer>().sprite = ginkluModeliai[Ginklas];
         GameObject configObject = GameObject.FindGameObjectWithTag("Nustatymai");
         if (configObject != null)
         {
@@ -36,7 +41,8 @@ public class Shooting : MonoBehaviour
                 {
                     Shoot();
                     soundEffect.Play();
-                    GameObject effect = Instantiate(fireEffect, transform.position, transform.rotation);
+                    GameObject effect = Instantiate(fireEffect, gunTipTransforms[Ginklas].position, gunTipTransforms[Ginklas].rotation);
+
                     effect.transform.parent = transform;
                     Destroy(effect, 0.2f);
                     timeSinceLastShot = 0.0f;
@@ -57,7 +63,7 @@ public class Shooting : MonoBehaviour
                 {
                     Shoot();
                     soundEffect.Play();
-                    GameObject effect = Instantiate(fireEffect, transform.position, transform.rotation);
+                    GameObject effect = Instantiate(fireEffect, gunTipTransforms[Ginklas].position, gunTipTransforms[Ginklas].rotation);
                     effect.transform.parent = transform;
                     Destroy(effect, 0.2f);
                     timeSinceLastShot = 0.0f;
@@ -70,6 +76,12 @@ public class Shooting : MonoBehaviour
     {
         // Get the hand position in world space
         Vector3 handPos = armTransform.position;
+
+        // Get the index of the equipped gun
+        int equippedGunIndex = Mathf.Clamp(Ginklas, 0, gunTipTransforms.Length - 1);
+
+        // Get the gun tip transform based on the equipped gun
+        Transform gunTipTransform = gunTipTransforms[equippedGunIndex];
 
         // Calculate the direction from the hand to the gun tip
         Vector3 direction = gunTipTransform.position - handPos;

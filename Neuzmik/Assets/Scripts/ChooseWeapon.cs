@@ -38,7 +38,6 @@ public class ChooseWeapon : MonoBehaviour
     {
         
         DabartinisZaidejoBalansas = PlayerPrefs.GetInt("ZaidejoPinigai", 0);
-        DabartinisZaidejoBalansas += 15000;
         EquippedWeapon = PlayerPrefs.GetInt("Equipped", 0);
 
         TavoBalansas.text = "Balance: " + DabartinisZaidejoBalansas;
