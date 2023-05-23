@@ -63,49 +63,49 @@ public class ChooseWeapon : MonoBehaviour
             FireRate.text = "Fire Rate: 50 rpm";
             FireMode.text = "Fire Mode: Single";
             BulletSpeed.text = "Bullet Speed: 100 m/s";
-            Damage.text = "20";
-            Accuracy.text = "60%";
-            Weight.text = "Light";
+            Damage.text = "Damage: 20";
+            Accuracy.text = "Accuracy: 60%";
+            Weight.text = "Weight: Light";
         }
         else if(pasirinktasGinklas == 1){
-            FireRate.text = "600";
-            FireMode.text = "Auto";
-            BulletSpeed.text = "80";
-            Damage.text = "5";
-            Accuracy.text = "60%";
-            Weight.text = "Light";
+            FireRate.text = "Fire Rate: 600";
+            FireMode.text = "Fire Mode: Auto";
+            BulletSpeed.text = "Bullet Speed: 80";
+            Damage.text = "Damage: 5";
+            Accuracy.text = "Accuracy: 60%";
+            Weight.text = "Weight: Light";
         }
         else if(pasirinktasGinklas == 2){
-            FireRate.text = "200";
-            FireMode.text = "Single";
-            BulletSpeed.text = "150";
-            Damage.text = "40";
-            Accuracy.text = "80%";
-            Weight.text = "Light";
+            FireRate.text = "Fire Rate: 200";
+            FireMode.text = "Fire Mode: Single";
+            BulletSpeed.text = "Bullet Speed: 150";
+            Damage.text = "Damage: 40";
+            Accuracy.text = "Accuracy: 80%";
+            Weight.text = "Weight: Light";
         }
         else if(pasirinktasGinklas == 3){
-            FireRate.text = "400";
-            FireMode.text = "Auto";
-            BulletSpeed.text = "120";
-            Damage.text = "30";
-            Accuracy.text = "70%";
-            Weight.text = "Heavy";    
+            FireRate.text = "Fire Rate: 400";
+            FireMode.text = "Fire Mode: Auto";
+            BulletSpeed.text = "Bullet Speed: 120";
+            Damage.text = "Damage: 30";
+            Accuracy.text = "Accuracy: 70%";
+            Weight.text = "Weight: Heavy";    
         }
         else if(pasirinktasGinklas == 4){
-            FireRate.text = "60";
-            FireMode.text = "Single";
-            BulletSpeed.text = "200";
-            Damage.text = "150";
-            Accuracy.text = "100%";
-            Weight.text = "Heavy"; 
+            FireRate.text = "Fire Rate: 60";
+            FireMode.text = "Fire Mode: Single";
+            BulletSpeed.text = "Bullet Speed: 200";
+            Damage.text = "Damage: 150";
+            Accuracy.text = "Accuracy: 100%";
+            Weight.text = "Weight: Heavy"; 
         }
         else if(pasirinktasGinklas == 5){
-            FireRate.text = "600";
-            FireMode.text = "Auto";
-            BulletSpeed.text = "150";
-            Damage.text = "30";
-            Accuracy.text = "85%";
-            Weight.text = "Heavy";
+            FireRate.text = "Fire Rate: 600";
+            FireMode.text = "Fire Mode: Auto";
+            BulletSpeed.text = "Bullet Speed: 150";
+            Damage.text = "Damage: 30";
+            Accuracy.text = "Accuracy: 85%";
+            Weight.text = "Weight: Heavy";
         }
     }
     private void Update()
