@@ -193,7 +193,11 @@ PrefabInstance:
     - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
       propertyPath: priesuLiko
       value: 
-      objectReference: {fileID: 1327379531}
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
 --- !u!4 &44350000 stripped
@@ -440,7 +444,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Tu laimejai!!!
+  m_text: You defeated the final boss.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -467,8 +471,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 300
-  m_fontSizeBase: 300
+  m_fontSize: 250
+  m_fontSizeBase: 250
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -822,7 +826,11 @@ PrefabInstance:
     - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
       propertyPath: priesuLiko
       value: 
-      objectReference: {fileID: 1327379531}
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
 --- !u!1 &169849696
@@ -1232,7 +1240,11 @@ PrefabInstance:
     - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
       propertyPath: priesuLiko
       value: 
-      objectReference: {fileID: 1327379531}
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
 --- !u!1001 &257795536
@@ -1305,7 +1317,11 @@ PrefabInstance:
     - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
       propertyPath: priesuLiko
       value: 
-      objectReference: {fileID: 1327379531}
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
 --- !u!1 &265626972
@@ -1341,7 +1357,7 @@ RectTransform:
   - {fileID: 813658957}
   - {fileID: 149718273}
   m_Father: {fileID: 1859013501}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2256,7 +2272,11 @@ PrefabInstance:
     - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
       propertyPath: priesuLiko
       value: 
-      objectReference: {fileID: 1327379531}
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
 --- !u!4 &428866873 stripped
@@ -2567,7 +2587,11 @@ PrefabInstance:
     - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
       propertyPath: priesuLiko
       value: 
-      objectReference: {fileID: 1327379531}
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
 --- !u!1 &456603759
@@ -2602,7 +2626,7 @@ RectTransform:
   m_Children:
   - {fileID: 483939587}
   m_Father: {fileID: 1859013501}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2919,7 +2943,11 @@ PrefabInstance:
     - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
       propertyPath: priesuLiko
       value: 
-      objectReference: {fileID: 1327379531}
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
 --- !u!1 &492535524
@@ -3288,7 +3316,11 @@ PrefabInstance:
     - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
       propertyPath: priesuLiko
       value: 
-      objectReference: {fileID: 1327379531}
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
 --- !u!1001 &562632871
@@ -3823,7 +3855,7 @@ Transform:
   - {fileID: 1185021232}
   - {fileID: 63753638}
   m_Father: {fileID: 1859013501}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &608495464
 PrefabInstance:
@@ -3895,7 +3927,11 @@ PrefabInstance:
     - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
       propertyPath: priesuLiko
       value: 
-      objectReference: {fileID: 1327379531}
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
 --- !u!1001 &614807232
@@ -3905,6 +3941,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 789936942}
     m_Modifications:
+    - target: {fileID: 1527321512916822646, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6379270643765424893, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6379270644331371424, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
       propertyPath: m_Name
       value: Bosas
@@ -3916,6 +3960,14 @@ PrefabInstance:
     - target: {fileID: 6379270644331371425, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6379270644331371425, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6379270644331371425, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 6379270644331371425, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3957,14 +4009,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0.751
       objectReference: {fileID: 0}
+    - target: {fileID: 6379270644340714138, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6379270644358442033, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6379270644376363235, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6379270645132965297, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6379270645459975243, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6379270645601550369, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6379270645601550369, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
       propertyPath: m_TagString
       value: Bosas
+      objectReference: {fileID: 0}
+    - target: {fileID: 6408799034577272966, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6658253880659696146, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 1207526185}
+    - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
+      propertyPath: coinPrefab
+      value: 
+      objectReference: {fileID: 1942691214}
     - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
       propertyPath: laimejimas
       value: 
@@ -3972,7 +4056,11 @@ PrefabInstance:
     - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
       propertyPath: priesuLiko
       value: 
-      objectReference: {fileID: 1327379531}
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 30
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
 --- !u!1001 &628751023
@@ -4045,7 +4133,11 @@ PrefabInstance:
     - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
       propertyPath: priesuLiko
       value: 
-      objectReference: {fileID: 1327379531}
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
 --- !u!1 &629590807
@@ -4562,7 +4654,7 @@ Transform:
   - {fileID: 2078365883}
   - {fileID: 492535525}
   m_Father: {fileID: 1859013501}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &724630958
 PrefabInstance:
@@ -4634,7 +4726,11 @@ PrefabInstance:
     - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
       propertyPath: priesuLiko
       value: 
-      objectReference: {fileID: 1327379531}
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
 --- !u!1001 &727946845
@@ -4707,7 +4803,11 @@ PrefabInstance:
     - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
       propertyPath: priesuLiko
       value: 
-      objectReference: {fileID: 1327379531}
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
 --- !u!1 &736584663
@@ -4818,7 +4918,11 @@ PrefabInstance:
     - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
       propertyPath: priesuLiko
       value: 
-      objectReference: {fileID: 1327379531}
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
 --- !u!1 &765161533
@@ -5282,7 +5386,11 @@ PrefabInstance:
     - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
       propertyPath: priesuLiko
       value: 
-      objectReference: {fileID: 1327379531}
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
 --- !u!1 &820348766
@@ -5707,7 +5815,11 @@ PrefabInstance:
     - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
       propertyPath: priesuLiko
       value: 
-      objectReference: {fileID: 1327379531}
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
 --- !u!4 &842665410 stripped
@@ -6857,10 +6969,14 @@ PrefabInstance:
     - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
       propertyPath: priesuLiko
       value: 
-      objectReference: {fileID: 1327379531}
+      objectReference: {fileID: 0}
     - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
       propertyPath: currentHealth
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
@@ -7050,7 +7166,11 @@ PrefabInstance:
     - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
       propertyPath: priesuLiko
       value: 
-      objectReference: {fileID: 1327379531}
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
 --- !u!1 &940347452
@@ -7846,7 +7966,11 @@ PrefabInstance:
     - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
       propertyPath: priesuLiko
       value: 
-      objectReference: {fileID: 1327379531}
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
 --- !u!4 &1120583383 stripped
@@ -7924,7 +8048,11 @@ PrefabInstance:
     - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
       propertyPath: priesuLiko
       value: 
-      objectReference: {fileID: 1327379531}
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
 --- !u!1001 &1142314551
@@ -7997,7 +8125,11 @@ PrefabInstance:
     - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
       propertyPath: priesuLiko
       value: 
-      objectReference: {fileID: 1327379531}
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
 --- !u!1 &1142872691
@@ -8632,6 +8764,7 @@ GameObject:
   - component: {fileID: 1185021232}
   - component: {fileID: 1185021234}
   - component: {fileID: 1185021233}
+  - component: {fileID: 1185021235}
   m_Layer: 5
   m_Name: RawImage
   m_TagString: Untagged
@@ -8695,6 +8828,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1185021231}
   m_CullTransparentMesh: 1
+--- !u!114 &1185021235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185021231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 5, y: 5}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1202234497 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3346226802001428341, guid: 480b3ac081828344c9b037bff1fbd5b9, type: 3}
@@ -8801,7 +8949,11 @@ PrefabInstance:
     - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
       propertyPath: priesuLiko
       value: 
-      objectReference: {fileID: 1327379531}
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
 --- !u!4 &1231074905 stripped
@@ -8990,7 +9142,11 @@ PrefabInstance:
     - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
       propertyPath: priesuLiko
       value: 
-      objectReference: {fileID: 1327379531}
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
 --- !u!1001 &1260894152
@@ -9063,7 +9219,11 @@ PrefabInstance:
     - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
       propertyPath: priesuLiko
       value: 
-      objectReference: {fileID: 1327379531}
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
 --- !u!4 &1261224862 stripped
@@ -9802,141 +9962,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 1
   m_TargetDisplay: 0
---- !u!1 &1327379529
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1327379530}
-  - component: {fileID: 1327379532}
-  - component: {fileID: 1327379531}
-  m_Layer: 5
-  m_Name: LikoPriesu
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1327379530
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1327379529}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1859013501}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3101.3477, y: 1920.7896}
-  m_SizeDelta: {x: 1780.23, y: 674.4}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1327379531
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1327379529}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: "Prie\u0161\u0173 liko: 10+"
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 250
-  m_fontSizeBase: 250
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1327379532
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1327379529}
-  m_CullTransparentMesh: 1
 --- !u!1 &1330653301
 GameObject:
   m_ObjectHideFlags: 0
@@ -10045,7 +10070,11 @@ PrefabInstance:
     - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
       propertyPath: priesuLiko
       value: 
-      objectReference: {fileID: 1327379531}
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
 --- !u!1 &1354715507
@@ -10248,6 +10277,7 @@ GameObject:
   - component: {fileID: 1366188842}
   - component: {fileID: 1366188841}
   - component: {fileID: 1366188840}
+  - component: {fileID: 1366188844}
   m_Layer: 5
   m_Name: Mygutkas
   m_TagString: Untagged
@@ -10386,6 +10416,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1366188838}
   m_CullTransparentMesh: 1
+--- !u!114 &1366188844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366188838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 5, y: 5}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1366560197
 GameObject:
   m_ObjectHideFlags: 0
@@ -10696,7 +10741,11 @@ PrefabInstance:
     - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
       propertyPath: priesuLiko
       value: 
-      objectReference: {fileID: 1327379531}
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
 --- !u!4 &1385640556 stripped
@@ -10774,7 +10823,11 @@ PrefabInstance:
     - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
       propertyPath: priesuLiko
       value: 
-      objectReference: {fileID: 1327379531}
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
 --- !u!1 &1395714984
@@ -12007,7 +12060,11 @@ PrefabInstance:
     - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
       propertyPath: priesuLiko
       value: 
-      objectReference: {fileID: 1327379531}
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
 --- !u!4 &1641565560 stripped
@@ -12085,7 +12142,11 @@ PrefabInstance:
     - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
       propertyPath: priesuLiko
       value: 
-      objectReference: {fileID: 1327379531}
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
 --- !u!1 &1695493516
@@ -12583,7 +12644,11 @@ PrefabInstance:
     - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
       propertyPath: priesuLiko
       value: 
-      objectReference: {fileID: 1327379531}
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
 --- !u!1 &1747635592
@@ -12743,7 +12808,11 @@ PrefabInstance:
     - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
       propertyPath: priesuLiko
       value: 
-      objectReference: {fileID: 1327379531}
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
 --- !u!1 &1798226051
@@ -13163,7 +13232,6 @@ RectTransform:
   m_LocalScale: {x: 0.13333333, y: 0.13333333, z: 0.13333333}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1327379530}
   - {fileID: 8206484957489604181}
   - {fileID: 602251708}
   - {fileID: 705365896}
@@ -13636,6 +13704,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackRange: 5
+  BossAttackRange: 15
   attackSpeed: 1.5
   speed: 15
   detectionRange: 50
@@ -13882,7 +13951,11 @@ PrefabInstance:
     - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
       propertyPath: priesuLiko
       value: 
-      objectReference: {fileID: 1327379531}
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
 --- !u!1001 &1958474034
@@ -13955,7 +14028,11 @@ PrefabInstance:
     - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
       propertyPath: priesuLiko
       value: 
-      objectReference: {fileID: 1327379531}
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
 --- !u!1 &1990679283
@@ -14159,7 +14236,11 @@ PrefabInstance:
     - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
       propertyPath: priesuLiko
       value: 
-      objectReference: {fileID: 1327379531}
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
 --- !u!1 &2078365882
@@ -14308,7 +14389,11 @@ PrefabInstance:
     - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
       propertyPath: priesuLiko
       value: 
-      objectReference: {fileID: 1327379531}
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754144106215619363, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
 --- !u!1 &2111344705
@@ -14344,11 +14429,11 @@ RectTransform:
   - {fileID: 73753686}
   - {fileID: 1330653302}
   m_Father: {fileID: 1859013501}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3521, y: 1810}
+  m_AnchoredPosition: {x: 3499, y: 2238}
   m_SizeDelta: {x: 1894.02, y: 399.82}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2111344707
@@ -15290,7 +15375,7 @@ Transform:
   - {fileID: 3843220967298046962}
   - {fileID: 3617785507740562255}
   m_Father: {fileID: 1859013501}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!222 &9159505255462247272
 CanvasRenderer:

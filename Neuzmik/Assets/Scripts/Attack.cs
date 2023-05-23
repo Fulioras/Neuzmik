@@ -28,7 +28,18 @@ public class Attack : MonoBehaviour
         // Check if the player is within attack range and enough time has passed since the last attack
         Vector3 playerPos = GameObject.FindGameObjectWithTag("Player").transform.position;
         float distance = Vector3.Distance(transform.position, playerPos);
+    if(gameObject.CompareTag("Bosas")){
+        if (distance <= config.BossAttackRange && Time.time - lastAttackTime >= config.attackSpeed)
+        {
+            // Deal damage to the player
+            PlayerHealth playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
+            playerHealth.TakeDamage(config.enemyDamage);
 
+            // Record the time of the attack
+            lastAttackTime = Time.time;
+        }
+    }
+    else{
         if (distance <= config.attackRange && Time.time - lastAttackTime >= config.attackSpeed)
         {
             // Deal damage to the player
@@ -38,5 +49,7 @@ public class Attack : MonoBehaviour
             // Record the time of the attack
             lastAttackTime = Time.time;
         }
+    }
+        
     }
 }

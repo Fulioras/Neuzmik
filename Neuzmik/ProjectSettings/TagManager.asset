@@ -8,6 +8,9 @@ TagManager:
   - Nustatymai
   - Siena
   - Bosas
+  - Final
+  - prefab
+  - Priesas
   layers:
   - Default
   - TransparentFX

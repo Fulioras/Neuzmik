@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using System.Collections;
 
 public class Health : MonoBehaviour
 {
@@ -7,7 +8,6 @@ public class Health : MonoBehaviour
     public int currentHealth;
     public GameObject laimejimas;
     private Nustatymai config;
-    public TextMeshProUGUI priesuLiko;
     public int PlayerXPGain = 0;
     public int coinDropCount = 3;
     public GameObject coinPrefab;
@@ -72,9 +72,16 @@ public class Health : MonoBehaviour
         splash.Play();
         Debug.Log(currentHealth);
 
-        if (currentHealth <= 0)
+               if (currentHealth <= 0)
         {
-            Die();
+            if (!gameObject.CompareTag("Bosas"))
+            {
+                Die();
+            }
+            else if (gameObject.CompareTag("Bosas"))
+            {
+                BossDie();
+            }
         }
     }
 
@@ -82,10 +89,6 @@ public class Health : MonoBehaviour
     {
         XP.DabartinisZaidejoXP += PlayerXPGain;
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
-        Debug.Log(enemies.Length);
-        if(enemies.Length <= 11){
-        priesuLiko.text = "Liko priešų: " + (enemies.Length-1);
-        }
         if (enemies.Length == 1)
         {
             Boss.Bosas = true;
@@ -96,6 +99,30 @@ public class Health : MonoBehaviour
             Instantiate(coinPrefab, spawnPosition, Quaternion.identity);
         }
         Destroy(gameObject);
+    }private void BossDie()
+{
+    XP.DabartinisZaidejoXP += PlayerXPGain * 20;
+    for (int i = 0; i < coinDropCount * 20; i++)
+    {
+        Vector3 spawnPosition = transform.position + Random.insideUnitSphere * coinSpawnRadius;
+        Instantiate(coinPrefab, spawnPosition, Quaternion.identity);
+    }
+
+    // Destroy all children of the object
+    foreach (Transform child in transform)
+    {
+        Destroy(child.gameObject);
+    }
+
+    StartCoroutine(ActivateLaimejimas());
+}
+
+        private IEnumerator ActivateLaimejimas()
+    {
+        yield return new WaitForSeconds(3.0f); // Wait for 3 seconds
+        laimejimas.SetActive(true);
+        Time.timeScale = 0f;
     }
 
 }
+

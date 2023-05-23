@@ -25,8 +25,8 @@ public class FollowObject : MonoBehaviour
         // Calculate the distance between this object and the target
         float distance = Vector2.Distance(transform.position, target.position);
 
-        // Check if the target is within the detection range
-        if (distance <= config.detectionRange || Gaudo == true)
+        if(gameObject.CompareTag("Final")){
+        if (distance <= 1000|| Gaudo == true)
         {
             Gaudo = true;
             EnergyBar.decreaseEnabled = false;
@@ -45,5 +45,28 @@ public class FollowObject : MonoBehaviour
             Gaudo = false;
             EnergyBar.decreaseEnabled = true;
         }
+        }
+        else{
+                    if (distance <= config.detectionRange || Gaudo == true)
+        {
+            Gaudo = true;
+            EnergyBar.decreaseEnabled = false;
+            // Calculate the direction from this object to the target
+            Vector2 direction = (target.position - transform.position).normalized;
+            
+            animator.SetBool("arJuda", true);
+            animator.SetFloat("horizontal", direction.x);
+            animator.SetFloat("vertical", direction.y);
+            
+
+            // Move this object towards the target at the specified speed
+            transform.Translate(direction * config.speed * Time.deltaTime);
+        }else animator.SetBool("arJuda", false);
+        if(distance > 150){
+            Gaudo = false;
+            EnergyBar.decreaseEnabled = true;
+        }
+        }
+
     }
 }
