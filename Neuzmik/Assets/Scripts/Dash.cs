@@ -64,7 +64,7 @@ public class Dash : MonoBehaviour
     }
     else
     {
-        dashTimer = Mathf.Min(dashTimer + Time.deltaTime, config.dashCooldown);
+            dashTimer = Mathf.Min(dashTimer + Time.deltaTime, config.dashCooldown);
     }
 }
 }

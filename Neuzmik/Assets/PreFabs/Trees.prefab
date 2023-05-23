@@ -387,7 +387,7 @@ SortingGroup:
   m_Enabled: 1
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
 --- !u!61 &202899984159677176
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -7,7 +7,6 @@ public class BlackJack : MonoBehaviour
     public Sprite[] kortos;
     private int rankosVerte = 0;
     int randomIndex;
-    int[] numeris = new int[53];
 
 
     // Update is called once per frame
@@ -24,6 +23,7 @@ public class BlackJack : MonoBehaviour
         {
             Debug.Log("laim4jai");
             rankosVerte = 0;
+            
         }
         else if (rankosVerte > 21)
         {
