@@ -833,141 +833,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
---- !u!1 &169849696
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 169849697}
-  - component: {fileID: 169849699}
-  - component: {fileID: 169849698}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &169849697
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 169849696}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1308325445}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0012512, y: 0.00024986}
-  m_SizeDelta: {x: 55.133, y: 29.681}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &169849698
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 169849696}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: "Nu\u017Eudyk visus prie\u0161us"
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 5
-  m_fontSizeBase: 5
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &169849699
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 169849696}
-  m_CullTransparentMesh: 1
 --- !u!1 &189589986
 GameObject:
   m_ObjectHideFlags: 0
@@ -1500,6 +1365,10 @@ PrefabInstance:
       propertyPath: laimejimas
       value: 
       objectReference: {fileID: 602251707}
+    - target: {fileID: 7754144106215619363, guid: cd661309b38c7b54eaca81e7ff3f4a8c, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd661309b38c7b54eaca81e7ff3f4a8c, type: 3}
 --- !u!4 &273296409 stripped
@@ -2166,6 +2035,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FastPriesas (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6379270644331371424, guid: 263aa449140db4a4aa830977be6b73e3, type: 3}
+      propertyPath: m_TagString
+      value: FastEnemy
+      objectReference: {fileID: 0}
     - target: {fileID: 6379270644331371425, guid: 263aa449140db4a4aa830977be6b73e3, type: 3}
       propertyPath: m_RootOrder
       value: 36
@@ -2222,6 +2095,10 @@ PrefabInstance:
       propertyPath: laimejimas
       value: 
       objectReference: {fileID: 602251707}
+    - target: {fileID: 7754144106215619363, guid: 263aa449140db4a4aa830977be6b73e3, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 263aa449140db4a4aa830977be6b73e3, type: 3}
 --- !u!4 &426471832 stripped
@@ -2433,6 +2310,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FastPriesas (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 6379270644331371424, guid: 263aa449140db4a4aa830977be6b73e3, type: 3}
+      propertyPath: m_TagString
+      value: FastEnemy
+      objectReference: {fileID: 0}
     - target: {fileID: 6379270644331371425, guid: 263aa449140db4a4aa830977be6b73e3, type: 3}
       propertyPath: m_RootOrder
       value: 41
@@ -2489,6 +2370,10 @@ PrefabInstance:
       propertyPath: laimejimas
       value: 
       objectReference: {fileID: 602251707}
+    - target: {fileID: 7754144106215619363, guid: 263aa449140db4a4aa830977be6b73e3, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 263aa449140db4a4aa830977be6b73e3, type: 3}
 --- !u!4 &429417485 stripped
@@ -3152,6 +3037,10 @@ PrefabInstance:
       propertyPath: laimejimas
       value: 
       objectReference: {fileID: 602251707}
+    - target: {fileID: 7754144106215619363, guid: cd661309b38c7b54eaca81e7ff3f4a8c, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd661309b38c7b54eaca81e7ff3f4a8c, type: 3}
 --- !u!4 &487982627 stripped
@@ -3438,6 +3327,10 @@ PrefabInstance:
       propertyPath: laimejimas
       value: 
       objectReference: {fileID: 602251707}
+    - target: {fileID: 7754144106215619363, guid: cd661309b38c7b54eaca81e7ff3f4a8c, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd661309b38c7b54eaca81e7ff3f4a8c, type: 3}
 --- !u!4 &499918367 stripped
@@ -3980,6 +3873,10 @@ PrefabInstance:
       propertyPath: laimejimas
       value: 
       objectReference: {fileID: 602251707}
+    - target: {fileID: 7754144106215619363, guid: cd661309b38c7b54eaca81e7ff3f4a8c, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd661309b38c7b54eaca81e7ff3f4a8c, type: 3}
 --- !u!4 &566633878 stripped
@@ -3987,132 +3884,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6379270644331371425, guid: cd661309b38c7b54eaca81e7ff3f4a8c, type: 3}
   m_PrefabInstance: {fileID: 566633877}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &587870923
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 587870927}
-  - component: {fileID: 587870926}
-  - component: {fileID: 587870925}
-  - component: {fileID: 587870924}
-  m_Layer: 3
-  m_Name: Square
-  m_TagString: Siena
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!61 &587870924
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 587870923}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!222 &587870925
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 587870923}
-  m_CullTransparentMesh: 1
---- !u!212 &587870926
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 587870923}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.2924528, g: 0.2924528, b: 0.2924528, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!224 &587870927
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 587870923}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -800.5212}
-  m_LocalScale: {x: 54.38741, y: 29.6822, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1308325445}
-  m_Father: {fileID: 865419135}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 250.01108, y: -33.059666}
-  m_SizeDelta: {x: 1, y: 1}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &593535551
 GameObject:
   m_ObjectHideFlags: 0
@@ -4374,6 +4145,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FastPriesas (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 6379270644331371424, guid: 263aa449140db4a4aa830977be6b73e3, type: 3}
+      propertyPath: m_TagString
+      value: FastEnemy
+      objectReference: {fileID: 0}
     - target: {fileID: 6379270644331371425, guid: 263aa449140db4a4aa830977be6b73e3, type: 3}
       propertyPath: m_RootOrder
       value: 39
@@ -4430,6 +4205,10 @@ PrefabInstance:
       propertyPath: laimejimas
       value: 
       objectReference: {fileID: 602251707}
+    - target: {fileID: 7754144106215619363, guid: 263aa449140db4a4aa830977be6b73e3, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 263aa449140db4a4aa830977be6b73e3, type: 3}
 --- !u!4 &619194258 stripped
@@ -4952,6 +4731,10 @@ PrefabInstance:
       propertyPath: laimejimas
       value: 
       objectReference: {fileID: 602251707}
+    - target: {fileID: 7754144106215619363, guid: cd661309b38c7b54eaca81e7ff3f4a8c, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd661309b38c7b54eaca81e7ff3f4a8c, type: 3}
 --- !u!4 &655650506 stripped
@@ -5115,6 +4898,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FastPriesas (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 6379270644331371424, guid: 263aa449140db4a4aa830977be6b73e3, type: 3}
+      propertyPath: m_TagString
+      value: FastEnemy
+      objectReference: {fileID: 0}
     - target: {fileID: 6379270644331371425, guid: 263aa449140db4a4aa830977be6b73e3, type: 3}
       propertyPath: m_RootOrder
       value: 42
@@ -5171,6 +4958,10 @@ PrefabInstance:
       propertyPath: laimejimas
       value: 
       objectReference: {fileID: 602251707}
+    - target: {fileID: 7754144106215619363, guid: 263aa449140db4a4aa830977be6b73e3, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 263aa449140db4a4aa830977be6b73e3, type: 3}
 --- !u!4 &722294072 stripped
@@ -6452,6 +6243,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FastPriesas (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6379270644331371424, guid: 263aa449140db4a4aa830977be6b73e3, type: 3}
+      propertyPath: m_TagString
+      value: FastEnemy
+      objectReference: {fileID: 0}
     - target: {fileID: 6379270644331371425, guid: 263aa449140db4a4aa830977be6b73e3, type: 3}
       propertyPath: m_RootOrder
       value: 33
@@ -6508,6 +6303,10 @@ PrefabInstance:
       propertyPath: laimejimas
       value: 
       objectReference: {fileID: 602251707}
+    - target: {fileID: 7754144106215619363, guid: 263aa449140db4a4aa830977be6b73e3, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 263aa449140db4a4aa830977be6b73e3, type: 3}
 --- !u!4 &863143824 stripped
@@ -6662,7 +6461,6 @@ Transform:
   - {fileID: 1046831146}
   - {fileID: 1990679284}
   - {fileID: 441645894}
-  - {fileID: 587870927}
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6678,7 +6476,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16e4f8be0de2f644cb04cf087a6fc657, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SienaPasBosa: {fileID: 587870923}
+  SienaPasBosa: {fileID: 0}
 --- !u!1 &871058371
 GameObject:
   m_ObjectHideFlags: 0
@@ -6912,6 +6710,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FastPriesas (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 6379270644331371424, guid: 263aa449140db4a4aa830977be6b73e3, type: 3}
+      propertyPath: m_TagString
+      value: FastEnemy
+      objectReference: {fileID: 0}
     - target: {fileID: 6379270644331371425, guid: 263aa449140db4a4aa830977be6b73e3, type: 3}
       propertyPath: m_RootOrder
       value: 40
@@ -6968,6 +6770,10 @@ PrefabInstance:
       propertyPath: laimejimas
       value: 
       objectReference: {fileID: 602251707}
+    - target: {fileID: 7754144106215619363, guid: 263aa449140db4a4aa830977be6b73e3, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 263aa449140db4a4aa830977be6b73e3, type: 3}
 --- !u!4 &873616908 stripped
@@ -8078,6 +7884,10 @@ PrefabInstance:
       propertyPath: laimejimas
       value: 
       objectReference: {fileID: 602251707}
+    - target: {fileID: 7754144106215619363, guid: cd661309b38c7b54eaca81e7ff3f4a8c, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd661309b38c7b54eaca81e7ff3f4a8c, type: 3}
 --- !u!4 &1011947150 stripped
@@ -8376,6 +8186,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FastPriesas (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 6379270644331371424, guid: 263aa449140db4a4aa830977be6b73e3, type: 3}
+      propertyPath: m_TagString
+      value: FastEnemy
+      objectReference: {fileID: 0}
     - target: {fileID: 6379270644331371425, guid: 263aa449140db4a4aa830977be6b73e3, type: 3}
       propertyPath: m_RootOrder
       value: 37
@@ -8432,6 +8246,10 @@ PrefabInstance:
       propertyPath: laimejimas
       value: 
       objectReference: {fileID: 602251707}
+    - target: {fileID: 7754144106215619363, guid: 263aa449140db4a4aa830977be6b73e3, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 263aa449140db4a4aa830977be6b73e3, type: 3}
 --- !u!4 &1072679536 stripped
@@ -10260,126 +10078,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6379270644331371425, guid: 5763cbbe39db451418e1917d09ac210a, type: 3}
   m_PrefabInstance: {fileID: 1133487053}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1308325444
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1308325445}
-  - component: {fileID: 1308325448}
-  - component: {fileID: 1308325447}
-  - component: {fileID: 1308325446}
-  m_Layer: 5
-  m_Name: Canvas
-  m_TagString: Siena
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1308325445
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1308325444}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.018386608, y: 0.033690225, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 169849697}
-  m_Father: {fileID: 587870927}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.5068512, y: 0.5}
-  m_SizeDelta: {x: 55.131, y: 29.682}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!23 &1308325446
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1308325444}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1308325447
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1308325444}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
---- !u!223 &1308325448
-Canvas:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1308325444}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_RenderMode: 2
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
-  m_PixelPerfect: 0
-  m_ReceivesEvents: 1
-  m_OverrideSorting: 0
-  m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 25
-  m_SortingLayerID: 0
-  m_SortingOrder: 1
-  m_TargetDisplay: 0
 --- !u!1 &1330653301
 GameObject:
   m_ObjectHideFlags: 0
@@ -11343,6 +11041,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DungeonBoss
       objectReference: {fileID: 0}
+    - target: {fileID: 2699436715905346193, guid: c0f8f02b3c6f98c4d91163c65ff23ae7, type: 3}
+      propertyPath: m_TagString
+      value: Bosas
+      objectReference: {fileID: 0}
     - target: {fileID: 4224801012489472547, guid: c0f8f02b3c6f98c4d91163c65ff23ae7, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -12250,6 +11952,10 @@ PrefabInstance:
       propertyPath: laimejimas
       value: 
       objectReference: {fileID: 602251707}
+    - target: {fileID: 7754144106215619363, guid: cd661309b38c7b54eaca81e7ff3f4a8c, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd661309b38c7b54eaca81e7ff3f4a8c, type: 3}
 --- !u!4 &1551747930 stripped
@@ -12419,6 +12125,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FastPriesas
       objectReference: {fileID: 0}
+    - target: {fileID: 6379270644331371424, guid: 263aa449140db4a4aa830977be6b73e3, type: 3}
+      propertyPath: m_TagString
+      value: FastEnemy
+      objectReference: {fileID: 0}
     - target: {fileID: 6379270644331371425, guid: 263aa449140db4a4aa830977be6b73e3, type: 3}
       propertyPath: m_RootOrder
       value: 31
@@ -12475,6 +12185,10 @@ PrefabInstance:
       propertyPath: laimejimas
       value: 
       objectReference: {fileID: 602251707}
+    - target: {fileID: 7754144106215619363, guid: 263aa449140db4a4aa830977be6b73e3, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 263aa449140db4a4aa830977be6b73e3, type: 3}
 --- !u!4 &1567432233 stripped
@@ -12608,6 +12322,62 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1666575129 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2699436715905346193, guid: c0f8f02b3c6f98c4d91163c65ff23ae7, type: 3}
+  m_PrefabInstance: {fileID: 1398025609}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1666575131 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4227415206667413203, guid: c0f8f02b3c6f98c4d91163c65ff23ae7, type: 3}
+  m_PrefabInstance: {fileID: 1398025609}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1666575133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666575129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f04ac91edfcd101478b17d96de04e6d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 0
+  laimejimas: {fileID: 602251707}
+  PlayerXPGain: 0
+  coinDropCount: 3
+  coinPrefab: {fileID: 1942691214}
+  coinSpawnRadius: 50
+  splash: {fileID: 2064439220}
+--- !u!114 &1666575134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666575129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7226f87add8546343ba29b77e4d310b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1666575135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666575129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43b36527f6f42e147bfad89a3ed862c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1207526185}
+  animator: {fileID: 1666575131}
 --- !u!1 &1695493516
 GameObject:
   m_ObjectHideFlags: 0
@@ -12709,6 +12479,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FastPriesas (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 6379270644331371424, guid: 263aa449140db4a4aa830977be6b73e3, type: 3}
+      propertyPath: m_TagString
+      value: FastEnemy
+      objectReference: {fileID: 0}
     - target: {fileID: 6379270644331371425, guid: 263aa449140db4a4aa830977be6b73e3, type: 3}
       propertyPath: m_RootOrder
       value: 38
@@ -12765,6 +12539,10 @@ PrefabInstance:
       propertyPath: laimejimas
       value: 
       objectReference: {fileID: 602251707}
+    - target: {fileID: 7754144106215619363, guid: 263aa449140db4a4aa830977be6b73e3, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 263aa449140db4a4aa830977be6b73e3, type: 3}
 --- !u!4 &1703770839 stripped
@@ -13243,17 +13021,17 @@ Transform:
   - {fileID: 863143824}
   - {fileID: 1913620244}
   - {fileID: 2086279557}
-  - {fileID: 426471832}
   - {fileID: 1072679536}
-  - {fileID: 1703770839}
-  - {fileID: 619194258}
-  - {fileID: 873616908}
-  - {fileID: 429417485}
-  - {fileID: 722294072}
+  - {fileID: 426471832}
   - {fileID: 566633878}
+  - {fileID: 1703770839}
   - {fileID: 487982627}
   - {fileID: 1551747930}
+  - {fileID: 619194258}
   - {fileID: 1747733936}
+  - {fileID: 873616908}
+  - {fileID: 722294072}
+  - {fileID: 429417485}
   - {fileID: 1825178842}
   - {fileID: 273296409}
   - {fileID: 1011947150}
@@ -13340,6 +13118,10 @@ PrefabInstance:
       propertyPath: laimejimas
       value: 
       objectReference: {fileID: 602251707}
+    - target: {fileID: 7754144106215619363, guid: cd661309b38c7b54eaca81e7ff3f4a8c, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd661309b38c7b54eaca81e7ff3f4a8c, type: 3}
 --- !u!4 &1747733936 stripped
@@ -13608,6 +13390,10 @@ PrefabInstance:
       propertyPath: laimejimas
       value: 
       objectReference: {fileID: 602251707}
+    - target: {fileID: 7754144106215619363, guid: cd661309b38c7b54eaca81e7ff3f4a8c, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd661309b38c7b54eaca81e7ff3f4a8c, type: 3}
 --- !u!4 &1825178842 stripped
@@ -13946,6 +13732,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FastPriesas (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6379270644331371424, guid: 263aa449140db4a4aa830977be6b73e3, type: 3}
+      propertyPath: m_TagString
+      value: FastEnemy
+      objectReference: {fileID: 0}
     - target: {fileID: 6379270644331371425, guid: 263aa449140db4a4aa830977be6b73e3, type: 3}
       propertyPath: m_RootOrder
       value: 32
@@ -14002,6 +13792,10 @@ PrefabInstance:
       propertyPath: laimejimas
       value: 
       objectReference: {fileID: 602251707}
+    - target: {fileID: 7754144106215619363, guid: 263aa449140db4a4aa830977be6b73e3, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 263aa449140db4a4aa830977be6b73e3, type: 3}
 --- !u!4 &1901576128 stripped
@@ -14019,6 +13813,10 @@ PrefabInstance:
     - target: {fileID: 6379270644331371424, guid: 263aa449140db4a4aa830977be6b73e3, type: 3}
       propertyPath: m_Name
       value: FastPriesas (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6379270644331371424, guid: 263aa449140db4a4aa830977be6b73e3, type: 3}
+      propertyPath: m_TagString
+      value: FastEnemy
       objectReference: {fileID: 0}
     - target: {fileID: 6379270644331371425, guid: 263aa449140db4a4aa830977be6b73e3, type: 3}
       propertyPath: m_RootOrder
@@ -14076,6 +13874,10 @@ PrefabInstance:
       propertyPath: laimejimas
       value: 
       objectReference: {fileID: 602251707}
+    - target: {fileID: 7754144106215619363, guid: 263aa449140db4a4aa830977be6b73e3, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 263aa449140db4a4aa830977be6b73e3, type: 3}
 --- !u!4 &1913620244 stripped
@@ -14423,7 +14225,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1942691214}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -590.3, y: -64.9, z: 0}
+  m_LocalPosition: {x: -875.3, y: -74.9, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14443,7 +14245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 50
-  followDistance: 100
+  followDistance: 500
   despawnDistance: 1
 --- !u!1 &1948449018 stripped
 GameObject:
@@ -14462,8 +14264,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64dfb7d8df7ff99409b66d089623c862, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRange: 5
-  BossAttackRange: 15
+  attackRange: 10
+  BossAttackRange: 50
   attackSpeed: 1.5
   speed: 15
   detectionRange: 50
@@ -14848,6 +14650,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3346226803532236918, guid: 480b3ac081828344c9b037bff1fbd5b9, type: 3}
   m_PrefabInstance: {fileID: 562632871}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &2064439220 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4767606978345287768, guid: c0f8f02b3c6f98c4d91163c65ff23ae7, type: 3}
+  m_PrefabInstance: {fileID: 1398025609}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2074096657
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15012,6 +14819,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FastPriesas (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6379270644331371424, guid: 263aa449140db4a4aa830977be6b73e3, type: 3}
+      propertyPath: m_TagString
+      value: FastEnemy
+      objectReference: {fileID: 0}
     - target: {fileID: 6379270644331371425, guid: 263aa449140db4a4aa830977be6b73e3, type: 3}
       propertyPath: m_RootOrder
       value: 35
@@ -15068,6 +14879,10 @@ PrefabInstance:
       propertyPath: laimejimas
       value: 
       objectReference: {fileID: 602251707}
+    - target: {fileID: 7754144106215619363, guid: 263aa449140db4a4aa830977be6b73e3, type: 3}
+      propertyPath: coinSpawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 263aa449140db4a4aa830977be6b73e3, type: 3}
 --- !u!4 &2086279557 stripped

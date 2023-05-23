@@ -11,7 +11,7 @@ public class ToastHP : MonoBehaviour
     void start()
     {
         int gyvybes = PlayerHealth.maxPlayerHealth;
-        int likoGyvybiu = PlayerHealth.currentPlayerHealth;
+        float likoGyvybiu = PlayerHealth.currentPlayerHealth;
     }
     void Update()
     {

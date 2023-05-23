@@ -11,6 +11,7 @@ TagManager:
   - Final
   - prefab
   - Priesas
+  - FastEnemy
   layers:
   - Default
   - TransparentFX

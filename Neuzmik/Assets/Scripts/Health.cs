@@ -87,19 +87,14 @@ public class Health : MonoBehaviour
 
     private void Die()
     {
-        XP.DabartinisZaidejoXP += PlayerXPGain;
-        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
-        if (enemies.Length == 1)
-        {
-            Boss.Bosas = true;
-        }
         for (int i = 0; i < coinDropCount; i++)
         {
             Vector3 spawnPosition = transform.position + Random.insideUnitSphere * coinSpawnRadius;
             Instantiate(coinPrefab, spawnPosition, Quaternion.identity);
         }
         Destroy(gameObject);
-    }private void BossDie()
+    }
+private void BossDie()
 {
     XP.DabartinisZaidejoXP += PlayerXPGain * 20;
     for (int i = 0; i < coinDropCount * 20; i++)
@@ -108,14 +103,20 @@ public class Health : MonoBehaviour
         Instantiate(coinPrefab, spawnPosition, Quaternion.identity);
     }
 
-    // Destroy all children of the object
-    foreach (Transform child in transform)
+    // Disable collider on the parent GameObject
+    Collider2D collider = GetComponent<Collider2D>();
+    if (collider != null)
+    {
+        collider.enabled = false;
+    }
+        foreach (Transform child in transform)
     {
         Destroy(child.gameObject);
     }
 
     StartCoroutine(ActivateLaimejimas());
 }
+
 
         private IEnumerator ActivateLaimejimas()
     {
