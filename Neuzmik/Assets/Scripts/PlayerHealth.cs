@@ -3,7 +3,7 @@ using UnityEngine;
 public class PlayerHealth : MonoBehaviour
 {
     private Nustatymai config;
-    public static int currentPlayerHealth;
+    public static float currentPlayerHealth;
     public static int maxPlayerHealth;
     public GameObject MirtiesZenklas;
     public Animator anim;
@@ -15,7 +15,7 @@ void Start()
         currentPlayerHealth = config.playerHealth;
         maxPlayerHealth = config.playerHealth;
     }
-    public void TakeDamage(int damage)
+    public void TakeDamage(float damage)
     {
         EnergyBar.currentEnergy += 10;
         currentPlayerHealth -= damage;

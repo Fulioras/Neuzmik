@@ -4,6 +4,7 @@ public class Attack : MonoBehaviour
 {
     private Nustatymai config;
     private float lastAttackTime;
+    private float priesoDamage;
 
     private void Start()
     {
@@ -15,6 +16,13 @@ public class Attack : MonoBehaviour
         else
         {
             Debug.LogError("Could not find AttackConfig object in scene.");
+        }
+        priesoDamage = config.enemyDamage;
+if(gameObject.CompareTag("bigEnemy")){
+                    priesoDamage = priesoDamage * 2;
+        }
+                else if(gameObject.CompareTag("Bosas")){
+                    priesoDamage = priesoDamage * 3;
         }
     }
 
@@ -33,7 +41,7 @@ public class Attack : MonoBehaviour
         {
             // Deal damage to the player
             PlayerHealth playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
-            playerHealth.TakeDamage(config.enemyDamage);
+            playerHealth.TakeDamage(priesoDamage);
 
             // Record the time of the attack
             lastAttackTime = Time.time;
@@ -44,7 +52,7 @@ public class Attack : MonoBehaviour
         {
             // Deal damage to the player
             PlayerHealth playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
-            playerHealth.TakeDamage(config.enemyDamage);
+            playerHealth.TakeDamage(priesoDamage);
 
             // Record the time of the attack
             lastAttackTime = Time.time;

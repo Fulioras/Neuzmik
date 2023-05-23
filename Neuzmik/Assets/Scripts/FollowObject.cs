@@ -6,6 +6,8 @@ public class FollowObject : MonoBehaviour
     private Nustatymai config;
     public Animator animator;
     private bool Gaudo = false;
+    private float priesoGreitis;
+    private float priesoPastebejimas;
 
         private void Start()
     {
@@ -18,6 +20,20 @@ public class FollowObject : MonoBehaviour
         {
             Debug.LogError("Could not find AttackConfig object in scene.");
         }
+        priesoGreitis = config.speed;
+        priesoPastebejimas = config.detectionRange;
+                if(gameObject.CompareTag("FastEnemy")){
+                    priesoGreitis = priesoGreitis * 2;
+        }
+        else if(gameObject.CompareTag("bigEnemy")){
+                    priesoGreitis = priesoGreitis / 120 * 100;
+        }
+        else if(gameObject.CompareTag("Bosas")){
+                    priesoGreitis = priesoGreitis * 30;
+                    priesoPastebejimas = priesoPastebejimas * 2;
+
+        }
+
     }
 
     private void Update()
@@ -26,7 +42,7 @@ public class FollowObject : MonoBehaviour
         float distance = Vector2.Distance(transform.position, target.position);
 
         if(gameObject.CompareTag("Final")){
-        if (distance <= 1000|| Gaudo == true)
+        if (distance <= priesoPastebejimas|| Gaudo == true)
         {
             Gaudo = true;
             EnergyBar.decreaseEnabled = false;
@@ -47,7 +63,7 @@ public class FollowObject : MonoBehaviour
         }
         }
         else{
-                    if (distance <= config.detectionRange || Gaudo == true)
+                    if (distance <= priesoPastebejimas || Gaudo == true)
         {
             Gaudo = true;
             EnergyBar.decreaseEnabled = false;
@@ -60,7 +76,7 @@ public class FollowObject : MonoBehaviour
             
 
             // Move this object towards the target at the specified speed
-            transform.Translate(direction * config.speed * Time.deltaTime);
+            transform.Translate(direction * priesoGreitis * Time.deltaTime);
         }else animator.SetBool("arJuda", false);
         if(distance > 150){
             Gaudo = false;
