@@ -73,7 +73,7 @@ public class Nustatymai : MonoBehaviour
             rpm = 600;
             firingMode = 2;
             ballSpeed = 150;
-            bulletDamage = 600;
+            bulletDamage = 80;
             accuracy = 0f;
             greitis = 40;
         }

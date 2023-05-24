@@ -22,62 +22,71 @@ public class Health : MonoBehaviour
         
         GameObject configObject = GameObject.FindGameObjectWithTag("Nustatymai");
         config = configObject.GetComponent<Nustatymai>();
-        currentHealth = config.enemyHealth;
 
         if (gameObject.CompareTag("Bosas"))
         {
-            currentHealth = 350;
-            maxHealth = 350;
-            BosoCurrentHealth = 350;
-            BosoMaxHealth = 350;
+            currentHealth = 100000;
+            maxHealth = 100000;
+            BosoCurrentHealth = 100000;
+            BosoMaxHealth = 100000;
         }
 
         if(ChooseMap.SelectedMap == 0){ // Dungeon
             if(ChooseMap.SelectedDifficulty == 0){ // Easy
                 PlayerXPGain = 150;
                 enemyWorth = 10;
+                currentHealth = 20;
             }
             else if(ChooseMap.SelectedDifficulty == 1){ // Medium
                 PlayerXPGain = 300;
                 enemyWorth = 15;
+                currentHealth = 30;
             }
             else if(ChooseMap.SelectedDifficulty == 2){ // Hard
                 PlayerXPGain = 500;
                 enemyWorth = 20;
+                currentHealth = 50;
             }
         }
         else if(ChooseMap.SelectedMap == 1){ // City
             if(ChooseMap.SelectedDifficulty == 0){ // Easy
                 PlayerXPGain = 850;
                 enemyWorth = 30;
+                currentHealth = 100;
             }
             else if(ChooseMap.SelectedDifficulty == 1){ // Medium
                 PlayerXPGain = 1000;
                 enemyWorth = 40;
+                currentHealth = 160;
             }
             else if(ChooseMap.SelectedDifficulty == 2){ // Hard
                 PlayerXPGain = 1200; 
                 enemyWorth = 50;
+                currentHealth = 220;
             }
         }
         else if(ChooseMap.SelectedMap == 2){ // Park
             if(ChooseMap.SelectedDifficulty == 0){ // Easy
                 PlayerXPGain = 1400;
                 enemyWorth = 75;
+                currentHealth = 350;
             }
             else if(ChooseMap.SelectedDifficulty == 1){ // Medium
                 PlayerXPGain = 1800;
                 enemyWorth = 100;
+                currentHealth = 400;
             }
             else if(ChooseMap.SelectedDifficulty == 2){ // Hard
                 PlayerXPGain = 2000;
                 enemyWorth = 125;
+                currentHealth = 500;
             }
         }
 
         if(ChooseMap.HardcoreRezimas){
             PlayerXPGain *= 2;
             enemyWorth *= 2;
+            currentHealth *= 2;
         }
     }
 
