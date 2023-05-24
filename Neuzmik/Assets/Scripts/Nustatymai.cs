@@ -25,7 +25,9 @@ public class Nustatymai : MonoBehaviour
 
     void Start()
     {
+        
         Ginklas = PlayerPrefs.GetInt("Equipped", 0);
+        
         if(Ginklas == 0){
             rpm = 50;
             firingMode = 1;

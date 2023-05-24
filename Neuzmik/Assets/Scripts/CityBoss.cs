@@ -37,7 +37,6 @@ public class CityBoss : MonoBehaviour
     private void Update()
     {
         remainingEnemies = GameObject.FindGameObjectsWithTag("Final");
-        Debug.Log(remainingEnemies.Length);
             if (remainingEnemies.Length == 0 && CityBoss.Bosas)
     {
         if (!conditionMet)

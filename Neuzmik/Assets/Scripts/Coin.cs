@@ -20,7 +20,6 @@ public class Coin : MonoBehaviour
         {
             Vector3 direction = player.position - transform.position;
             float distance = direction.magnitude;
-            Debug.Log(distance);
             if (distance > followDistance)
             {
                 return;
@@ -30,7 +29,7 @@ public class Coin : MonoBehaviour
             {
                 // Despawn the coin orb
                 Destroy(gameObject);
-                Money.PiniguKiekis += 10;
+                Money.PiniguKiekis += Health.enemyWorth;
             }
             else
             {

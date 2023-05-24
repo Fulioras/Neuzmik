@@ -33,7 +33,7 @@ public class ChooseMap : MonoBehaviour
 
     private void Start()
     {
-        DabartinisZaidejoLygis = PlayerPrefs.GetInt("DabartinisZaidejoLygis", 0);
+        DabartinisZaidejoLygis = PlayerPrefs.GetInt("DabartinisZaidejoLygis", 1);
         yourLevelText.text = "Your level: " + DabartinisZaidejoLygis;
         mapSprites = new Sprite[mapNames.Length];
         for (int i = 0; i < mapNames.Length; i++)
