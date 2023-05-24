@@ -5,7 +5,7 @@ public class FollowObject : MonoBehaviour
     public Transform target;
     private Nustatymai config;
     public Animator animator;
-    private bool Gaudo = false;
+    public static bool Gaudo = false;
     private float priesoGreitis;
     private float priesoPastebejimas;
 
@@ -41,8 +41,8 @@ public class FollowObject : MonoBehaviour
         // Calculate the distance between this object and the target
         float distance = Vector2.Distance(transform.position, target.position);
 
-        if(gameObject.CompareTag("Final")){
-        if (distance <= priesoPastebejimas|| Gaudo == true)
+        if(CityBoss.Bosas){
+        if (distance <= 100000)
         {
             Gaudo = true;
             EnergyBar.decreaseEnabled = false;
@@ -56,11 +56,10 @@ public class FollowObject : MonoBehaviour
 
             // Move this object towards the target at the specified speed
             transform.Translate(direction * config.speed * Time.deltaTime);
-        }else animator.SetBool("arJuda", false);
-        if(distance > 150){
-            Gaudo = false;
-            EnergyBar.decreaseEnabled = true;
         }
+        else
+        Gaudo = false;
+        animator.SetBool("arJuda", false);
         }
         else{
                     if (distance <= priesoPastebejimas || Gaudo == true)

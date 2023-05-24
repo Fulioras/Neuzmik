@@ -12,6 +12,7 @@ TagManager:
   - prefab
   - Priesas
   - FastEnemy
+  - bigEnemy
   layers:
   - Default
   - TransparentFX

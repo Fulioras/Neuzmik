@@ -97,11 +97,7 @@ public class Health : MonoBehaviour
 private void BossDie()
 {
     XP.DabartinisZaidejoXP += PlayerXPGain * 20;
-    for (int i = 0; i < coinDropCount * 20; i++)
-    {
-        Vector3 spawnPosition = transform.position + Random.insideUnitSphere * coinSpawnRadius;
-        Instantiate(coinPrefab, spawnPosition, Quaternion.identity);
-    }
+    Money.PiniguKiekis += 500;
 
     // Disable collider on the parent GameObject
     Collider2D collider = GetComponent<Collider2D>();

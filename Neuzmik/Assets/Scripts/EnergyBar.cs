@@ -5,8 +5,8 @@ using TMPro;
 public class EnergyBar : MonoBehaviour
 {
     public float maxEnergy = 100f; // Maximum energy value
-    public float decreaseRateNormal = 2f; // Rate at which energy decreases per second normally
-    public float decreaseRateDisabled = 1f; // Rate at which energy decreases per second when decrease is disabled
+    public float decreaseRateNormal = 1f; // Rate at which energy decreases per second normally
+    public float decreaseRateDisabled = 0.5f; // Rate at which energy decreases per second when decrease is disabled
     public static bool decreaseEnabled = true; // Toggle for enabling/disabling energy decrease
 
     public static float currentEnergy; // Current energy value

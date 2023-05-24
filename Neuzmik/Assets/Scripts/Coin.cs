@@ -2,11 +2,12 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
-    public float moveSpeed = 500f;
     public float followDistance = 100f;
     public float despawnDistance = 1f;
 
     private Transform player;
+
+    private const float moveSpeed = 100f;
 
     private void Start()
     {
@@ -19,7 +20,7 @@ public class Coin : MonoBehaviour
         {
             Vector3 direction = player.position - transform.position;
             float distance = direction.magnitude;
-
+            Debug.Log(distance);
             if (distance > followDistance)
             {
                 return;
@@ -38,3 +39,4 @@ public class Coin : MonoBehaviour
         }
     }
 }
+

@@ -24,18 +24,21 @@ EditorBuildSettings:
     path: Assets/Scenes/Dungeon.unity
     guid: 28a243a6573940a49abc3a40542b9afb
   - enabled: 0
-    path: Assets/Scenes/Shop.unity
-    guid: e8fc36f0daa9eca41b03df36e704939f
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Choosing.unity
     guid: 5e637186ca8aca6478e6b4f7cf76542c
   - enabled: 1
     path: Assets/Scenes/City.unity
     guid: 4060d2cf76b98f042bbd6e09e440a92a
-  - enabled: 1
+  - enabled: 0
     path: 
-    guid: 18c65c7c2cc16f04d810d82849d8df9d
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Shopas.unity
     guid: 7a74667bc47a9ca45a3f6dc1e3929fd5
+  - enabled: 1
+    path: Assets/Scenes/Park.unity
+    guid: bf38a16b0cad3a847a4662e09fa0dd7e
   m_configObjects: {}
