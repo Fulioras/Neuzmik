@@ -12,7 +12,8 @@ public class Health : MonoBehaviour
     public int coinDropCount = 3;
     public GameObject coinPrefab;
     public float coinSpawnRadius = 50f;
-
+    public static int BosoMaxHealth;
+    public static int BosoCurrentHealth;
     [SerializeField] ParticleSystem splash = null;
 
     private void Start()
@@ -25,6 +26,8 @@ public class Health : MonoBehaviour
         {
             currentHealth = 350;
             maxHealth = 350;
+            BosoCurrentHealth = 350;
+            BosoMaxHealth = 350;
         }
 
         if(ChooseMap.SelectedMap == 0){ // Dungeon
@@ -68,6 +71,10 @@ public class Health : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        if(gameObject.CompareTag("Bosas"))
+        {
+            BosoCurrentHealth -= damage;
+        }
         currentHealth -= damage;
         splash.Play();
         Debug.Log(currentHealth);
