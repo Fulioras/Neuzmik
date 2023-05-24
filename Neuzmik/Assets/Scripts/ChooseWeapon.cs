@@ -86,10 +86,10 @@ public class ChooseWeapon : MonoBehaviour
             Weight.text = "Weight: Light";
         }
         else if(pasirinktasGinklas == 3){
-            FireRate.text = "Fire Rate: 400 rpm";
+            FireRate.text = "Fire Rate: 500 rpm";
             FireMode.text = "Fire Mode: Auto";
             BulletSpeed.text = "Bullet Speed: 120 m/s";
-            Damage.text = "Damage: 30";
+            Damage.text = "Damage: 40";
             Accuracy.text = "Accuracy: 70%";
             Weight.text = "Weight: Heavy";    
         }
@@ -97,7 +97,7 @@ public class ChooseWeapon : MonoBehaviour
             FireRate.text = "Fire Rate: 60 rpm";
             FireMode.text = "Fire Mode: Single";
             BulletSpeed.text = "Bullet Speed: 200 m/s";
-            Damage.text = "Damage: 150";
+            Damage.text = "Damage: 600";
             Accuracy.text = "Accuracy: 100%";
             Weight.text = "Weight: Heavy"; 
         }
@@ -105,8 +105,8 @@ public class ChooseWeapon : MonoBehaviour
             FireRate.text = "Fire Rate: 600 rpm";
             FireMode.text = "Fire Mode: Auto";
             BulletSpeed.text = "Bullet Speed: 150 m/s";
-            Damage.text = "Damage: 30";
-            Accuracy.text = "Accuracy: 85%";
+            Damage.text = "Damage: 80";
+            Accuracy.text = "Accuracy: 100%";
             Weight.text = "Weight: Heavy";
         }
     }

@@ -20,4 +20,60 @@ public class Nustatymai : MonoBehaviour
     public float greitis; // PLAYER MOVEMENT SPEED
     public int playerHealth = 100; // PLAYER HEALTH
     public int bossHealth = 200; // PLAYER HEALTH
+    public static int Ginklas;
+
+
+    void Start()
+    {
+        Ginklas = PlayerPrefs.GetInt("Equipped", 0);
+        if(Ginklas == 0){
+            rpm = 50;
+            firingMode = 1;
+            ballSpeed = 100;
+            bulletDamage = 20;
+            accuracy = 0.5f;
+            greitis = 50;
+
+        }
+        else if(Ginklas == 1){
+            rpm = 600;
+            firingMode = 2;
+            ballSpeed = 80;
+            bulletDamage = 5;
+            accuracy = 0.5f;
+            greitis = 50;
+        }
+        else if(Ginklas == 2){
+            rpm = 200;
+            firingMode = 1;
+            ballSpeed = 150;
+            bulletDamage = 40;
+            accuracy = 0.2f;
+            greitis = 50;
+        }
+            else if(Ginklas == 3){
+            rpm = 500;
+            firingMode = 2;
+            ballSpeed = 120;
+            bulletDamage = 40;
+            accuracy = 0.3f;
+            greitis = 40;
+        }
+        else if(Ginklas == 4){
+            rpm = 60;
+            firingMode = 2;
+            ballSpeed = 200;
+            bulletDamage = 600;
+            accuracy = 0f; 
+            greitis = 40;
+        }
+        else if(Ginklas == 5){
+            rpm = 600;
+            firingMode = 2;
+            ballSpeed = 150;
+            bulletDamage = 600;
+            accuracy = 0f;
+            greitis = 40;
+        }
+    }
 }
