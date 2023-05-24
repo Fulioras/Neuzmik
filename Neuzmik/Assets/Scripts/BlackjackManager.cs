@@ -30,7 +30,6 @@ public class BlackjackManager : MonoBehaviour
         standButton.gameObject.SetActive(true);
         dealButton.gameObject.SetActive(false);
 
-
     }
 
     private void Hit()
