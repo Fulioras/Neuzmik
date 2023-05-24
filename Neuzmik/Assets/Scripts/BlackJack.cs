@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class BlackJack : MonoBehaviour
 {
@@ -8,13 +10,58 @@ public class BlackJack : MonoBehaviour
     private int rankosVerte = 0;
     int randomIndex;
 
+    public Button hitButton;
+    public Button standButton;
+    public Button dealButton;
+
+    public TextMeshProUGUI Pinigai;
+    int PiniguKiekis;
+    
+
+    private void Start()
+    {
+        PiniguKiekis = PlayerPrefs.GetInt("LaimetiPinigai", 0);
+        // Disable the Hit and Stand buttons initially
+        hitButton.gameObject.SetActive(false);
+        standButton.gameObject.SetActive(false);
+
+        // Add click listeners to the buttons
+        dealButton.onClick.AddListener(deal);
+        hitButton.onClick.AddListener(hit);
+        standButton.onClick.AddListener(stand);
+    }
+    private void Update()
+    {
+        Pinigai.text = "$" + PiniguKiekis;
+    }
+
+    private void deal()
+    {
+        // Logic for the "Deal" button
+        Debug.Log("Player chose to Deal.");
+        // Add your code here to start a new round or deal new cards
+
+        // Enable the Hit and Stand buttons after pressing Deal
+        hitButton.gameObject.SetActive(true);
+        standButton.gameObject.SetActive(true);
+        dealButton.gameObject.SetActive(false);
+
+    }
+
+    private void stand()
+    {
+        // Logic for the "Stand" button
+        Debug.Log("Player chose to Stand.");
+        // Add your code here to handle the player's action
+    }
+
 
     // Update is called once per frame
     public void hit()
     {
         
         
-
+        
         pasirenkamKorta();
         randamRankosVerte();
 
@@ -29,12 +76,14 @@ public class BlackJack : MonoBehaviour
         {
             Debug.Log("busted");
             rankosVerte = 0;
+
         }
 
     }
     int pasirenkamKorta()
     {
         randomIndex = Random.Range(1, kortos.Length);
+        int spriteSkaicius = randomIndex;
         Sprite randomSprite = kortos[randomIndex];
 
         // Create a new GameObject to display the card sprite
