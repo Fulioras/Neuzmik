@@ -12,8 +12,10 @@ void Start()
     {
         GameObject configObject = GameObject.FindGameObjectWithTag("Nustatymai");
         config = configObject.GetComponent<Nustatymai>();
-        currentPlayerHealth = config.playerHealth;
-        maxPlayerHealth = config.playerHealth;
+        int ZaidejoHealth = PlayerPrefs.GetInt("HealthUpgrade", 0);
+        ZaidejoHealth *= 50;
+        currentPlayerHealth = config.playerHealth + ZaidejoHealth;
+        maxPlayerHealth = config.playerHealth + ZaidejoHealth;
     }
     public void TakeDamage(float damage)
     {

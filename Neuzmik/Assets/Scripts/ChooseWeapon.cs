@@ -10,7 +10,7 @@ public class ChooseWeapon : MonoBehaviour
     public static int pasirinktasGinklas = 0;
     private string[] GinkluPavadinimai = { "Slingshot", "Toy Gun", "Deagle", "AK-47", "AWP", "G36C" };
     private Sprite[] GinkluNuotraukos;
-    private int[] GinkluKainos = { 100, 2000, 7770, 42000, 89000, 120000 };
+    private int[] GinkluKainos = { 100, 2500, 8500, 42000, 89000, 120000 };
     public int DabartinisZaidejoBalansas;
     public TextMeshProUGUI TavoBalansas;
     public Button Pirkti;

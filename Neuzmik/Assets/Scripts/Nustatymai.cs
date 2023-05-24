@@ -25,7 +25,11 @@ public class Nustatymai : MonoBehaviour
 
     void Start()
     {
-        
+        int ZaidejoMovement = PlayerPrefs.GetInt("MovementUpgrade", 0);
+        ZaidejoMovement *= 5;
+        int ZaidejoDamage = PlayerPrefs.GetInt("DamageUpgrade", 0);
+        ZaidejoDamage *= 5;
+
         Ginklas = PlayerPrefs.GetInt("Equipped", 0);
         
         if(Ginklas == 0){
@@ -77,5 +81,8 @@ public class Nustatymai : MonoBehaviour
             accuracy = 0f;
             greitis = 40;
         }
+        bulletDamage = bulletDamage + ZaidejoDamage;
+        greitis = greitis + ZaidejoMovement;
+        Debug.Log(greitis);
     }
 }
