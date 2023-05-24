@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 3ed1f1dd2910fde44b3c1794023c89b8
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - MeniuMusic: {fileID: 8300000, guid: d86fb89790ca4554a84639c1f443724b, type: 3}
+  - DungeonMusic: {fileID: 8300000, guid: 1d4cdca777a56dd47b3557b8b14fd452, type: 3}
+  - CityMusic: {fileID: 8300000, guid: c765c2735af9bd842ac6d777232ceb32, type: 3}
+  - ParkMusic: {fileID: 8300000, guid: 9b648f20512ec4643bf7ce3be52e6bc9, type: 3}
+  - BossMusic: {fileID: 8300000, guid: 6097565d8015fe144b87668b9341f714, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
