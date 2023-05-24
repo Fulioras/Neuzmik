@@ -116,7 +116,7 @@ public class ChooseMap : MonoBehaviour
     }
 
     public void PlayButton()
-    {
+    { 
         SceneManager.LoadScene(mapNames[selectedMapIndex]);
         SelectedMap = selectedMapIndex;
         SelectedDifficulty = selectedDifficultyIndex;

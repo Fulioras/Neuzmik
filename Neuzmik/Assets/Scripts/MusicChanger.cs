@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MusicChanger : MonoBehaviour
 {
@@ -10,10 +11,41 @@ public class MusicChanger : MonoBehaviour
     public AudioClip ParkMusic;
     public AudioClip BossMusic;
     private AudioSource audioSource; // Reference to the AudioSource component
-
+    private string oldSceneName = "";
     private void Start()
     {
         audioSource = GetComponent<AudioSource>(); // Get the reference to the AudioSource component
+        
+    }
+    public void Update()
+    {
+        string sceneName = SceneManager.GetActiveScene().name;
+        
+        Debug.Log(sceneName);
+        if(sceneName == oldSceneName)
+        {
+
+        }
+        else if (sceneName == "Dungeon" && oldSceneName != "Dungeon")
+        {
+            PlayDungeon();
+            oldSceneName = "Dungeon";
+        }
+        else if (sceneName == "City" && oldSceneName != "City")
+        {
+            PlayCity();
+            oldSceneName = "City";
+        }
+        else if (sceneName == "Park" && oldSceneName != "Park")
+        {
+            PlayPark();
+            oldSceneName = "Park";
+        }
+        else if(oldSceneName == "City" || oldSceneName == "Park" || oldSceneName == "Dungeon")
+        {
+            PlayMeniu();
+            oldSceneName = "";
+        }
     }
 
     public void PlayMeniu()
