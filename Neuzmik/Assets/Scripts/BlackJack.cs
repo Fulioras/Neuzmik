@@ -30,6 +30,7 @@ public class BlackJack : MonoBehaviour
     public Button bet100;
     public Button resetBet;
     public Button exit;
+    public Button boardReset;
 
     public Image PlayerCard1;
     public Image PlayerCard2;
@@ -51,6 +52,7 @@ public class BlackJack : MonoBehaviour
     int PradinisKiekis;
     public TextMeshProUGUI PastatytiPinigai;
     int PastatytasKiekis;
+    public TextMeshProUGUI WinLossStatus;
     private void Awake()
     {
         PiniguKiekis = PlayerPrefs.GetInt("LaimetiPinigai", 0) + 100;
@@ -60,15 +62,15 @@ public class BlackJack : MonoBehaviour
     private void Start()
     {
         PastatytasKiekis = 0;
-        // Disable the Hit and Stand buttons initially
         hitButton.gameObject.SetActive(false);
         standButton.gameObject.SetActive(false);
         dealButton.gameObject.SetActive(true);
+        boardReset.gameObject.SetActive(false);
 
-        // Add click listeners to the buttons
         dealButton.onClick.AddListener(deal);
         hitButton.onClick.AddListener(hit);
         standButton.onClick.AddListener(stand);
+        boardReset.onClick.AddListener(Start);
 
         bet10.onClick.AddListener(b10);
         bet25.onClick.AddListener(b25);
@@ -147,9 +149,32 @@ public class BlackJack : MonoBehaviour
 
     private void deal()
     {
+        dealerTuzai = 0;
+        rankosTuzai = 0;
+        rankosVerte = 0;
+        dealerVerte = 0;
         // Logic for the "Deal" button
         Debug.Log("Player chose to Deal.");
         // Add your code here to start a new round or deal new cards
+
+        PlayerCard3.gameObject.SetActive(false);
+        PlayerCard3.sprite = kortos[0];
+        PlayerCard4.gameObject.SetActive(false);
+        PlayerCard4.sprite = kortos[0];
+        PlayerCard5.gameObject.SetActive(false);
+        PlayerCard5.sprite = kortos[0];
+        PlayerCard6.gameObject.SetActive(false);
+        PlayerCard6.sprite = kortos[0];
+
+
+        DealerCard3.gameObject.SetActive(false);
+        DealerCard3.sprite = kortos[0];
+        DealerCard4.gameObject.SetActive(false);
+        DealerCard4.sprite = kortos[0];
+        DealerCard5.gameObject.SetActive(false);
+        DealerCard5.sprite = kortos[0];
+        DealerCard6.gameObject.SetActive(false);
+        DealerCard6.sprite = kortos[0];
 
         // Enable the Hit and Stand buttons after pressing Deal
         hitButton.gameObject.SetActive(true);
@@ -186,6 +211,8 @@ public class BlackJack : MonoBehaviour
             rankosTuzai = 1;
         }
         playersHand.text = "" + rankosVerte;
+        kelintaDealerKorta = 2;
+        kelintaKorta = 2;
     }
     int kelintaDealerKorta = 2;
     private void stand()
@@ -193,7 +220,7 @@ public class BlackJack : MonoBehaviour
         DealerCard2.sprite = kortos[uzverstaKorta];
         dealerVerte += kortosVerte(uzverstaKorta);
         // Logic for the "Stand" button
-        Debug.Log("stand: dHand " + dealerVerte);
+        Debug.Log("stand: dHand " + dealerVerte + "Phand: " + rankosVerte);
         traukiaZaidejas = false;
         hitButton.gameObject.SetActive(false);
         standButton.gameObject.SetActive(false);
@@ -203,25 +230,30 @@ public class BlackJack : MonoBehaviour
             Debug.Log("labas" + kelintaDealerKorta);
             randomIndex = Random.Range(1, kortos.Length);
             dealerVerte += kortosVerte(randomIndex);
-            if (kelintaKorta == 3)
+            if (kelintaDealerKorta == 3)
             {
-                DealerCard3.sprite = kortos[randomIndex];
+                
                 DealerCard3.gameObject.SetActive(true);
+                DealerCard3.sprite = kortos[randomIndex];
+                Debug.Log("3 aktyvuota");
             }
-            else if (kelintaKorta == 4)
+            else if (kelintaDealerKorta == 4)
             {
                 DealerCard4.sprite = kortos[randomIndex];
                 DealerCard4.gameObject.SetActive(true);
+                Debug.Log("4 aktyvuota");
             }
-            else if (kelintaKorta == 5)
+            else if (kelintaDealerKorta == 5)
             {
                 DealerCard5.sprite = kortos[randomIndex];
                 DealerCard5.gameObject.SetActive(true);
+                Debug.Log("5 aktyvuota");
             }
-            else if (kelintaKorta == 6)
+            else if (kelintaDealerKorta == 6)
             {
                 DealerCard6.sprite = kortos[randomIndex];
                 DealerCard6.gameObject.SetActive(true);
+                Debug.Log("6 aktyvuota");
             }
             if(dealerVerte >= 17 && dealerVerte < 22)
             {
@@ -231,8 +263,9 @@ public class BlackJack : MonoBehaviour
                 dealerTuzai--;
                 dealerVerte -= 10;
             }
+            Debug.Log("after taking dhand: " + dealerVerte);
         }
-        Debug.Log("stand2: dHand " + dealerVerte);
+        Debug.Log("stand2: dHand " + dealerVerte + "pHand: " + rankosVerte);
         
         end();
         
@@ -247,7 +280,7 @@ public class BlackJack : MonoBehaviour
         kelintaKorta++;
         Debug.Log(kelintaKorta);
         randomIndex = Random.Range(1, kortos.Length);
-        rankosVerte += kortosVerte(randomIndex);
+        
         if (kelintaKorta == 3)
         {
             PlayerCard3.sprite = kortos[randomIndex];
@@ -268,6 +301,7 @@ public class BlackJack : MonoBehaviour
             PlayerCard6.sprite = kortos[randomIndex];
             PlayerCard6.gameObject.SetActive(true);
         }
+        rankosVerte += kortosVerte(randomIndex);
 
     }
 
@@ -300,6 +334,7 @@ public class BlackJack : MonoBehaviour
     private void b10()
     {
         int naujas = PiniguKiekis / 10;
+        Debug.Log(PiniguKiekis + ",: " + naujas);
         PastatytasKiekis += naujas;
         PiniguKiekis -= naujas;
         resetBet.gameObject.SetActive(true);
@@ -307,6 +342,7 @@ public class BlackJack : MonoBehaviour
     }
     private void b25()
     {
+        
         int naujas = PiniguKiekis / 4;
         PastatytasKiekis += naujas;
         PiniguKiekis -= naujas;
@@ -332,50 +368,51 @@ public class BlackJack : MonoBehaviour
 
     private void end()
     {
-        if(rankosVerte > 21)
+        if (rankosVerte > 21)
         {
-            
-        } else if(dealerVerte > 21 && rankosVerte < 21)
-        {
-            PiniguKiekis += PastatytasKiekis * 2;
-        } else if(dealerVerte != 21 && rankosVerte == 21)
-        {
-            PiniguKiekis += PastatytasKiekis * 2 + PastatytasKiekis / 2;
-        } else if (dealerVerte == rankosVerte)
-        {
-            PiniguKiekis += PastatytasKiekis;
-        } else if (dealerVerte < rankosVerte && rankosVerte < 22)
-        {
-            PiniguKiekis += PastatytasKiekis * 2;
-        } else if (dealerVerte < 22 && dealerVerte > rankosVerte)
-        { 
-
+            PastatytasKiekis = 0;
+            Debug.Log("you Busted");
+            WinLossStatus.text = "God turned away from you.. You lost";
+            Debug.Log("Dhand: " + dealerVerte + " Phand: " + rankosVerte);
         }
-        PlayerCard3.gameObject.SetActive(false);
-        PlayerCard3.sprite = kortos[0];
-        PlayerCard4.gameObject.SetActive(false);
-        PlayerCard4.sprite = kortos[0];
-        PlayerCard5.gameObject.SetActive(false);
-        PlayerCard5.sprite = kortos[0];
-        PlayerCard6.gameObject.SetActive(false);
-        PlayerCard6.sprite = kortos[0];
+        else if (dealerVerte > 21 && rankosVerte < 21)
+        {
+            PiniguKiekis += PastatytasKiekis * 2;
+            Debug.Log("dealer busted");
+            WinLossStatus.text = "You won! It's your lucky day!";
+            Debug.Log("Dhand: " + dealerVerte + " Phand: " + rankosVerte);
+        }
+        else if (dealerVerte != 21 && rankosVerte == 21)
+        {
+            Debug.Log("Blackjack Win");
+            WinLossStatus.text = "BlackJack! You must be cheating! +50% winings";
+            Debug.Log("Dhand: " + dealerVerte + " Phand: " + rankosVerte);
+            PiniguKiekis += PastatytasKiekis * 2 + PastatytasKiekis / 2;
+        }
+        else if (dealerVerte == rankosVerte)
+        {
+            Debug.Log("Equal");
+            WinLossStatus.text = "Draw! Atleast you didn't lose anything";
+            Debug.Log("Dhand: " + dealerVerte + " Phand: " + rankosVerte);
+            PiniguKiekis += PastatytasKiekis;
+        }
+        else if (dealerVerte < rankosVerte && rankosVerte < 22)
+        {
+            Debug.Log("player win");
+            WinLossStatus.text = "You won! You beat the system";
+            Debug.Log("Dhand: " + dealerVerte + " Phand: " + rankosVerte);
+            PiniguKiekis += PastatytasKiekis * 2;
+        }
+        else if (dealerVerte < 22 && dealerVerte > rankosVerte)
+        {
+            Debug.Log("Dealer win");
+            WinLossStatus.text = "You lost. The dealer got the upper hand";
+            Debug.Log("Dhand: " + dealerVerte + " Phand: " + rankosVerte);
+            PastatytasKiekis = 0;
+        }
 
-        
-        DealerCard3.gameObject.SetActive(false);
-        DealerCard3.sprite = kortos[0];
-        DealerCard4.gameObject.SetActive(false);
-        DealerCard4.sprite = kortos[0];
-        DealerCard5.gameObject.SetActive(false);
-        DealerCard5.sprite = kortos[0];
-        DealerCard6.gameObject.SetActive(false);
-        DealerCard6.sprite = kortos[0];
-
-        dealerTuzai = 0;
-        rankosTuzai = 0;
-        rankosVerte = 0;
-        dealerVerte = 0;
-
-        Start();
+        boardReset.gameObject.SetActive(true);
+        //Start();
     }
     private void quit()
     {
