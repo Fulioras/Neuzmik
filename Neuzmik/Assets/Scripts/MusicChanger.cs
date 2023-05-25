@@ -21,7 +21,6 @@ public class MusicChanger : MonoBehaviour
     {
         string sceneName = SceneManager.GetActiveScene().name;
         
-        Debug.Log(sceneName);
         if(sceneName == oldSceneName)
         {
 

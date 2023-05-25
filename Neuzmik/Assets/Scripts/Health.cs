@@ -16,11 +16,11 @@ public class Health : MonoBehaviour
     public static int BosoCurrentHealth;
     [SerializeField] ParticleSystem splash = null;
     public static int enemyWorth;
-    public int PraeitasMapas = 0;
+    public static int PraeitasMapas = 0;
 
     private void Start()
     {
-        
+
         GameObject configObject = GameObject.FindGameObjectWithTag("Nustatymai");
         
         config = configObject.GetComponent<Nustatymai>();
@@ -159,11 +159,14 @@ private void BossDie()
 
         private IEnumerator ActivateLaimejimas()
     {
+        Debug.Log(PraeitasMapas);
         if(PraeitasMapas == 0){
             PlayerPrefs.SetInt(""+ChooseMap.SelectedMap+""+ChooseMap.SelectedDifficulty, 1);
             int dabartiniaiTaskai = PlayerPrefs.GetInt("PlayerPoints", 0);
+            Debug.Log(dabartiniaiTaskai);
             dabartiniaiTaskai += 1;
             PlayerPrefs.SetInt("PlayerPoints", dabartiniaiTaskai);
+            Debug.Log(dabartiniaiTaskai);
         }
         yield return new WaitForSeconds(3.0f); // Wait for 3 seconds
         laimejimas.SetActive(true);

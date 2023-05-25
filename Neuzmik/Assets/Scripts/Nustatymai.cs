@@ -83,6 +83,5 @@ public class Nustatymai : MonoBehaviour
         }
         bulletDamage = bulletDamage + ZaidejoDamage;
         greitis = greitis + ZaidejoMovement;
-        Debug.Log(greitis);
     }
 }

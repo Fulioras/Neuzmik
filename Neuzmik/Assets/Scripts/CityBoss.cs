@@ -17,6 +17,7 @@ public class CityBoss : MonoBehaviour
     public GameObject[] remainingEnemies;
     public GameObject laimejimas;
     public bool conditionMet = false;
+    private bool pridetasTaskas = false;
 
     private void Start()
     {
@@ -65,6 +66,15 @@ public class CityBoss : MonoBehaviour
 }
             private IEnumerator ActivateLaimejimas()
     {
+        if(Health.PraeitasMapas == 0 && !pridetasTaskas){
+            PlayerPrefs.SetInt(""+ChooseMap.SelectedMap+""+ChooseMap.SelectedDifficulty, 1);
+            int dabartiniaiTaskai = PlayerPrefs.GetInt("PlayerPoints", 0);
+            Debug.Log(dabartiniaiTaskai);
+            dabartiniaiTaskai += 1;
+            pridetasTaskas = true;
+            PlayerPrefs.SetInt("PlayerPoints", dabartiniaiTaskai);
+            Debug.Log(dabartiniaiTaskai);
+        }
         yield return new WaitForSeconds(2.0f); // Wait for 3 seconds
         laimejimas.SetActive(true);
         Time.timeScale = 0f;
