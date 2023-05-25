@@ -55,18 +55,9 @@ public class BlackJack : MonoBehaviour
     public TextMeshProUGUI WinLossStatus;
     private void Awake()
     {
-        PiniguKiekis = PlayerPrefs.GetInt("LaimetiPinigai", 0) + 100;
+        PiniguKiekis = PlayerPrefs.GetInt("LaimetiPinigai", 0);
         PradinisKiekis = PlayerPrefs.GetInt("ZaidejoPinigai", 0) - PiniguKiekis;
-    }
-
-    private void Start()
-    {
-        PastatytasKiekis = 0;
-        hitButton.gameObject.SetActive(false);
-        standButton.gameObject.SetActive(false);
-        dealButton.gameObject.SetActive(true);
-        boardReset.gameObject.SetActive(false);
-
+        
         dealButton.onClick.AddListener(deal);
         hitButton.onClick.AddListener(hit);
         standButton.onClick.AddListener(stand);
@@ -78,6 +69,16 @@ public class BlackJack : MonoBehaviour
         bet100.onClick.AddListener(b100);
         exit.onClick.AddListener(quit);
         resetBet.onClick.AddListener(betReset);
+    }
+
+    private void Start()
+    {
+        WinLossStatus.gameObject.SetActive(false);
+        PastatytasKiekis = 0;
+        hitButton.gameObject.SetActive(false);
+        standButton.gameObject.SetActive(false);
+        dealButton.gameObject.SetActive(true);
+        boardReset.gameObject.SetActive(false);
 
         bet10.gameObject.SetActive(true);
         bet25.gameObject.SetActive(true);
@@ -331,43 +332,41 @@ public class BlackJack : MonoBehaviour
         }
         return verte;
     }
+    int naujas;
     private void b10()
     {
-        int naujas = PiniguKiekis / 10;
+        naujas = PiniguKiekis / 10;
         Debug.Log(PiniguKiekis + ",: " + naujas);
-        PastatytasKiekis += naujas;
-        PiniguKiekis -= naujas;
-        resetBet.gameObject.SetActive(true);
-        resetBet.interactable = true;
+        calculateBet();
     }
     private void b25()
     {
         
-        int naujas = PiniguKiekis / 4;
-        PastatytasKiekis += naujas;
-        PiniguKiekis -= naujas;
-        resetBet.gameObject.SetActive(true);
-        resetBet.interactable = true;
+        naujas = PiniguKiekis / 4;
+        calculateBet();
     }
     private void b50()
     {
-        int naujas = PiniguKiekis / 2;
-        PastatytasKiekis += naujas;
-        PiniguKiekis -= naujas;
-        resetBet.gameObject.SetActive(true);
-        resetBet.interactable = true;
+        naujas = PiniguKiekis / 2;
+        calculateBet();
     }
     private void b100()
     {
-        int naujas = PiniguKiekis;
+        naujas = PiniguKiekis;
+        calculateBet();
+    }
+    private void calculateBet()
+    {
         PastatytasKiekis += naujas;
         PiniguKiekis -= naujas;
         resetBet.gameObject.SetActive(true);
         resetBet.interactable = true;
+        naujas = 0;
     }
 
     private void end()
     {
+        WinLossStatus.gameObject.SetActive(true);
         if (rankosVerte > 21)
         {
             PastatytasKiekis = 0;
@@ -410,13 +409,14 @@ public class BlackJack : MonoBehaviour
             Debug.Log("Dhand: " + dealerVerte + " Phand: " + rankosVerte);
             PastatytasKiekis = 0;
         }
-
+        PastatytasKiekis = 0; 
         boardReset.gameObject.SetActive(true);
         //Start();
     }
     private void quit()
     {
         PlayerPrefs.SetInt("ZaidejoPinigai", PradinisKiekis + PiniguKiekis);
+        PlayerPrefs.SetInt("LaimetiPinigai", 0);
         SceneManager.LoadScene("Menu");
     }
 }
