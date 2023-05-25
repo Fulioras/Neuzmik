@@ -1212,7 +1212,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.2784314, g: 0.2784314, b: 0.2784314, a: 1}
+    m_NormalColor: {r: 0.2784314, g: 0.2784314, b: 0.2784314, a: 0}
     m_HighlightedColor: {r: 0.13207549, g: 0.11400856, b: 0.11400856, a: 1}
     m_PressedColor: {r: 0.16037738, g: 0.003782485, b: 0.003782485, a: 1}
     m_SelectedColor: {r: 0.2784314, g: 0.2784314, b: 0.2784314, a: 1}
@@ -1393,6 +1393,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3f0b61bf6105184eb6f372ef6c8b839, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioObject: {fileID: 0}
 --- !u!1001 &1502986120
 PrefabInstance:
   m_ObjectHideFlags: 0
