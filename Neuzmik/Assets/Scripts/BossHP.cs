@@ -12,6 +12,8 @@ public class BossHP : MonoBehaviour
   private void Update()
 {
     // Ensure that health text is updated correctly
+    float currentHealth = (float)Health.BosoCurrentHealth; // Convert to float
+float maxHealth = (float)Health.BosoMaxHealth;
     if (healthText != null)
     {
         healthText.text = "BOSS HEALTH: " + Health.BosoCurrentHealth + " / " + Health.BosoMaxHealth;
@@ -21,8 +23,8 @@ public class BossHP : MonoBehaviour
     // Ensure that health slider value is updated correctly
     if (healthSlider != null)
     {
-        float targetValue = Health.BosoCurrentHealth / Health.BosoMaxHealth; // Calculate the target fill value
-        healthSlider.value = Mathf.Lerp(healthSlider.value, targetValue, Time.deltaTime * fillSpeed); // Smoothly update the slider value towards the target
+        float targetValue = currentHealth / maxHealth;
+        healthSlider.value = Mathf.Lerp(healthSlider.value, targetValue, Time.deltaTime * fillSpeed);
     }
 
     if (Health.BosoCurrentHealth <= 0)

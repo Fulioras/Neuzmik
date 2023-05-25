@@ -3,7 +3,7 @@ using UnityEngine;
 public class Nustatymai : MonoBehaviour
 {
     public float attackRange = 1.5f; // ENEMY ATTACK RANGE
-    public float BossAttackRange = 15f; // PLAYER HEALTH
+    public float BossAttackRange = 500f; // PLAYER HEALTH
     public float attackSpeed = 1.5f; // ENEMY ATTACK SPEED
     public float speed = 5f; // ENEMY WALKING SPEED
     public float detectionRange = 3f; // ENEMY DETECTION RANGE

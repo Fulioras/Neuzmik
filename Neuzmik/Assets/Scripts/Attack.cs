@@ -37,7 +37,8 @@ if(gameObject.CompareTag("bigEnemy")){
         Vector3 playerPos = GameObject.FindGameObjectWithTag("Player").transform.position;
         float distance = Vector3.Distance(transform.position, playerPos);
     if(gameObject.CompareTag("Bosas")){
-        if (distance <= config.BossAttackRange && Time.time - lastAttackTime >= config.attackSpeed)
+        Debug.Log("DISTANCE: " + distance);
+        if (distance <= 645 && Time.time - lastAttackTime >= config.attackSpeed)
         {
             // Deal damage to the player
             PlayerHealth playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();

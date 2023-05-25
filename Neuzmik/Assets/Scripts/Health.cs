@@ -27,13 +27,7 @@ public class Health : MonoBehaviour
         
         int ZaidejoPinigai = PlayerPrefs.GetInt("PiniguUpgrade", 0);
         ZaidejoPinigai *= 5;
-        if (gameObject.CompareTag("Bosas"))
-        {
-            currentHealth = 100000;
-            maxHealth = 100000;
-            BosoCurrentHealth = 100000;
-            BosoMaxHealth = 100000;
-        }
+        
 
         if(ChooseMap.SelectedMap == 0){ // Dungeon
             if(ChooseMap.SelectedDifficulty == 0){ // Easy
@@ -102,6 +96,13 @@ public class Health : MonoBehaviour
             currentHealth *= 2;
         }
         enemyWorth += ZaidejoPinigai;
+        if (gameObject.CompareTag("Bosas"))
+        {
+            currentHealth = 100000;
+            maxHealth = 100000;
+            BosoCurrentHealth = 100000;
+            BosoMaxHealth = 100000;
+        }
     }
 
     public void TakeDamage(int damage)
