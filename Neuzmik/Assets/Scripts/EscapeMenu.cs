@@ -31,5 +31,6 @@ public class EscapeMenu : MonoBehaviour
         Time.timeScale = 1f; // unfreeze the game
         escapeMenuUI.SetActive(false); // hide the escape menu UI
         inEscape = false;
+        
     }
 }
