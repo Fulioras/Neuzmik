@@ -5,7 +5,6 @@ public class Shooting : MonoBehaviour
     public GameObject ballPrefab;
     private bool isShooting = false;
     public GameObject fireEffect;
-    public AudioSource soundEffect;
     private float timeSinceLastShot = 0.0f;
     private Nustatymai config;
 
@@ -14,9 +13,13 @@ public class Shooting : MonoBehaviour
     public int Ginklas;
     public Sprite[] ginkluModeliai;
     public GameObject GinkloRenderer;
+    public AudioClip[] soundEffects;
+    private AudioSource audioSource;
+
 
     private void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         Ginklas = PlayerPrefs.GetInt("Equipped", 0);
         GinkloRenderer.GetComponent<SpriteRenderer>().sprite = ginkluModeliai[Ginklas];
         GameObject configObject = GameObject.FindGameObjectWithTag("Nustatymai");
@@ -40,7 +43,9 @@ public class Shooting : MonoBehaviour
                 if (Input.GetButtonDown("Fire1") && timeSinceLastShot >= (60.0f / config.rpm))
                 {
                     Shoot();
-                    soundEffect.Play();
+            
+            audioSource.clip = soundEffects[Ginklas];
+            audioSource.Play();
                     GameObject effect = Instantiate(fireEffect, gunTipTransforms[Ginklas].position, gunTipTransforms[Ginklas].rotation);
 
                     effect.transform.parent = transform;
@@ -62,7 +67,8 @@ public class Shooting : MonoBehaviour
                 if (isShooting && timeSinceLastShot >= (60.0f / config.rpm))
                 {
                     Shoot();
-                    soundEffect.Play();
+                    audioSource.clip = soundEffects[Ginklas];
+            audioSource.Play();
                     GameObject effect = Instantiate(fireEffect, gunTipTransforms[Ginklas].position, gunTipTransforms[Ginklas].rotation);
                     effect.transform.parent = transform;
                     Destroy(effect, 0.2f);

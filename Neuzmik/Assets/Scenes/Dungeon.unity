@@ -15792,6 +15792,34 @@ PrefabInstance:
       propertyPath: MirtiesZenklas
       value: 
       objectReference: {fileID: 1719621563}
+    - target: {fileID: 2132487090787750763, guid: 0328f13cc4b48534f85b74b35295c9bf, type: 3}
+      propertyPath: soundEffects.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2132487090787750763, guid: 0328f13cc4b48534f85b74b35295c9bf, type: 3}
+      propertyPath: soundEffects.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 527841101b82b904fb6b07f11ec208f4, type: 3}
+    - target: {fileID: 2132487090787750763, guid: 0328f13cc4b48534f85b74b35295c9bf, type: 3}
+      propertyPath: soundEffects.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 97b208fd106f6e54ba21d655c3deb515, type: 3}
+    - target: {fileID: 2132487090787750763, guid: 0328f13cc4b48534f85b74b35295c9bf, type: 3}
+      propertyPath: soundEffects.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 4046d49505b90aa40b7635b6747a2886, type: 3}
+    - target: {fileID: 2132487090787750763, guid: 0328f13cc4b48534f85b74b35295c9bf, type: 3}
+      propertyPath: soundEffects.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: f2aad6d4406c2df48aebbf9a0805e05a, type: 3}
+    - target: {fileID: 2132487090787750763, guid: 0328f13cc4b48534f85b74b35295c9bf, type: 3}
+      propertyPath: soundEffects.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: 3d6efcffe856acf46a2406cb23de3efa, type: 3}
+    - target: {fileID: 2132487090787750763, guid: 0328f13cc4b48534f85b74b35295c9bf, type: 3}
+      propertyPath: soundEffects.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: c2ad7b74afc2d0e4c8f6bf7fee4355c8, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0328f13cc4b48534f85b74b35295c9bf, type: 3}
 --- !u!224 &3843220967298046962
