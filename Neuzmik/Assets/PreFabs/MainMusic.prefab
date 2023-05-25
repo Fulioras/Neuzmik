@@ -159,3 +159,4 @@ MonoBehaviour:
   CityMusic: {fileID: 8300000, guid: c765c2735af9bd842ac6d777232ceb32, type: 3}
   ParkMusic: {fileID: 8300000, guid: 9b648f20512ec4643bf7ce3be52e6bc9, type: 3}
   BossMusic: {fileID: 8300000, guid: 6097565d8015fe144b87668b9341f714, type: 3}
+  CasinoMusic: {fileID: 8300000, guid: 5b23c66b2eeb30f4387458b4b66ab1e7, type: 3}

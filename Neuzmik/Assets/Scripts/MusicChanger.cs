@@ -10,6 +10,7 @@ public class MusicChanger : MonoBehaviour
     public AudioClip CityMusic;
     public AudioClip ParkMusic;
     public AudioClip BossMusic;
+    public AudioClip CasinoMusic;
     private AudioSource audioSource; // Reference to the AudioSource component
     private string oldSceneName = "";
     private void Start()
@@ -20,7 +21,7 @@ public class MusicChanger : MonoBehaviour
     public void Update()
     {
         string sceneName = SceneManager.GetActiveScene().name;
-        
+        Debug.Log(sceneName);
         if(sceneName == oldSceneName)
         {
 
@@ -40,7 +41,12 @@ public class MusicChanger : MonoBehaviour
             PlayPark();
             oldSceneName = "Park";
         }
-        else if(oldSceneName == "City" || oldSceneName == "Park" || oldSceneName == "Dungeon")
+        else if (sceneName == "BlackJack" && oldSceneName != "BlackJack")
+        {
+            PlayCasino();
+            oldSceneName = "BlackJack";
+        }
+        else if(oldSceneName == "City" || oldSceneName == "Park" || oldSceneName == "Dungeon" || oldSceneName == "BlackJack")
         {
             PlayMeniu();
             oldSceneName = "";
@@ -71,6 +77,11 @@ public class MusicChanger : MonoBehaviour
     public void PlayBoss()
     {
         audioSource.clip = BossMusic;
+        audioSource.Play();
+    }
+    public void PlayCasino()
+    {
+        audioSource.clip = CasinoMusic;
         audioSource.Play();
     }
 
