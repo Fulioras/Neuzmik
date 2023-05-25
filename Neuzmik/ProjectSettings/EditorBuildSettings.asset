@@ -41,4 +41,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Park.unity
     guid: bf38a16b0cad3a847a4662e09fa0dd7e
+  - enabled: 1
+    path: Assets/Scenes/BlackJack.unity
+    guid: a33f3e451d4a7134f9b6dd5892b95039
   m_configObjects: {}

@@ -95,4 +95,8 @@ public class StartGame : MonoBehaviour
         SceneManager.LoadScene("Menu");
         etapas = 2;
     }
+    public void toBlackJack()
+    {
+        SceneManager.LoadScene("BlackJack");
+    }
 }
