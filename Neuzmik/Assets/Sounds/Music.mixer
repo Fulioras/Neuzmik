@@ -15,7 +15,9 @@ AudioMixerController:
   m_SuspendThreshold: 0
   m_EnableSuspend: 1
   m_UpdateMode: 0
-  m_ExposedParameters: []
+  m_ExposedParameters:
+  - guid: f28522ace832a504994de1276adc11b6
+    name: Muzika
   m_AudioMixerGroupViews:
   - guids:
     - 59b88d34cfd8a044f80b88ee87aa4c83
