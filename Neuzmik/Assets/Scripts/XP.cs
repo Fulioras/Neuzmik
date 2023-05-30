@@ -22,6 +22,7 @@ public class XP : MonoBehaviour
         UpdateLevel();
         ZaidejoLygis.text = DabartinisZaidejoLygis + " Lygis";
     }
+    //pushas
 
     void Update()
     {
