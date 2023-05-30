@@ -24,7 +24,7 @@ public class Gyvybes : MonoBehaviour
         }
     }
     void Update(){
-        MygtukoTekstas.text = "Prisikelti (" + ZaidejoGyvybes + ")";
+        MygtukoTekstas.text = "Revive (" + ZaidejoGyvybes + ")";
     }
 
     public void Prisikelimas()

@@ -20,7 +20,7 @@ public class XP : MonoBehaviour
         DabartinisZaidejoXP = PlayerPrefs.GetFloat("DabartinisZaidejoXP", 0);
         DabartinisZaidejoLygis = PlayerPrefs.GetInt("DabartinisZaidejoLygis", 1);
         UpdateLevel();
-        ZaidejoLygis.text = DabartinisZaidejoLygis + " Lygis";
+        ZaidejoLygis.text = DabartinisZaidejoLygis + " Level";
     }
     //pushas
 
@@ -28,7 +28,7 @@ public class XP : MonoBehaviour
     {
         if(DabartinisZaidejoLygis == 50){
             ZaidejoXP.text = "MAX";
-            ZaidejoLygis.text = DabartinisZaidejoLygis + " Lygis [MAX]";
+            ZaidejoLygis.text = DabartinisZaidejoLygis + " Level [MAX]";
         }
         else{
             ZaidejoXP.text = "XP " + DabartinisZaidejoXP + " / " + reikiamasXpKiekis + " [" + Mathf.RoundToInt((DabartinisZaidejoXP / reikiamasXpKiekis) * 100) + "%]";
@@ -41,7 +41,7 @@ public class XP : MonoBehaviour
             if(DabartinisZaidejoXP < 0){
                 DabartinisZaidejoXP = 0;
             }
-            ZaidejoLygis.text = DabartinisZaidejoLygis + " Lygis";
+            ZaidejoLygis.text = DabartinisZaidejoLygis + " Level";
         }
 
         if (xpSlider != null & DabartinisZaidejoLygis != 50)
